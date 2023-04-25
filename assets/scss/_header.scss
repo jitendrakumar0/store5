@@ -1,5 +1,125 @@
 @include media-breakpoint(basic) {
-  
+  .topHeader {
+    border-bottom: 1px solid rgb(239, 239, 239);
+    & ul {
+      gap: 10px;
+      & .nav-link {
+        font-size: 12px;
+        font-weight: 500;
+        color: lighten($black, 10);
+        padding: 11px 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & img {
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          overflow: hidden;
+          margin-right: 5px;
+        }
+        &.dropdown-toggle {
+          &::after {
+            border: none;
+            width: 13px;
+            height: 13px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 11px;
+            background-image: url('../img/svg/chevron-down.svg');
+          }
+        }
+      }
+      & .dropdown {
+        & .dropdown-menu {
+          min-width: 140px;
+          padding: 0;
+          border-radius: 5px;
+          overflow: hidden;
+          border: 1px solid $gray-400;
+          & .dropdown-item {
+            font-size: 12px;
+            color: black;
+            font-weight: 500;
+            transition: all 0.3s ease-in-out;
+            padding: 10px 20px;
+            background-color: white;
+            &:hover {
+              font-weight: 600;
+              background-color: #f6f6f6;
+            }
+          }
+        }
+      }
+    }
+  }
+  .mainNavbar {
+    padding: 14px 0px;
+    & .container {
+      & .navbar-brand {
+        height: 36px;
+        padding: 0;
+      }
+      & .navbar-collapse {
+        max-width: 557px;
+        & .input-group {
+          color: black;
+          height: 44px;
+          & input {
+            border-radius: 0;
+            box-shadow: none;
+            border: 1px solid $gray-200;
+            border-right: none;
+            font-size: 12px;
+            font-weight: 600;
+            &:focus {
+              outline: none;
+            }
+
+          }
+          & .devider {
+            width: 3px;
+            height: 50%;
+            background-color: $gray-300;
+            margin: auto;
+          }
+          & select {
+            border-left: none !important;
+            box-shadow: none;
+            border-radius: 0;
+            border: 1px solid $gray-200;
+            font-size: 12px;
+            font-weight: 600;
+            &:focus {
+              outline: none;
+            }
+            & option:disabled {
+              color: $gray-300;
+            }
+          }
+          & .searchBtn {
+            font-size: 13px;
+            color: black;
+            font-weight: 600;
+            text-align: center;
+            background-color: #ffbb39;
+            box-shadow: none;
+            border-radius: 0;
+            border: 1px solid $gray-200;
+            padding: 5px 25px;
+            &:focus {
+              outline: none;
+            }
+          }
+          & ::placeholder {
+            font-size: 12px;
+            color: $gray-300;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
 }
 @include media-breakpoint-up(sm) {}
 
@@ -17,7 +137,7 @@
 @include media-breakpoint-down(xl) {}
 
 @include media-breakpoint-down(lg) {}
-
+ 
 @include media-breakpoint-down(md) {}
 
 @include media-breakpoint-down(sm) {}
