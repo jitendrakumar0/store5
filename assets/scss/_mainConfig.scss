@@ -1,0 +1,439 @@
+@include media-breakpoint(basic) {
+  @font-face {
+    font-family: 'GalanoGrotesque';
+    src: local('Galano Grotesque SemiBold'), local('GalanoGrotesque-SemiBold'),
+        url('../fonts/GalanoGrotesque-SemiBold.woff2') format('woff2'),
+        url('../fonts/GalanoGrotesque-SemiBold.woff') format('woff'),
+        url('../fonts/GalanoGrotesque-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GalanoGrotesque';
+    src: local('Galano Grotesque Medium'), local('GalanoGrotesque-Medium'),
+        url('../fonts/GalanoGrotesque-Medium.woff2') format('woff2'),
+        url('../fonts/GalanoGrotesque-Medium.woff') format('woff'),
+        url('../fonts/GalanoGrotesque-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GalanoGrotesque';
+    src: local('Galano Grotesque Light'), local('GalanoGrotesque-Light'),
+        url('../fonts/GalanoGrotesque-Light.woff2') format('woff2'),
+        url('../fonts/GalanoGrotesque-Light.woff') format('woff'),
+        url('../fonts/GalanoGrotesque-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GalanoGrotesqueAlt';
+    src: local('Galano Grotesque Alt Bold'), local('GalanoGrotesqueAlt-Bold'),
+        url('../fonts/GalanoGrotesqueAlt-Bold.woff2') format('woff2'),
+        url('../fonts/GalanoGrotesqueAlt-Bold.woff') format('woff'),
+        url('../fonts/GalanoGrotesqueAlt-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GalanoGrotesque';
+    src: local('Galano Grotesque Thin'), local('GalanoGrotesque-Thin'),
+        url('../fonts/GalanoGrotesque-Thin.woff2') format('woff2'),
+        url('../fonts/GalanoGrotesque-Thin.woff') format('woff'),
+        url('../fonts/GalanoGrotesque-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GalanoGrotesqueAlt';
+    src: local('Galano Grotesque Alt Black'), local('GalanoGrotesqueAlt-Black'),
+        url('../fonts/GalanoGrotesqueAlt-Black.woff2') format('woff2'),
+        url('../fonts/GalanoGrotesqueAlt-Black.woff') format('woff'),
+        url('../fonts/GalanoGrotesqueAlt-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GalanoGrotesqueAlt';
+    src: local('Galano Grotesque Alt ExtraBold'), local('GalanoGrotesqueAlt-ExtraBold'),
+        url('../fonts/GalanoGrotesqueAlt-ExtraBold.woff2') format('woff2'),
+        url('../fonts/GalanoGrotesqueAlt-ExtraBold.woff') format('woff'),
+        url('../fonts/GalanoGrotesqueAlt-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GalanoGrotesqueAltDEMO';
+    src: local('Galano Grotesque Alt DEMO Bold'), local('GalanoGrotesqueAltDEMO-Bold'),
+        url('../fonts/GalanoGrotesqueAltDEMO-Bold.woff2') format('woff2'),
+        url('../fonts/GalanoGrotesqueAltDEMO-Bold.woff') format('woff'),
+        url('../fonts/GalanoGrotesqueAltDEMO-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GalanoGrotesqueAlt';
+    src: local('Galano Grotesque Alt Heavy'), local('GalanoGrotesqueAlt-Heavy'),
+        url('../fonts/GalanoGrotesqueAlt-Heavy.woff2') format('woff2'),
+        url('../fonts/GalanoGrotesqueAlt-Heavy.woff') format('woff'),
+        url('../fonts/GalanoGrotesqueAlt-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GalanoGrotesqueAlt';
+    src: local('Galano Grotesque Alt ExtraLight'), local('GalanoGrotesqueAlt-ExtraLight'),
+        url('../fonts/GalanoGrotesqueAlt-ExtraLight.woff2') format('woff2'),
+        url('../fonts/GalanoGrotesqueAlt-ExtraLight.woff') format('woff'),
+        url('../fonts/GalanoGrotesqueAlt-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GalanoGrotesque';
+    src: local('Galano Grotesque'), local('GalanoGrotesque-Regular'),
+        url('../fonts/GalanoGrotesque-Regular.woff2') format('woff2'),
+        url('../fonts/GalanoGrotesque-Regular.woff') format('woff'),
+        url('../fonts/GalanoGrotesque-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GalanoGrotesqueAlt';
+    src: local('Galano Grotesque Alt Black Italic'), local('GalanoGrotesqueAlt-BlackItalic'),
+        url('../fonts/GalanoGrotesqueAlt-BlackItalic.woff2') format('woff2'),
+        url('../fonts/GalanoGrotesqueAlt-BlackItalic.woff') format('woff'),
+        url('../fonts/GalanoGrotesqueAlt-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GalanoGrotesqueAlt';
+    src: local('Galano Grotesque Alt Medium'), local('GalanoGrotesqueAlt-Medium'),
+        url('../fonts/GalanoGrotesqueAlt-Medium.woff2') format('woff2'),
+        url('../fonts/GalanoGrotesqueAlt-Medium.woff') format('woff'),
+        url('../fonts/GalanoGrotesqueAlt-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GalanoGrotesque';
+    src: local('Galano Grotesque Black'), local('GalanoGrotesque-Black'),
+        url('../fonts/GalanoGrotesque-Black.woff2') format('woff2'),
+        url('../fonts/GalanoGrotesque-Black.woff') format('woff'),
+        url('../fonts/GalanoGrotesque-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GalanoGrotesque';
+    src: local('Galano Grotesque Bold'), local('GalanoGrotesque-Bold'),
+        url('../fonts/GalanoGrotesque-Bold.woff2') format('woff2'),
+        url('../fonts/GalanoGrotesque-Bold.woff') format('woff'),
+        url('../fonts/GalanoGrotesque-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GalanoGrotesqueAlt';
+    src: local('Galano Grotesque Alt Thin'), local('GalanoGrotesqueAlt-Thin'),
+        url('../fonts/GalanoGrotesqueAlt-Thin.woff2') format('woff2'),
+        url('../fonts/GalanoGrotesqueAlt-Thin.woff') format('woff'),
+        url('../fonts/GalanoGrotesqueAlt-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GalanoGrotesqueAlt';
+    src: local('Galano Grotesque Alt SemiBold'), local('GalanoGrotesqueAlt-SemiBold'),
+        url('../fonts/GalanoGrotesqueAlt-SemiBold.woff2') format('woff2'),
+        url('../fonts/GalanoGrotesqueAlt-SemiBold.woff') format('woff'),
+        url('../fonts/GalanoGrotesqueAlt-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GalanoGrotesque';
+    src: local('Galano Grotesque ExtraLight'), local('GalanoGrotesque-ExtraLight'),
+        url('../fonts/GalanoGrotesque-ExtraLight.woff2') format('woff2'),
+        url('../fonts/GalanoGrotesque-ExtraLight.woff') format('woff'),
+        url('../fonts/GalanoGrotesque-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GalanoGrotesqueAlt';
+    src: local('Galano Grotesque Alt'), local('GalanoGrotesqueAlt-Regular'),
+        url('../fonts/GalanoGrotesqueAlt-Regular.woff2') format('woff2'),
+        url('../fonts/GalanoGrotesqueAlt-Regular.woff') format('woff'),
+        url('../fonts/GalanoGrotesqueAlt-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GalanoGrotesqueDEMO';
+    src: local('Galano Grotesque DEMO Bold'), local('GalanoGrotesqueDEMO-Bold'),
+        url('../fonts/GalanoGrotesqueDEMO-Bold.woff2') format('woff2'),
+        url('../fonts/GalanoGrotesqueDEMO-Bold.woff') format('woff'),
+        url('../fonts/GalanoGrotesqueDEMO-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GalanoGrotesqueAlt';
+    src: local('Galano Grotesque Alt Light'), local('GalanoGrotesqueAlt-Light'),
+        url('../fonts/GalanoGrotesqueAlt-Light.woff2') format('woff2'),
+        url('../fonts/GalanoGrotesqueAlt-Light.woff') format('woff'),
+        url('../fonts/GalanoGrotesqueAlt-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GalanoGrotesque';
+    src: local('Galano Grotesque ExtraBold'), local('GalanoGrotesque-ExtraBold'),
+        url('../fonts/GalanoGrotesque-ExtraBold.woff2') format('woff2'),
+        url('../fonts/GalanoGrotesque-ExtraBold.woff') format('woff'),
+        url('../fonts/GalanoGrotesque-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GalanoGrotesque';
+    src: local('Galano Grotesque Heavy'), local('GalanoGrotesque-Heavy'),
+        url('../fonts/GalanoGrotesque-Heavy.woff2') format('woff2'),
+        url('../fonts/GalanoGrotesque-Heavy.woff') format('woff'),
+        url('../fonts/GalanoGrotesque-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+  * {
+    &>* {
+      &::-webkit-scrollbar {}
+
+      &::-webkit-scrollbar-track {}
+
+      &::-webkit-scrollbar-thumb {}
+
+      &::-webkit-scrollbar-thumb:hover {}
+    }
+
+    &:hover>* {
+      &::-webkit-scrollbar-track {}
+
+      &::-webkit-scrollbar-thumb {}
+
+      &::-webkit-scrollbar-thumb:hover {}
+    }
+  }
+
+  [href*=javascript][target=_blank] {
+    pointer-events: none;
+  }
+  a.active[href],
+  a.accordion-button:not(.collapsed) {
+    pointer-events: none;
+  }
+  [data-scrollbar] {
+    & > canvas {
+      z-index: 1000;
+    }
+  }
+
+
+  body {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    outline: 0 !important;
+    display: block !important;
+    user-select: none !important;
+
+    & input,
+    & textarea,
+    & select {
+      user-select: auto;
+    }
+
+    & main {
+      width: 100vw !important;
+      max-width: none !important;
+      height: 100% !important;
+      margin: 0 !important;
+      position: relative !important;
+      overflow: hidden !important;
+      padding: 0px !important;
+
+      &>.mainInner {
+        height: 100% !important;
+        border: 0 !important;
+        position: relative !important;
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        outline: 0 !important;
+        overflow: hidden !important;
+        margin: 0px !important;
+        flex-wrap: nowrap;
+        &> [data-page-name] {
+          overflow: hidden auto;
+        }
+      }
+    }
+
+    & .overflow-hidden-auto {
+      overflow: hidden auto !important;
+    }
+
+    & .overflow-auto-hidden {
+      overflow: auto hidden !important;
+    }
+  }
+}
+
+
+
+
+// No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+@include media-breakpoint-up(sm) {
+}
+
+@include media-breakpoint-up(md) {
+  * {
+    &>* {
+      scrollbar-width: thin !important;
+      scrollbar-color: lighten($theme2, 2) !important;
+
+      &::-webkit-scrollbar {
+        width: .3em;
+        height: .3em;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: transparent;
+        border-radius: 50em;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: rgba($gray-500, .0);
+        border-radius: 50em;
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background: rgba($gray-400, .6);
+      }
+    }
+
+    &>* {
+      &>*:hover {
+        &::-webkit-scrollbar {
+          width: .3em;
+          height: .3em;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background: rgba($gray-500, .1);
+          border-radius: 50em;
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+          background: rgba($gray-400, .8);
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {
+}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {}
+
+[data-bs-theme=dark] {
+  @include dark-media-breakpoint(basic) {}
+
+  // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+  @include dark-media-breakpoint-up(sm) {}
+
+  @include dark-media-breakpoint-up(md) {}
+
+  @include dark-media-breakpoint-up(lg) {}
+
+  @include dark-media-breakpoint-up(xl) {}
+
+  @include dark-media-breakpoint-up(xxl) {}
+
+
+  @include dark-media-breakpoint-down(xxl) {}
+
+  @include dark-media-breakpoint-down(xl) {}
+
+  @include dark-media-breakpoint-down(lg) {}
+
+  @include dark-media-breakpoint-down(md) {}
+
+  @include dark-media-breakpoint-down(sm) {}
+}
