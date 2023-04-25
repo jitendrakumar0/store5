@@ -152,4 +152,9 @@ body .overflow-auto-hidden {
   * > * > *:hover::-webkit-scrollbar-thumb:hover {
     background: rgba(206, 212, 218, 0.8);
   }
+}
+.breadCrumbFluid .breadCrumbContainer .singleProductBreadcrumbOl .singleProductBreadcrumbLi .singleProductBreadcrumbAnchor {
+  font-size: 13px;
+  font-weight: 400;
+  color: #000;
 }/*# sourceMappingURL=style.min.css.map */

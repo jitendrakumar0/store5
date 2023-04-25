@@ -1,5 +1,17 @@
 @include media-breakpoint(basic) {
-  
+    .breadCrumbFluid{
+        & .breadCrumbContainer{
+            & .singleProductBreadcrumbOl{
+                & .singleProductBreadcrumbLi{
+                    & .singleProductBreadcrumbAnchor{
+                        font-size: 13px;
+                        font-weight: 400;
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
 }
 @include media-breakpoint-up(sm) {}
 
