@@ -293,7 +293,7 @@ body .overflow-auto-hidden {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 18px 20px;
   background-color: transparent;
   color: #000;
   font-size: 15px;
@@ -304,7 +304,7 @@ body .overflow-auto-hidden {
   font-size: 13px;
 }
 .singleProductHeroFluid .singleProductHeroContainer .productSizeSelect .productSizeSelectDrop .productSizeSelectDropAnchor .fontSelect img {
-  height: 10px;
+  height: 8px;
 }
 .singleProductHeroFluid .singleProductHeroContainer .productSizeSelect .productSizeSelectDrop .productSizeSelectDropAnchor::after {
   display: none;
@@ -324,6 +324,7 @@ body .overflow-auto-hidden {
 .singleProductHeroFluid .singleProductHeroContainer .cartSize .cartSizeInp .sizeBtn {
   border: none;
   background-color: transparent;
+  margin: 0 10px;
 }
 .singleProductHeroFluid .singleProductHeroContainer .wishlistInp {
   padding: 10px 20px;

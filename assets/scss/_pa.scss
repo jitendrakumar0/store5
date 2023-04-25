@@ -146,7 +146,7 @@
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
-                        padding: 10px 20px;
+                        padding: 18px 20px;
                         background-color: transparent;
                         color: $black;
                         font-size: 15px;
@@ -155,7 +155,7 @@
                         & .fontSelect{
                             font-size: 13px;
                             & img{
-                                height: 10px;
+                                height: 8px;
                             }
                         }
                         &::after{
@@ -181,6 +181,7 @@
                     & .sizeBtn{
                         border: none;
                         background-color: transparent;
+                        margin: 0 10px;
                     }
                 }
             }
