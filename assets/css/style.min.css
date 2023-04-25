@@ -153,6 +153,9 @@ body .overflow-auto-hidden {
     background: rgba(206, 212, 218, 0.8);
   }
 }
+.breadCrumbFluid .breadCrumbContainer .singleProductBreadcrumbOl {
+  margin-bottom: 0;
+}
 .breadCrumbFluid .breadCrumbContainer .singleProductBreadcrumbOl .singleProductBreadcrumbLi .singleProductBreadcrumbAnchor {
   font-size: 13px;
   font-weight: 400;
@@ -178,7 +181,7 @@ body .overflow-auto-hidden {
   position: absolute;
   top: 28px;
   left: 30px;
-  background-color: red;
+  background-color: #ffba38;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -189,4 +192,233 @@ body .overflow-auto-hidden {
   max-width: 100%;
   height: auto;
   object-fit: contain;
+}
+.singleProductHeroFluid .singleProductHeroContainer .productImages {
+  width: 110px;
+  height: 100px;
+  padding: 15px;
+  border: 1px solid #e9ecef;
+  cursor: pointer;
+}
+.singleProductHeroFluid .singleProductHeroContainer .productImages img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0.5;
+}
+.singleProductHeroFluid .singleProductHeroContainer .productNameHead {
+  font-size: 12px;
+  color: #6c757d;
+  margin-bottom: 5px;
+}
+.singleProductHeroFluid .singleProductHeroContainer .productName {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.singleProductHeroFluid .singleProductHeroContainer .ratingBox {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.singleProductHeroFluid .singleProductHeroContainer .ratingBox .ratingUl {
+  margin-bottom: 0;
+}
+.singleProductHeroFluid .singleProductHeroContainer .ratingBox .ratingUl .ratingLi {
+  width: 15px;
+  height: 15px;
+}
+.singleProductHeroFluid .singleProductHeroContainer .ratingBox span {
+  font-size: 12px;
+  color: #000;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.singleProductHeroFluid .singleProductHeroContainer .productPrice {
+  margin-bottom: 20px;
+}
+.singleProductHeroFluid .singleProductHeroContainer .productPrice span:first-child {
+  font-size: 15px;
+  color: gray;
+}
+.singleProductHeroFluid .singleProductHeroContainer .productPrice span:last-child {
+  font-size: 25px;
+  color: #EF262C;
+  margin-left: 5px;
+}
+.singleProductHeroFluid .singleProductHeroContainer .productDetail {
+  font-size: 15px;
+  color: gray;
+  margin-bottom: 20px;
+}
+.singleProductHeroFluid .singleProductHeroContainer .productColour {
+  font-size: 15px;
+  color: gray;
+  margin-bottom: 15px;
+}
+.singleProductHeroFluid .singleProductHeroContainer .colourInp {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #e9ecef;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.singleProductHeroFluid .singleProductHeroContainer .colourInp:focus-visible {
+  outline: unset;
+}
+.singleProductHeroFluid .singleProductHeroContainer .colourInp.inpColour1 {
+  background-color: #d63384;
+}
+.singleProductHeroFluid .singleProductHeroContainer .colourInp.inpColour2 {
+  background-color: #377dff;
+}
+.singleProductHeroFluid .singleProductHeroContainer .colourInp.inpColour3 {
+  background-color: #d10015;
+}
+.singleProductHeroFluid .singleProductHeroContainer .colourInp.inpColour4 {
+  background-color: #fff;
+}
+.singleProductHeroFluid .singleProductHeroContainer .productSize {
+  font-size: 15px;
+  color: gray;
+  margin-bottom: 15px;
+  margin: 15px 0;
+}
+.singleProductHeroFluid .singleProductHeroContainer .productSizeSelect {
+  margin-bottom: 25px;
+}
+.singleProductHeroFluid .singleProductHeroContainer .productSizeSelect .productSizeSelectDrop .productSizeSelectDropAnchor {
+  width: 100% !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #000;
+  font-size: 15px;
+  border-radius: 0 !important;
+  border: 1px solid #e9ecef;
+}
+.singleProductHeroFluid .singleProductHeroContainer .productSizeSelect .productSizeSelectDrop .productSizeSelectDropAnchor .fontSelect {
+  font-size: 13px;
+}
+.singleProductHeroFluid .singleProductHeroContainer .productSizeSelect .productSizeSelectDrop .productSizeSelectDropAnchor .fontSelect img {
+  height: 10px;
+}
+.singleProductHeroFluid .singleProductHeroContainer .productSizeSelect .productSizeSelectDrop .productSizeSelectDropAnchor::after {
+  display: none;
+}
+.singleProductHeroFluid .singleProductHeroContainer .productSizeSelect .productSizeSelectDrop .productSizeSelectDropMenu {
+  width: 100%;
+  padding: 0;
+}
+.singleProductHeroFluid .singleProductHeroContainer .productSizeSelect .productSizeSelectDrop .productSizeSelectDropMenu .productSizeSelectDropItem.active {
+  background-color: #F6F6F6 !important;
+  color: #000;
+}
+.singleProductHeroFluid .singleProductHeroContainer .cartSize .cartSizeInp {
+  border: 1px solid #e9ecef;
+  padding: 10px 25px;
+}
+.singleProductHeroFluid .singleProductHeroContainer .cartSize .cartSizeInp .sizeBtn {
+  border: none;
+  background-color: transparent;
+}
+.singleProductHeroFluid .singleProductHeroContainer .wishlistInp {
+  padding: 10px 20px;
+  border: 1px solid #e9ecef;
+  cursor: pointer;
+}
+.singleProductHeroFluid .singleProductHeroContainer .cartBtn {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  border: 1px solid #000;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+.singleProductHeroFluid .singleProductHeroContainer .cartBtn:hover {
+  opacity: 0.8;
+}
+.singleProductHeroFluid .singleProductHeroContainer .address span:first-child {
+  font-size: 13px;
+  color: #000;
+}
+.singleProductHeroFluid .singleProductHeroContainer .address span:last-child {
+  font-size: 13px;
+  color: #6c757d;
+}
+.singleProductHeroFluid .singleProductHeroContainer .reportAnchor {
+  color: #EF262C;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 5px;
+  text-decoration: none;
+}
+.singleProductHeroFluid .singleProductHeroContainer .reportAnchor img {
+  margin-right: 5px;
+}
+.singleProductHeroFluid .singleProductHeroContainer .social span {
+  font-size: 15px;
+  color: #000;
+}
+.singleProductHeroFluid .singleProductHeroContainer .social img {
+  height: 15px;
+  margin: 0px 10px;
+}
+
+.tabsFluid {
+  background-color: #F8F8F8;
+  width: 100%;
+}
+.tabsFluid .tabsContainer .productNavPills {
+  border-bottom: 1px solid #dee2e6;
+}
+.tabsFluid .tabsContainer .productNavPills .productNavPillsItem .productNavLink {
+  background-color: #F8F8F8;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6c757d;
+  font-weight: 500;
+  padding: 20px 20px;
+  position: relative;
+  transition: 0.3s linear;
+  border-radius: 0 !important;
+}
+.tabsFluid .tabsContainer .productNavPills .productNavPillsItem .productNavLink.active {
+  border-bottom: 1px solid #ffba38;
+  border-radius: 0 !important;
+  border-color: #ffba38;
+  color: #000;
+}
+.tabsFluid .tabsContainer .productNavPillsTabContent .productTabPane1 {
+  padding-bottom: 50px;
+}
+.tabsFluid .tabsContainer .productNavPillsTabContent .productTabPane1 .tabMainHeading {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 10px;
+}
+.tabsFluid .tabsContainer .productNavPillsTabContent .productTabPane1 .para {
+  font-size: 15px;
+  color: #6c757d;
+}
+.tabsFluid .tabsContainer .productNavPillsTabContent .productTabPane1 .tabProductDetailUl {
+  padding-left: 1em;
+  margin-bottom: 0;
+}
+.tabsFluid .tabsContainer .productNavPillsTabContent .productTabPane1 .tabProductDetailUl .tabProductDetailLi {
+  font-size: 15px;
+  color: #6c757d;
+  margin-bottom: 10px;
+}
+.tabsFluid .tabsContainer .productNavPillsTabContent .productTabPane2 .tab2 .tabMainHeading {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=style.min.css.map */
