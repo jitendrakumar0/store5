@@ -157,4 +157,36 @@ body .overflow-auto-hidden {
   font-size: 13px;
   font-weight: 400;
   color: #000;
+  text-decoration: none;
+}
+
+.singleProductHeroFluid .singleProductHeroContainer .productImage {
+  height: 600px;
+  width: 100%;
+  border: 1px solid #e9ecef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+.singleProductHeroFluid .singleProductHeroContainer .productImage::before {
+  content: "-50%";
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  top: 28px;
+  left: 30px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+.singleProductHeroFluid .singleProductHeroContainer .productImage img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }/*# sourceMappingURL=style.min.css.map */
