@@ -1,6 +1,9 @@
 [data-page-name="indexPage"] {
 @include media-breakpoint(basic) {
-    
+    body {
+        background-color: $theme1;
+    }
+
 }
 @include media-breakpoint-down(xxl) {}
 
