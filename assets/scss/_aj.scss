@@ -1,9 +1,19 @@
 [data-page-name="indexPage"] {
 @include media-breakpoint(basic) {
-    body {
-        background-color: $theme1;
+    & .heroSection {
+        & .shopingCards {
+            & .innerCard {
+                & .cardImg {
+                    height: 40px;
+                }
+                & .cardSubTitle, & .cardTitle{
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
     }
-
+    
 }
 @include media-breakpoint-down(xxl) {}
 
@@ -11,11 +21,56 @@
 
 @include media-breakpoint-down(lg) {}
 
-@include media-breakpoint-down(md) {}
+@include media-breakpoint-down(md) {
+    & .heroSection {
+        & .shopingCards {
+            & .innerCard {
+                & .cardImg {
+                    height: 35px;
+                }
+            }
+        }
+    }
+}
 
 @include media-breakpoint-down(sm) {}
 }
 @include media-breakpoint(basic) {
+
+    .gamerWorldSection {
+        & .innersection{
+            font-size: 30px;
+            line-height: normal;
+        }
+        & .viewMoreBtn {
+            font-size: 16px;
+            line-height: normal;
+            & img {
+                height: 14px;
+                transform-origin: center bottom;
+                animation-name: swinging;
+                animation-duration: 0.8s;
+                animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+                animation-delay: 0s;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
+                animation-fill-mode: none;
+                animation-play-state: running;
+            }
+        }
+        @keyframes swinging{
+            0%{transform: translateX(0px) }
+            100%{transform: translateX(5px) }
+        }
+        & .productCard {
+            & .card {
+                &.mobileUrlSection {
+                    background: url(../img/section-category-2.jpg) no-repeat, center;
+                    background-size: cover;
+                }
+            }
+        }
+    }
 
 }
 @include media-breakpoint-up(sm) {}
