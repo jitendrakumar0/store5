@@ -56,6 +56,14 @@
   .mainNavbar {
     padding: 14px 0px;
     & .container {
+      & .sideBarBtn {
+        background-image: url('../img/svg/menu.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 25px;
+        height: 25px;
+      }
       & .navbar-brand {
         height: 36px;
         padding: 0;
@@ -90,12 +98,26 @@
             border: 1px solid $gray-200;
             font-size: 12px;
             font-weight: 600;
+            position: relative;
             &:focus {
               outline: none;
             }
             & option:disabled {
               color: $gray-300;
             }
+          }
+          & .downArrow {
+            width: 32px;
+            height: 16px;
+            background-image: url('../img/svg/chevron-down.svg');
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-size: 12px;
+            margin-top: 15px;
+            margin-left: -32px !important;
+            position: relative;
+            padding-right: 10px;
+            z-index: 9;
           }
           & .searchBtn {
             font-size: 13px;
@@ -116,6 +138,188 @@
             color: $gray-300;
             font-weight: 400;
           }
+        }
+      }
+      & .linkBtnOuter {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        & .linkBtn {
+          & .imgOuter {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 22px;
+            height: 22px;
+            & .linkAmount {
+              position: absolute;
+              top: -8px;
+              right: -9px;
+              width: 17px;
+              height: 17px;
+              border-radius: 50%;
+              overflow: hidden;
+              background-color: #ffbb38;
+              color: #000;
+              font-size: 9px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  .navbarBottom {
+    background-color: #ffba38;
+    & .container {
+      position: relative;
+      & .categroiesBtnOuter {
+        & .categoriesBtn {
+          text-decoration: none;
+          text-decoration: none;
+          background-color: #fff;
+          color: #000;
+          position: relative;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          padding: 16px 80px 16px 80px;
+          border-radius: 8px 8px 0px 0px;
+          margin-bottom: -4px;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 15px;
+            left: 10px;
+            background-image: url('../img/svg/menu.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+      }
+      & .navLinksOuter {
+        display: flex;
+        align-items: center;
+        & li {
+          margin-right: 40px;
+          &:last-child {
+            margin-right: 0px;
+          }
+          & .navLinks {
+            text-decoration: none;
+            font-size: .875rem;
+            line-height: 1.25rem;
+            font-weight: 600;
+            color: #000;
+            background-color: transparent;
+            border: none;
+            padding: 22px 0px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            & .dropIcon {
+              width: 13px;
+              height: 13px;
+              background-image: url('../img/svg/chevron-down.svg');
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: 11px;
+            }
+            &.hoverClass {
+              transition: all 0.3s ease-in-out;
+              & .bottomBox {
+                width: 220px;
+                position: absolute;
+                top: 100%;
+                background-color: #ffff;
+                padding: 20px;
+                z-index: -1;
+                opacity: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                text-align: start;
+                cursor: auto;
+                box-shadow: rgba(0, 0, 0, 0.14) 0px 15px 50px 0px;;
+                & .boxLinks {
+                  color: rgb(121, 121, 121);
+                  font-weight: 400;
+                  text-decoration: none;
+                  &:hover {
+                    color: #ffba38;
+                    text-decoration: underline;
+                  }
+                }
+                &.shopBox {
+                  width: 100%;
+                  left: 0;
+                  & .linkHeading {
+                    margin-bottom: 12px;
+                    font-size: 13px;
+                    font-weight: 700;
+                    color: rgb(34, 34, 34);
+                  }
+                  & .boxLinks {
+                    margin-bottom: 12px;
+                    &:last-child {
+                      margin-bottom: 0;
+                    }
+                  }
+                }
+              }
+              &.homeHover {
+                &:hover {
+                  & .homeBox {
+                    z-index: 1;
+                    opacity: 1;
+                  }
+                }
+              }
+              &.shopHover {
+                &:hover {
+                  & .shopBox {
+                    opacity: 1;
+                    z-index: 1;
+                  }
+                }
+              }
+              &.pageHover {
+                &:hover {
+                  & .pagesBox {
+                    z-index: 1;
+                    opacity: 1;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      & .becomeASellerBtn {
+        background-color: #000;
+        color: #ffff;
+        font-size: .875rem;
+        line-height: 1.25rem;
+        font-weight: 600;
+        transition: all 0.3s ease-in-out;
+        width: 161px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        &:hover {
+          background-color: lighten(#000, 5);
+        }
+        & img {
+          width: 13px;
+          height: 13px;
+          margin-left: 8px;
+          filter: invert(1);
+          transform: rotate(-90deg);
         }
       }
     }
