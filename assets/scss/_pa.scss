@@ -292,7 +292,206 @@
                             color: $black;
                             margin-bottom: 10px;
                         }
+                        & .messageBox{
+                            padding: 32px 2.5em;
+                            background-color: $white;
+                            & .profile{
+                                width: 50px;
+                                height: 50px;
+                                overflow: hidden;
+                                & img{
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+                            & .profileName{
+                                font-size: 18px;
+                                font-weight: 500;
+                            }
+                            & .address{
+                                font-size: 14px;
+                                color: $gray-600;
+                            }
+                            & .starUl{
+                                & .starLi{
+                                    & img{
+
+                                    }
+                                }
+                                & span{
+                                    font-size: 14px;
+                                }
+                            }
+                            & .reply{
+                                padding: 32px 2.5rem 1.5rem 32px;
+                            }
+                        }
+                        & .comment{
+                            font-size: 15;
+                            line-height: 1.75rem;
+                            color: $gray-600;
+                            border-bottom: 1px solid $gray-300;
+                            padding-bottom: 30px;
+                            &.coment{
+                                border-bottom: unset;
+                            }
+                        }
+                        & .commentReply{
+                            padding-left: 2.5rem;
+                            border-bottom: unset;
+                        }
+                        & .loadBtn{
+                            font-size: .875rem;
+                            line-height: 1.25rem;
+                            background-color: $black;
+                            border: none;
+                            font-weight: 600;
+                            width: 300px;
+                            height: 50px;
+                            color: $white;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            &:hover{
+                                opacity: 0.8;
+                            }
+                        }
+                        & .reviewForm{
+                            & .reviewFormHead{
+                                font-size: 1.5rem;
+                                line-height: 2rem;
+                                font-weight: 500;
+                                margin-bottom: 1.25rem;
+                            }
+                            & .starUl{
+                                margin-bottom: 30px;
+                                & .starLi{
+                                    & img{
+                                        filter: brightness(0);
+                                    }
+                                }
+                            }
+                            & span{
+                                margin-bottom: 30px;
+                                margin-left: 5px;
+                            }
+                        }
+                        & .formBox{
+                            margin-bottom: 1.25rem;
+                            & .reviewLbl{
+                                font-size: 13px;
+                                margin-bottom: 0.25rem
+                            }
+                            & .reviewInp{
+                                font-size: .875rem;
+                                line-height: 1.25rem;
+                                padding-left: 1.5rem;
+                                padding-right: 1.5rem;
+                                width: 100%;
+                                height: 50px;
+                                box-shadow: none;
+                                border-color: $white;
+                            }
+                        } 
+                        & .reviewLbl{
+                            font-size: 13px;
+                            margin-bottom: 0.25rem
+                        }
+                        & .textArea{
+                            width: 100%;
+                            padding: 1.5rem;
+                            border: none;
+                            margin-bottom: 30px;
+                            &:focus-visible{
+                                outline: unset;
+                            }
+                        }
                     }
+                }
+                & .productTabPane3{
+                    & .tab3{
+                        & .borderBottom{
+                            border-bottom: 1px solid $gray-300;
+                            & .profile{
+                                height: 73px;
+                                width: 73px;
+                                overflow: hidden;
+                                border-radius: 50%;
+                                & img{
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+                            & .profileName{
+                                font-size: 18px;
+                                color: $black;
+                                font-weight: 500;
+                            }
+                            & .adderss{
+                                font-size: 13px;
+                                color: $gray-600;
+                                font-weight: 400;
+                            }
+
+                        }
+                        & .product{
+                            font-size: 15px;
+                            font-weight: 400;
+                            & span{
+                                font-size: 14px;
+                                font-weight: 400;
+                                color: $gray-600;
+                            }
+                        }
+                        & .heading{
+                            font-size: 18px;
+                            font-weight: 500;
+                            margin-bottom:0;
+                            margin-top: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .relatedFluid{
+        & .relatedContainer{
+            & .relatedCardBox{
+                padding: 60px 0;
+                & .relatedCardBoxHead{
+                    font-size: 1.875rem;
+                    line-height: 2.25rem;
+                    font-weight: 600;
+                }
+            }
+            & .forShadow{
+                box-shadow: rgba(0, 0, 0, 0.05) 0px 15px 64px 0px;
+            }
+        }
+    }
+    .newsletterFluid{
+        background-image: url(../img/newsletter.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 307px;
+        & .newsletterContainer{
+            & .newsletterBox{
+                & .newsletterHeading{
+                    font-size: 1.875rem;
+                    line-height: 2.25rem;
+                    font-weight: 700;
+                    margin-bottom: 20px;
+                    color: $black;
+                    & span{
+                        color: $yellow;
+                    }
+                }
+                & .newsletterSubHeading{
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: $black;
                 }
             }
         }
