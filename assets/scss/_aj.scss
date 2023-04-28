@@ -35,13 +35,14 @@
 
 @include media-breakpoint-down(sm) {}
 }
-@include media-breakpoint(basic) {
 
-    .gamerWorldSection {
-        & .innersection{
+@include media-breakpoint(basic) {
+    .homeSectionHeading {
+        & .sectionHeading {
             font-size: 30px;
             line-height: normal;
         }
+        
         & .viewMoreBtn {
             font-size: 16px;
             line-height: normal;
@@ -57,17 +58,194 @@
                 animation-fill-mode: none;
                 animation-play-state: running;
             }
+            @keyframes swinging{
+                0%{transform: translateX(0px) }
+                100%{transform: translateX(5px) }
+            }
         }
-        @keyframes swinging{
-            0%{transform: translateX(0px) }
-            100%{transform: translateX(5px) }
+    }
+
+    .gamerWorldSection {
+        & .innersection{
         }
-        & .productCard {
+        & .productCardRow {
             & .card {
-                &.mobileUrlSection {
-                    background: url(../img/section-category-2.jpg) no-repeat, center;
-                    background-size: cover;
+                background: var(--bg) no-repeat, center;
+                background-size: cover;
+                & .cardtitle {
+                    font-size: 16px;
+                    line-height: 1.5rem;
+                    letter-spacing: .025em;
+                    font-weight: 600;
                 }
+                & .cardLink {
+                    font-size: 14px;
+                    line-height: 1.5rem;
+                    letter-spacing: .025em;
+                    color: rgb(121 121 121);
+                    text-decoration: none;
+                    margin-bottom: 3px;
+                    &:hover {
+                        color: #000000;
+                        text-decoration: underline;
+                    }
+                }
+                & .shopNow {
+                    font-size: 16px;
+                    line-height: 1.5rem;
+                    letter-spacing: .025em;
+                    font-weight: 600;
+                    color: #000000;
+                    text-decoration: none;
+                    & img {
+                        height: 14px;
+                        margin-left: 4px;
+                        transition: 0.3s ease-in-out;
+                    }
+                    &:hover {
+                        & img {
+                            transform: translateX(5px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .productCard {
+        background-color: white;
+        padding: 30px 20px;
+        overflow: hidden;
+        & .proImg {
+            height: 280px;
+            & img {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+        & .proRating {
+            & img {
+                height: 17px;
+                margin-right: 2px;
+            }
+        }
+        & .proName {
+            font-size: 15px;
+            line-height: 24px;
+            font-weight: 600;
+            color: rgb(34 34 34);
+            text-decoration: none;
+            -webkit-box-orient: vertical;
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-line-clamp: 2;
+        }
+        & .proPrice {
+            font-size: 18px;
+            font-weight: 600;
+            & .oldPrice {
+                color: rgb(121,121,121);
+            }
+            & .newPrice {
+                color: rgb(239 38 44);
+            }
+        }
+        & .addToCartBtn {
+            border: none;
+            background-color: $theme1;
+            align-items: center;
+            display: flex;
+            font-size: 13px;
+            font-weight: 600;
+            justify-content: center;
+            line-height: 0; 
+            height: 2.5rem;
+            text-decoration: none;
+            position: absolute;
+            bottom: 16px;
+            width: calc(100% - 40px);
+            left: 50%;
+            transform: translateX(-50%) translateY(150%);
+            z-index: 9;
+            transition: 0.3s ease-in-out;
+            & img {
+                height: 16px;
+                margin-right: 10px;
+            }
+            &:hover {
+                background-color: darken($theme1, 11);
+            }
+        }
+        & .cardOptions {
+            position: absolute;
+            z-index: 9;
+            top: 80px;
+            right: 25px;
+            width: 40px;
+            transform: translateX(150%);
+            transition: 0.3s ease-in-out;
+            & .optionBtn {
+                height: 40px;
+                width: 40px;
+                border: 0;
+                background-color: rgb(248 248 248);
+                & img {
+                    height: 18px;
+                    transition: 0.3s ease-in-out;
+                }
+                &:hover {
+                    & img {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+        & .progressShow {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 18px;
+            & .text {
+                font-size: 12px;
+                font-weight: 400;
+                color: rgb(34 34 34);
+                line-height: 1.5rem;
+            }
+            & .value {
+                font-size: 14px;
+                font-weight: 600;
+                color: rgb(34 34 34);
+                line-height: 1.5rem;
+            }
+            & .progress {
+                height: 5px;
+                & .progress-bar {
+                    background-color: $theme1;
+                }
+            }
+        }
+        & .categoryBadge {
+            font-size: 9px;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: .05em;
+            color: rgb(255 255 255);
+            background-color: var(--bg);
+            display: inline-block;
+            width: auto;
+            padding: 5px 10px;
+            border-radius: 8px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        &:hover {
+            & .addToCartBtn {
+                transform: translateX(-50%) translateY(0);
+            }
+            & .cardOptions {
+                transform: translateX(0);
             }
         }
     }
@@ -84,12 +262,388 @@
 @include media-breakpoint-up(xxl) {}
 
 
-@include media-breakpoint-down(xxl) {}
+@include media-breakpoint-down(xxl) {
+    .homeSectionHeading {
+        & .sectionHeading {}
+        
+        & .viewMoreBtn {
+            & img {
+            }
+        }
+    }
+    .gamerWorldSection {
+        & .innersection{
+        }
+        & .viewMoreBtn {
+            & img {
+            }
+        }
+        & .productCardRow {
+            & .card {
+                & .cardtitle {
+                }
+                & .cardLink {
+                    &:hover {
+                    }
+                }
+                & .shopNow {
+                    & img {
+                    }
+                    &:hover {
+                        & img {
+                        }
+                    }
+                }
+            }
+            & .productCard {
+                & .proImg {
+                    & img {
+                    }
+                }
+                & .proRating {
+                    & img {
+                    }
+                }
+                & .proName {
+                }
+                & .proPrice {
+                    & .oldPrice {
+                    }
+                    & .newPrice {
+                    }
+                }
+                & .addToCartBtn {
+                    & img {
+                    }
+                    &:hover {
+                    }
+                }
+                & .cardOptions {
+                    & .optionBtn {
+                        & img {
+                        }
+                    }
+                }
+                & .progressShow {
+                    & .text {
+                    }
+                    & .value {
+                    }
+                    & .progress {
+                        & .progress-bar {
+                        }
+                    }
+                }
+                & .categoryBadge {
+                }
+            }
+        }
+    }
+}
 
-@include media-breakpoint-down(xl) {}
+@include media-breakpoint-down(xl) {
+    .homeSectionHeading {
+        & .sectionHeading {}
+        & .viewMoreBtn {
+            & img {
+            }
+        }
+    }
+    .gamerWorldSection {
+        & .innersection{
+        }
+        & .productCardRow {
+            & .card {
+                & .cardtitle {
+                }
+                & .cardLink {
+                    &:hover {
+                    }
+                }
+                & .shopNow {
+                    & img {
+                    }
+                    &:hover {
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .productCard {
+        & .proImg {
+            & img {
+            }
+        }
+        & .proRating {
+            & img {
+            }
+        }
+        & .proName {
+        }
+        & .proPrice {
+            & .oldPrice {
+            }
+            & .newPrice {
+            }
+        }
+        & .addToCartBtn {
+            & img {
+            }
+            &:hover {
+            }
+        }
+        & .cardOptions {
+            & .optionBtn {
+                & img {
+                }
+            }
+        }
+        & .progressShow {
+            & .text {
+            }
+            & .value {
+            }
+            & .progress {
+                & .progress-bar {
+                }
+            }
+        }
+        & .categoryBadge {
+        }
+    }
+    }
 
-@include media-breakpoint-down(lg) {}
+@include media-breakpoint-down(lg) {
+    
+    .homeSectionHeading {
+        & .sectionHeading {
+            font-size: 22px;
+        }
+        & .viewMoreBtn {
+            & img {
+            }
+        }
+    }
+    .gamerWorldSection {
+        & .innersection{
+        }
+        & .productCardRow {
+            & .card {
+                & .cardtitle {
+                }
+                & .cardLink {
+                    &:hover {
+                    }
+                }
+                & .shopNow {
+                    & img {
+                    }
+                    &:hover {
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .productCard {
+        & .proImg {
+            & img {
+            }
+        }
+        & .proRating {
+            & img {
+            }
+        }
+        & .proName {
+        }
+        & .proPrice {
+            & .oldPrice {
+            }
+            & .newPrice {
+            }
+        }
+        & .addToCartBtn {
+            & img {
+            }
+            &:hover {
+            }
+        }
+        & .cardOptions {
+            & .optionBtn {
+                & img {
+                }
+            }
+        }
+        & .progressShow {
+            & .text {
+            }
+            & .value {
+            }
+            & .progress {
+                & .progress-bar {
+                }
+            }
+        }
+        & .categoryBadge {
+        }
+    }
+    }
 
-@include media-breakpoint-down(md) {}
+@include media-breakpoint-down(md) {
+    .homeSectionHeading {
+        & .sectionHeading {
+            font-size: 20px;
+        }
+        & .viewMoreBtn {
+            font-size: 14px;
+            & img {
+                height: 12px;
+            }
+        }
+    }
+    .gamerWorldSection {
+        & .innersection{
+        }
+        & .productCardRow {
+            & .card {
+                & .cardtitle {
+                }
+                & .cardLink {
+                    &:hover {
+                    }
+                }
+                & .shopNow {
+                    & img {
+                    }
+                    &:hover {
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .productCard {
+        & .proImg {
+            & img {
+            }
+        }
+        & .proRating {
+            & img {
+            }
+        }
+        & .proName {
+        }
+        & .proPrice {
+            & .oldPrice {
+            }
+            & .newPrice {
+            }
+        }
+        & .addToCartBtn {
+            & img {
+            }
+            &:hover {
+            }
+        }
+        & .cardOptions {
+            & .optionBtn {
+                & img {
+                }
+            }
+        }
+        & .progressShow {
+            & .text {
+            }
+            & .value {
+            }
+            & .progress {
+                & .progress-bar {
+                }
+            }
+        }
+        & .categoryBadge {
+        }
+    }
+}
 
-@include media-breakpoint-down(sm) {}
+@include media-breakpoint-down(sm) {
+    
+    .homeSectionHeading {
+        & .sectionHeading {}
+        & .viewMoreBtn {
+            & img {
+            }
+        }
+    }
+    .gamerWorldSection {
+        & .innersection{
+        }
+        & .productCardRow {
+            & .card {
+                & .cardtitle {
+                }
+                & .cardLink {
+                    &:hover {
+                    }
+                }
+                & .shopNow {
+                    & img {
+                    }
+                    &:hover {
+                        & img {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .productCard {
+        & .proImg {
+            & img {
+            }
+        }
+        & .proRating {
+            & img {
+            }
+        }
+        & .proName {
+        }
+        & .proPrice {
+            & .oldPrice {
+            }
+            & .newPrice {
+            }
+        }
+        & .addToCartBtn {
+            & img {
+            }
+            &:hover {
+            }
+        }
+        & .cardOptions {
+            & .optionBtn {
+                & img {
+                }
+            }
+        }
+        & .progressShow {
+            & .text {
+            }
+            & .value {
+            }
+            & .progress {
+                & .progress-bar {
+                }
+            }
+        }
+        & .categoryBadge {
+        }
+    }
+    }
