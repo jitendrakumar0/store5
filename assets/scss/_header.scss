@@ -55,7 +55,7 @@
     }
   }
   .mainNavbar {
-    background-color: whtie;
+    background-color: white;
     padding: 14px 12px;
     & .mainNavbarInner {
       & .sideBarBtn {
@@ -215,6 +215,7 @@
         & .menuCollapse {
           width: 270px;
           background-color: white;
+          z-index: 1;
           & .menuLinks {
             font-size: .75rem;
             line-height: 1rem;
