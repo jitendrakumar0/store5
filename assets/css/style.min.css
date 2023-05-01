@@ -289,6 +289,9 @@ body .overflow-auto-hidden {
   overflow: hidden;
   position: relative;
 }
+.singleProductHeroFluid .singleProductHeroContainer .productImage:hover {
+  cursor: pointer;
+}
 .singleProductHeroFluid .singleProductHeroContainer .productImage::before {
   content: "-50%";
   width: 80px;
@@ -321,6 +324,9 @@ body .overflow-auto-hidden {
   height: 100%;
   object-fit: contain;
   opacity: 0.5;
+}
+.singleProductHeroFluid .singleProductHeroContainer .productImages img.active {
+  opacity: 1;
 }
 .singleProductHeroFluid .singleProductHeroContainer .productNameHead {
   font-size: 12px;
@@ -716,7 +722,127 @@ body .overflow-auto-hidden {
   font-weight: 400;
   color: #000;
 }
+.newsletterFluid .newsletterContainer .newsletterBox .emailInp {
+  margin-top: 2rem;
+}
+.newsletterFluid .newsletterContainer .newsletterBox .emailInp .mailInp {
+  box-shadow: none;
+  border: none;
+  height: 54px;
+  width: 543px;
+  font-size: 12px;
+  line-height: 1.25rem;
+  letter-spacing: 0.05em;
+  color: #000;
+  padding-left: 35px;
+  border-radius: 0;
+}
+.newsletterFluid .newsletterContainer .newsletterBox .emailInp .mailInp:focus img {
+  color: #ffba38;
+}
+.newsletterFluid .newsletterContainer .newsletterBox .emailInp .mail {
+  position: absolute;
+  left: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.newsletterFluid .newsletterContainer .newsletterBox .emailInp .mailBtn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 54px;
+  border: none;
+  background-color: #ffba38;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  width: 158px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+@media (max-width: 767.98px) {
+  .singleProductHeroFluid .singleProductHeroContainer .productImages {
+    width: 84px;
+    height: 80px;
+  }
+}
+@media (max-width: 575.98px) {
+  .singleProductHeroFluid .singleProductHeroContainer .productImage {
+    height: 400px;
+  }
+  .singleProductHeroFluid .singleProductHeroContainer .productImage::before {
+    top: 4px;
+    left: 4px;
+    width: 35px;
+    height: 35px;
+    font-size: 12px;
+  }
+  .singleProductHeroFluid .singleProductHeroContainer .productImages {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+  }
+  .singleProductHeroFluid .singleProductHeroContainer .productName {
+    font-size: 16px;
+  }
+  .singleProductHeroFluid .singleProductHeroContainer .productPrice span:last-child {
+    font-size: 20px;
+  }
+  .singleProductHeroFluid .singleProductHeroContainer .cartBtn {
+    padding: 12px;
+  }
+  .tabsFluid .tabsContainer .productNavPills {
+    white-space: nowrap;
+    overflow: hidden;
+    overflow-y: auto;
+    flex-wrap: nowrap;
+    margin-bottom: 0 !important;
+  }
+  .tabsFluid .tabsContainer .productNavPillsTabContent .productTabPane1 {
+    padding-bottom: 0;
+  }
+  .tabsFluid .tabsContainer .productNavPillsTabContent .productTabPane2 .tab2 .messageBox .reply {
+    padding-left: 0;
+  }
+  .tabsFluid .tabsContainer .productNavPillsTabContent .productTabPane2 .tab2 .commentReply {
+    padding-left: 0;
+  }
+  .tabsFluid .tabsContainer .productNavPillsTabContent .productTabPane2 .tab2 .loadBtn {
+    margin-bottom: 1rem;
+  }
+  .tabsFluid .tabsContainer .productNavPillsTabContent .productTabPane2 .tab2 .reviewForm .reviewFormHead {
+    margin-bottom: 0;
+  }
+  .relatedFluid .relatedContainer .relatedCardBox {
+    padding: 30px 0;
+  }
+  .relatedFluid .relatedContainer .relatedCardBox .relatedCardBoxHead {
+    font-size: 24px;
+  }
+  .newsletterFluid .newsletterContainer .newsletterBox .newsletterHeading {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+  .newsletterFluid .newsletterContainer .newsletterBox .newsletterSubHeading {
+    font-size: 16px;
+  }
+  .newsletterFluid .newsletterContainer .newsletterBox .emailInp .mailInp {
+    width: 310px;
+    font-size: 12px;
+  }
+  .newsletterFluid .newsletterContainer .newsletterBox .emailInp .mail {
+    position: absolute;
+    left: 4%;
+    height: 12px;
+  }
+  .newsletterFluid .newsletterContainer .newsletterBox .emailInp .mailBtn {
+    height: 54px;
+    font-size: 12px;
+    width: 105px;
+  }
+}
 [data-page-name=indexPage] .heroSection .shopingCards .innerCard .cardImg {
   height: 40px;
 }

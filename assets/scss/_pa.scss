@@ -25,6 +25,9 @@
                 align-items: center;
                 overflow: hidden;
                 position: relative;
+                &:hover{
+                    cursor: pointer;
+                }
                 &::before{
                     content: '-50%';
                     width: 80px;
@@ -57,6 +60,9 @@
                     height: 100%;
                     object-fit: contain;
                     opacity: 0.5;
+                    &.active{
+                        opacity: 1;
+                    }
                 }
             }
             & .productNameHead{
@@ -493,6 +499,47 @@
                     font-weight: 400;
                     color: $black;
                 }
+                & .emailInp{
+                    margin-top: 2rem;
+                    & .mailInp{
+                        box-shadow: none;
+                        border: none;
+                        height: 54px;
+                        width: 543px;
+                        font-size: 12px;
+                        line-height: 1.25rem;
+                        letter-spacing: .05em;
+                        color: $black;
+                        padding-left: 35px;
+                        border-radius: 0;
+                        &:focus{
+                            & img{
+                                color: $theme1;
+                            }
+                        }
+                    }
+                    & .mail{
+                        position: absolute;
+                        left: 2%;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                    & .mailBtn{
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        height: 54px;
+                        border: none;
+                        background-color: $theme1;
+                        font-size: .875rem;
+                        line-height: 1.25rem;
+                        font-weight: 600;
+                        width: 158px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
             }
         }
     }
@@ -508,12 +555,1304 @@
 @include media-breakpoint-up(xxl) {}
 
 
-@include media-breakpoint-down(xxl) {}
+@include media-breakpoint-down(xxl) {
+    .breadCrumbFluid{
+        & .breadCrumbContainer{
+            & .singleProductBreadcrumbOl{
+                & .singleProductBreadcrumbLi{
+                    & .singleProductBreadcrumbAnchor{
+                    }
+                }
+            }
+        }
+    }
+    .singleProductHeroFluid{
+        & .singleProductHeroContainer{
+            & .productImage{
+                &:hover{
+                }
+                &::before{
+                }
+                & img{
+                }
+            }
+            & .productImages{
+                & img{
+                    &:hover{
+                    }
+                }
+            }
+            & .productNameHead{
+            }
+            & .productName{
+            }
+            & .ratingBox{
+                & .ratingUl{
+                    & .ratingLi{
+                    }
+                }
+                & span{
+                }
+            }
+            & .productPrice{
+                & span:first-child{
+                }
+                & span:last-child{
+                }
+            }
+            & .productDetail{
+            }
+            & .productColour{
+            }
+            & .colourInp{
+                &:focus-visible{
+                }
+                &.inpColour1{
+                }
+                &.inpColour2{
+                }
+                &.inpColour3{
+                }
+                &.inpColour4{
+                }
+            }
+            & .productSize{
+            }
+            & .productSizeSelect{
+                & .productSizeSelectDrop{
+                    & .productSizeSelectDropAnchor{
+                        & .fontSelect{
+                            & img{
+                            }
+                        }
+                        &::after{
+                        }
+                    }
+                    & .productSizeSelectDropMenu{
+                        & .productSizeSelectDropItem{
+                            &.active{
+                            }
+                        }
+                    }
+                }
+            }
+            & .cartSize{
+                & .cartSizeInp{
+                    & .sizeBtn{
+                    }
+                }
+            }
+            & .wishlistInp{
+            }
+            & .cartBtn{
+                &:hover{
+                }
+            }
+            & .address{
+                & span:first-child{
+                }
+                & span:last-child{
+                }
+            }
+            & .reportAnchor{
+                & img{
+                }
+            }
+            & .social{
+                & span{
+                }
+                & img{
+                }
+            }
+        }
+    }
+    .tabsFluid{
+        & .tabsContainer{
+            & .productNavPills{
+                & .productNavPillsItem{
+                    & .productNavLink{
+                        &.active{
+                        }
+                    }
+                }
+            }
+            & .productNavPillsTabContent{
+                & .productTabPane1{
+                    & .tabMainHeading{
+                    }
+                    & .para{
+                    }
+                    & .tabProductDetailUl{
+                        & .tabProductDetailLi{
+                        }
+                    }
+                }
+                & .productTabPane2{
+                    & .tab2{
+                        & .tabMainHeading{
+                        }
+                        & .messageBox{
+                            & .profile{
+                                & img{
+                                }
+                            }
+                            & .profileName{
+                            }
+                            & .address{
+                            }
+                            & .starUl{
+                                & .starLi{
+                                    & img{
 
-@include media-breakpoint-down(xl) {}
+                                    }
+                                }
+                                & span{
+                                }
+                            }
+                            & .reply{
+                            }
+                        }
+                        & .comment{
+                            &.coment{
+                            }
+                        }
+                        & .commentReply{
+                        }
+                        & .loadBtn{
+                            &:hover{
+                            }
+                        }
+                        & .reviewForm{
+                            & .reviewFormHead{
+                            }
+                            & .starUl{
+                                & .starLi{
+                                    & img{
+                                    }
+                                }
+                            }
+                            & span{
+                            }
+                        }
+                        & .formBox{
+                            & .reviewLbl{
+                            }
+                            & .reviewInp{
+                            }
+                        } 
+                        & .reviewLbl{
+                        }
+                        & .textArea{
+                            &:focus-visible{
+                            }
+                        }
+                    }
+                }
+                & .productTabPane3{
+                    & .tab3{
+                        & .borderBottom{
+                            & .profile{
+                                & img{
+                                }
+                            }
+                            & .profileName{
+                            }
+                            & .adderss{
+                            }
 
-@include media-breakpoint-down(lg) {}
+                        }
+                        & .product{
+                            & span{
+                            }
+                        }
+                        & .heading{
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .relatedFluid{
+        & .relatedContainer{
+            & .relatedCardBox{
+                & .relatedCardBoxHead{
+                }
+            }
+            & .forShadow{
+            }
+        }
+    }
+    .newsletterFluid{
+        & .newsletterContainer{
+            & .newsletterBox{
+                & .newsletterHeading{
+                    & span{
+                    }
+                }
+                & .newsletterSubHeading{
+                }
+                & .emailInp{
+                    & .mailInp{
+                        &:focus{
+                            & img{
+                            }
+                        }
+                    }
+                    & .mail{
+                    }
+                    & .mailBtn{
+                    }
+                }
+            }
+        }
+    }
+}
 
-@include media-breakpoint-down(md) {}
+@include media-breakpoint-down(xl) {
+    .breadCrumbFluid{
+        & .breadCrumbContainer{
+            & .singleProductBreadcrumbOl{
+                & .singleProductBreadcrumbLi{
+                    & .singleProductBreadcrumbAnchor{
+                    }
+                }
+            }
+        }
+    }
+    .singleProductHeroFluid{
+        & .singleProductHeroContainer{
+            & .productImage{
+                &:hover{
+                }
+                &::before{
+                }
+                & img{
+                }
+            }
+            & .productImages{
+                & img{
+                    &:hover{
+                    }
+                }
+            }
+            & .productNameHead{
+            }
+            & .productName{
+            }
+            & .ratingBox{
+                & .ratingUl{
+                    & .ratingLi{
+                    }
+                }
+                & span{
+                }
+            }
+            & .productPrice{
+                & span:first-child{
+                }
+                & span:last-child{
+                }
+            }
+            & .productDetail{
+            }
+            & .productColour{
+            }
+            & .colourInp{
+                &:focus-visible{
+                }
+                &.inpColour1{
+                }
+                &.inpColour2{
+                }
+                &.inpColour3{
+                }
+                &.inpColour4{
+                }
+            }
+            & .productSize{
+            }
+            & .productSizeSelect{
+                & .productSizeSelectDrop{
+                    & .productSizeSelectDropAnchor{
+                        & .fontSelect{
+                            & img{
+                            }
+                        }
+                        &::after{
+                        }
+                    }
+                    & .productSizeSelectDropMenu{
+                        & .productSizeSelectDropItem{
+                            &.active{
+                            }
+                        }
+                    }
+                }
+            }
+            & .cartSize{
+                & .cartSizeInp{
+                    & .sizeBtn{
+                    }
+                }
+            }
+            & .wishlistInp{
+            }
+            & .cartBtn{
+                &:hover{
+                }
+            }
+            & .address{
+                & span:first-child{
+                }
+                & span:last-child{
+                }
+            }
+            & .reportAnchor{
+                & img{
+                }
+            }
+            & .social{
+                & span{
+                }
+                & img{
+                }
+            }
+        }
+    }
+    .tabsFluid{
+        & .tabsContainer{
+            & .productNavPills{
+                & .productNavPillsItem{
+                    & .productNavLink{
+                        &.active{
+                        }
+                    }
+                }
+            }
+            & .productNavPillsTabContent{
+                & .productTabPane1{
+                    & .tabMainHeading{
+                    }
+                    & .para{
+                    }
+                    & .tabProductDetailUl{
+                        & .tabProductDetailLi{
+                        }
+                    }
+                }
+                & .productTabPane2{
+                    & .tab2{
+                        & .tabMainHeading{
+                        }
+                        & .messageBox{
+                            & .profile{
+                                & img{
+                                }
+                            }
+                            & .profileName{
+                            }
+                            & .address{
+                            }
+                            & .starUl{
+                                & .starLi{
+                                    & img{
 
-@include media-breakpoint-down(sm) {}
+                                    }
+                                }
+                                & span{
+                                }
+                            }
+                            & .reply{
+                            }
+                        }
+                        & .comment{
+                            &.coment{
+                            }
+                        }
+                        & .commentReply{
+                        }
+                        & .loadBtn{
+                            &:hover{
+                            }
+                        }
+                        & .reviewForm{
+                            & .reviewFormHead{
+                            }
+                            & .starUl{
+                                & .starLi{
+                                    & img{
+                                    }
+                                }
+                            }
+                            & span{
+                            }
+                        }
+                        & .formBox{
+                            & .reviewLbl{
+                            }
+                            & .reviewInp{
+                            }
+                        } 
+                        & .reviewLbl{
+                        }
+                        & .textArea{
+                            &:focus-visible{
+                            }
+                        }
+                    }
+                }
+                & .productTabPane3{
+                    & .tab3{
+                        & .borderBottom{
+                            & .profile{
+                                & img{
+                                }
+                            }
+                            & .profileName{
+                            }
+                            & .adderss{
+                            }
+
+                        }
+                        & .product{
+                            & span{
+                            }
+                        }
+                        & .heading{
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .relatedFluid{
+        & .relatedContainer{
+            & .relatedCardBox{
+                & .relatedCardBoxHead{
+                }
+            }
+            & .forShadow{
+            }
+        }
+    }
+    .newsletterFluid{
+        & .newsletterContainer{
+            & .newsletterBox{
+                & .newsletterHeading{
+                    & span{
+                    }
+                }
+                & .newsletterSubHeading{
+                }
+                & .emailInp{
+                    & .mailInp{
+                        &:focus{
+                            & img{
+                            }
+                        }
+                    }
+                    & .mail{
+                    }
+                    & .mailBtn{
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .breadCrumbFluid{
+        & .breadCrumbContainer{
+            & .singleProductBreadcrumbOl{
+                & .singleProductBreadcrumbLi{
+                    & .singleProductBreadcrumbAnchor{
+                    }
+                }
+            }
+        }
+    }
+    .singleProductHeroFluid{
+        & .singleProductHeroContainer{
+            & .productImage{
+                &:hover{
+                }
+                &::before{
+                }
+                & img{
+                }
+            }
+            & .productImages{
+                & img{
+                    &:hover{
+                    }
+                }
+            }
+            & .productNameHead{
+            }
+            & .productName{
+            }
+            & .ratingBox{
+                & .ratingUl{
+                    & .ratingLi{
+                    }
+                }
+                & span{
+                }
+            }
+            & .productPrice{
+                & span:first-child{
+                }
+                & span:last-child{
+                }
+            }
+            & .productDetail{
+            }
+            & .productColour{
+            }
+            & .colourInp{
+                &:focus-visible{
+                }
+                &.inpColour1{
+                }
+                &.inpColour2{
+                }
+                &.inpColour3{
+                }
+                &.inpColour4{
+                }
+            }
+            & .productSize{
+            }
+            & .productSizeSelect{
+                & .productSizeSelectDrop{
+                    & .productSizeSelectDropAnchor{
+                        & .fontSelect{
+                            & img{
+                            }
+                        }
+                        &::after{
+                        }
+                    }
+                    & .productSizeSelectDropMenu{
+                        & .productSizeSelectDropItem{
+                            &.active{
+                            }
+                        }
+                    }
+                }
+            }
+            & .cartSize{
+                & .cartSizeInp{
+                    & .sizeBtn{
+                    }
+                }
+            }
+            & .wishlistInp{
+            }
+            & .cartBtn{
+                &:hover{
+                }
+            }
+            & .address{
+                & span:first-child{
+                }
+                & span:last-child{
+                }
+            }
+            & .reportAnchor{
+                & img{
+                }
+            }
+            & .social{
+                & span{
+                }
+                & img{
+                }
+            }
+        }
+    }
+    .tabsFluid{
+        & .tabsContainer{
+            & .productNavPills{
+                & .productNavPillsItem{
+                    & .productNavLink{
+                        &.active{
+                        }
+                    }
+                }
+            }
+            & .productNavPillsTabContent{
+                & .productTabPane1{
+                    & .tabMainHeading{
+                    }
+                    & .para{
+                    }
+                    & .tabProductDetailUl{
+                        & .tabProductDetailLi{
+                        }
+                    }
+                }
+                & .productTabPane2{
+                    & .tab2{
+                        & .tabMainHeading{
+                        }
+                        & .messageBox{
+                            & .profile{
+                                & img{
+                                }
+                            }
+                            & .profileName{
+                            }
+                            & .address{
+                            }
+                            & .starUl{
+                                & .starLi{
+                                    & img{
+
+                                    }
+                                }
+                                & span{
+                                }
+                            }
+                            & .reply{
+                            }
+                        }
+                        & .comment{
+                            &.coment{
+                            }
+                        }
+                        & .commentReply{
+                        }
+                        & .loadBtn{
+                            &:hover{
+                            }
+                        }
+                        & .reviewForm{
+                            & .reviewFormHead{
+                            }
+                            & .starUl{
+                                & .starLi{
+                                    & img{
+                                    }
+                                }
+                            }
+                            & span{
+                            }
+                        }
+                        & .formBox{
+                            & .reviewLbl{
+                            }
+                            & .reviewInp{
+                            }
+                        } 
+                        & .reviewLbl{
+                        }
+                        & .textArea{
+                            &:focus-visible{
+                            }
+                        }
+                    }
+                }
+                & .productTabPane3{
+                    & .tab3{
+                        & .borderBottom{
+                            & .profile{
+                                & img{
+                                }
+                            }
+                            & .profileName{
+                            }
+                            & .adderss{
+                            }
+
+                        }
+                        & .product{
+                            & span{
+                            }
+                        }
+                        & .heading{
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .relatedFluid{
+        & .relatedContainer{
+            & .relatedCardBox{
+                & .relatedCardBoxHead{
+                }
+            }
+            & .forShadow{
+            }
+        }
+    }
+    .newsletterFluid{
+        & .newsletterContainer{
+            & .newsletterBox{
+                & .newsletterHeading{
+                    & span{
+                    }
+                }
+                & .newsletterSubHeading{
+                }
+                & .emailInp{
+                    & .mailInp{
+                        &:focus{
+                            & img{
+                            }
+                        }
+                    }
+                    & .mail{
+                    }
+                    & .mailBtn{
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .breadCrumbFluid{
+        & .breadCrumbContainer{
+            & .singleProductBreadcrumbOl{
+                & .singleProductBreadcrumbLi{
+                    & .singleProductBreadcrumbAnchor{
+                    }
+                }
+            }
+        }
+    }
+    .singleProductHeroFluid{
+        & .singleProductHeroContainer{
+            & .productImage{
+                &:hover{
+                }
+                &::before{
+                }
+                & img{
+                }
+            }
+            & .productImages{
+                width: 84px;
+                height: 80px;
+                & img{
+                    &:hover{
+                    }
+                }
+            }
+            & .productNameHead{
+            }
+            & .productName{
+            }
+            & .ratingBox{
+                & .ratingUl{
+                    & .ratingLi{
+                    }
+                }
+                & span{
+                }
+            }
+            & .productPrice{
+                & span:first-child{
+                }
+                & span:last-child{
+                }
+            }
+            & .productDetail{
+            }
+            & .productColour{
+            }
+            & .colourInp{
+                &:focus-visible{
+                }
+                &.inpColour1{
+                }
+                &.inpColour2{
+                }
+                &.inpColour3{
+                }
+                &.inpColour4{
+                }
+            }
+            & .productSize{
+            }
+            & .productSizeSelect{
+                & .productSizeSelectDrop{
+                    & .productSizeSelectDropAnchor{
+                        & .fontSelect{
+                            & img{
+                            }
+                        }
+                        &::after{
+                        }
+                    }
+                    & .productSizeSelectDropMenu{
+                        & .productSizeSelectDropItem{
+                            &.active{
+                            }
+                        }
+                    }
+                }
+            }
+            & .cartSize{
+                & .cartSizeInp{
+                    & .sizeBtn{
+                    }
+                }
+            }
+            & .wishlistInp{
+            }
+            & .cartBtn{
+                &:hover{
+                }
+            }
+            & .address{
+                & span:first-child{
+                }
+                & span:last-child{
+                }
+            }
+            & .reportAnchor{
+                & img{
+                }
+            }
+            & .social{
+                & span{
+                }
+                & img{
+                }
+            }
+        }
+    }
+    .tabsFluid{
+        & .tabsContainer{
+            & .productNavPills{
+                & .productNavPillsItem{
+                    & .productNavLink{
+                        &.active{
+                        }
+                    }
+                }
+            }
+            & .productNavPillsTabContent{
+                & .productTabPane1{
+                    & .tabMainHeading{
+                    }
+                    & .para{
+                    }
+                    & .tabProductDetailUl{
+                        & .tabProductDetailLi{
+                        }
+                    }
+                }
+                & .productTabPane2{
+                    & .tab2{
+                        & .tabMainHeading{
+                        }
+                        & .messageBox{
+                            & .profile{
+                                & img{
+                                }
+                            }
+                            & .profileName{
+                            }
+                            & .address{
+                            }
+                            & .starUl{
+                                & .starLi{
+                                    & img{
+
+                                    }
+                                }
+                                & span{
+                                }
+                            }
+                            & .reply{
+                            }
+                        }
+                        & .comment{
+                            &.coment{
+                            }
+                        }
+                        & .commentReply{
+                        }
+                        & .loadBtn{
+                            &:hover{
+                            }
+                        }
+                        & .reviewForm{
+                            & .reviewFormHead{
+                            }
+                            & .starUl{
+                                & .starLi{
+                                    & img{
+                                    }
+                                }
+                            }
+                            & span{
+                            }
+                        }
+                        & .formBox{
+                            & .reviewLbl{
+                            }
+                            & .reviewInp{
+                            }
+                        } 
+                        & .reviewLbl{
+                        }
+                        & .textArea{
+                            &:focus-visible{
+                            }
+                        }
+                    }
+                }
+                & .productTabPane3{
+                    & .tab3{
+                        & .borderBottom{
+                            & .profile{
+                                & img{
+                                }
+                            }
+                            & .profileName{
+                            }
+                            & .adderss{
+                            }
+
+                        }
+                        & .product{
+                            & span{
+                            }
+                        }
+                        & .heading{
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .relatedFluid{
+        & .relatedContainer{
+            & .relatedCardBox{
+                & .relatedCardBoxHead{
+                }
+            }
+            & .forShadow{
+            }
+        }
+    }
+    .newsletterFluid{
+        & .newsletterContainer{
+            & .newsletterBox{
+                & .newsletterHeading{
+                    & span{
+                    }
+                }
+                & .newsletterSubHeading{
+                }
+                & .emailInp{
+                    & .mailInp{
+                        &:focus{
+                            & img{
+                            }
+                        }
+                    }
+                    & .mail{
+                    }
+                    & .mailBtn{
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .breadCrumbFluid{
+        & .breadCrumbContainer{
+            & .singleProductBreadcrumbOl{
+                & .singleProductBreadcrumbLi{
+                    & .singleProductBreadcrumbAnchor{
+                    }
+                }
+            }
+        }
+    }
+    .singleProductHeroFluid{
+        & .singleProductHeroContainer{
+            & .productImage{
+                height: 400px;
+                &:hover{
+                }
+                &::before{
+                    top: 4px;
+                    left: 4px;
+                    width: 35px;
+                    height: 35px;
+                    font-size: 12px;
+                }
+                & img{
+                }
+            }
+            & .productImages{
+                width: 60px;
+                height: 60px;
+                object-fit: cover;
+                & img{
+                    &:hover{
+                    }
+                }
+            }
+            & .productNameHead{
+            }
+            & .productName{
+                font-size: 16px;
+            }
+            & .ratingBox{
+                & .ratingUl{
+                    & .ratingLi{
+                    }
+                }
+                & span{
+                }
+            }
+            & .productPrice{
+                & span:first-child{
+                }
+                & span:last-child{
+                    font-size: 20px;
+                }
+            }
+            & .productDetail{
+            }
+            & .productColour{
+            }
+            & .colourInp{
+                &:focus-visible{
+                }
+                &.inpColour1{
+                }
+                &.inpColour2{
+                }
+                &.inpColour3{
+                }
+                &.inpColour4{
+                }
+            }
+            & .productSize{
+            }
+            & .productSizeSelect{
+                & .productSizeSelectDrop{
+                    & .productSizeSelectDropAnchor{
+                        & .fontSelect{
+                            & img{
+                            }
+                        }
+                        &::after{
+                        }
+                    }
+                    & .productSizeSelectDropMenu{
+                        & .productSizeSelectDropItem{
+                            &.active{
+                            }
+                        }
+                    }
+                }
+            }
+            & .cartSize{
+                & .cartSizeInp{
+                    & .sizeBtn{
+                    }
+                }
+            }
+            & .wishlistInp{
+            }
+            & .cartBtn{
+                padding: 12px;
+                &:hover{
+                }
+            }
+            & .address{
+                & span:first-child{
+                }
+                & span:last-child{
+                }
+            }
+            & .reportAnchor{
+                & img{
+                }
+            }
+            & .social{
+                & span{
+                }
+                & img{
+                }
+            }
+        }
+    }
+    .tabsFluid{
+        & .tabsContainer{
+            & .productNavPills{
+                white-space: nowrap;
+                overflow: hidden;
+                overflow-y: auto;
+                flex-wrap: nowrap;
+                margin-bottom: 0 !important;
+                & .productNavPillsItem{
+                    & .productNavLink{
+                        &.active{
+                        }
+                    }
+                }
+            }
+            & .productNavPillsTabContent{
+                & .productTabPane1{
+                    padding-bottom: 0;
+                    & .tabMainHeading{
+                    }
+                    & .para{
+                    }
+                    & .tabProductDetailUl{
+                        & .tabProductDetailLi{
+                        }
+                    }
+                }
+                & .productTabPane2{
+                    & .tab2{
+                        & .tabMainHeading{
+                        }
+                        & .messageBox{
+                            & .profile{
+                                & img{
+                                }
+                            }
+                            & .profileName{
+                            }
+                            & .address{
+                            }
+                            & .starUl{
+                                & .starLi{
+                                    & img{
+
+                                    }
+                                }
+                                & span{
+                                }
+                            }
+                            & .reply{
+                                padding-left: 0;
+                            }
+                        }
+                        & .comment{
+                            &.coment{
+                            }
+                        }
+                        & .commentReply{
+                            padding-left: 0;
+                        }
+                        & .loadBtn{
+                            margin-bottom: 1rem;
+                            &:hover{
+                            }
+                        }
+                        & .reviewForm{
+                            & .reviewFormHead{
+                                margin-bottom: 0;
+                            }
+                            & .starUl{
+                                & .starLi{
+                                    & img{
+                                    }
+                                }
+                            }
+                            & span{
+                            }
+                        }
+                        & .formBox{
+                            & .reviewLbl{
+                            }
+                            & .reviewInp{
+                            }
+                        } 
+                        & .reviewLbl{
+                        }
+                        & .textArea{
+                            &:focus-visible{
+                            }
+                        }
+                    }
+                }
+                & .productTabPane3{
+                    & .tab3{
+                        & .borderBottom{
+                            & .profile{
+                                & img{
+                                }
+                            }
+                            & .profileName{
+                            }
+                            & .adderss{
+                            }
+
+                        }
+                        & .product{
+                            & span{
+                            }
+                        }
+                        & .heading{
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .relatedFluid{
+        & .relatedContainer{
+            & .relatedCardBox{
+                padding: 30px 0;
+                & .relatedCardBoxHead{
+                    font-size: 24px;
+                }
+            }
+            & .forShadow{
+            }
+        }
+    }
+    .newsletterFluid{
+        & .newsletterContainer{
+            & .newsletterBox{
+                & .newsletterHeading{
+                    font-size: 20px;
+                    margin-bottom: 0;
+                    & span{
+                    }
+                }
+                & .newsletterSubHeading{
+                    font-size: 16px;
+                }
+                & .emailInp{
+                    & .mailInp{
+                        width: 310px;
+                        font-size: 12px;
+                        &:focus{
+                            & img{
+                            }
+                        }
+                    }
+                    & .mail{
+                        position: absolute;
+                        left: 4%;
+                        height: 12px;
+                    }
+                    & .mailBtn{
+                        height: 54px;
+                        font-size: 12px;
+                        width: 105px;
+                    }
+                }
+            }
+        }
+    }
+}
