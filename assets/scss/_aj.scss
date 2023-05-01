@@ -64,7 +64,6 @@
             }
         }
     }
-
     .gamerWorldSection {
         & .innersection{
         }
@@ -246,6 +245,29 @@
             }
             & .cardOptions {
                 transform: translateX(0);
+            }
+        }
+    }
+    .flashSaleSection {
+        & .innersection {
+            & .leftSideCard {   
+                & .card {
+                    // background: url(../img/campaign-cover-countdown.jpg) 0% 0% / cover no-repeat;
+                    & .card-body{
+                        & .counter {
+                            width: 100px;
+                            height: 100px;
+                            & span {
+                                font-size: 30px;
+                                color: #eb5757;
+                            }
+                        }
+                        & .counterHeading {
+                            font-size: 18px;
+                            line-height: normal;
+                        }
+                    }
+                }
             }
         }
     }
