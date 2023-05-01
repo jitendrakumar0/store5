@@ -1,5 +1,6 @@
 @include media-breakpoint(basic) {
   .topHeader {
+    background-color: white;
     border-bottom: 1px solid rgb(239, 239, 239);
     & ul {
       gap: 10px;
@@ -54,8 +55,9 @@
     }
   }
   .mainNavbar {
-    padding: 14px 0px;
-    & .container {
+    background-color: whtie;
+    padding: 14px 12px;
+    & .mainNavbarInner {
       & .sideBarBtn {
         background-image: url('../img/svg/menu.svg');
         background-repeat: no-repeat;
@@ -174,29 +176,78 @@
   }
   .navbarBottom {
     background-color: #ffba38;
-    & .container {
+    & .navbarBottomInner {
       position: relative;
       & .categroiesBtnOuter {
         & .categoriesBtn {
           text-decoration: none;
           text-decoration: none;
           background-color: #fff;
-          color: #000;
+          font-size: 0.875rem;
+          line-height: 1.25rem;
+          font-weight: 600;
+          color: rgb(29, 29, 29);
           position: relative;
           height: 100%;
           display: flex;
           align-items: center;
-          padding: 16px 80px 16px 80px;
+          padding: 16px 20px 16px 20px;
           border-radius: 8px 8px 0px 0px;
-          margin-bottom: -4px;
-          &::before {
-            content: "";
-            position: absolute;
-            top: 15px;
-            left: 10px;
-            background-image: url('../img/svg/menu.svg');
-            background-repeat: no-repeat;
-            background-position: center;
+          margin-bottom: -12px;
+          width: 270px;
+          & .menuIcon {
+            width: 18px;
+            height: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+          }
+          & .dropIcon {
+            width: 12px;
+            height: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+          }
+        }
+        & .menuCollapse {
+          width: 270px;
+          background-color: white;
+          & .menuLinks {
+            font-size: .75rem;
+            line-height: 1rem;
+            font-weight: 400;
+            color: rgb(34, 34, 34);
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+            padding: 8px 16px;
+            border-top: 1px solid rgba( #000, 0.03);
+            & .leftIcon {
+              width: 18px;
+              height: 18px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-right: 12px;
+            }
+            & .rightIcon {
+              width: 12px;
+              height: 12px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-left: auto;
+              & img {
+                transform: rotate(-90deg);
+              }
+            }
+            &:hover {
+              background-color: #ffba38;
+            }
           }
         }
       }
@@ -324,6 +375,155 @@
       }
     }
   }
+
+  .menuOffcanvas {
+    max-width: 280px;
+    & .offcanvas-header {
+      position: sticky;
+      top: 0;
+      & .offIconLink {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 22px;
+        height: 22px;
+        & span {
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          background-color: #ffba38;
+          font-size: 9px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          top: -9px;
+          right: -9px;
+          color: rgb(34, 34, 34);
+        }
+      }
+      & .btn-close {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background-color: #fc4949;
+        margin-left: auto;
+        padding: 0;
+        background-image: url('../img/svg/cancel2-svgrepo-com.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 30px;
+        opacity: 1;
+        margin-right: 0;
+        box-shadow: none;
+      }
+      & .searchInputOuter {
+        & .input-group {
+          & .form-control {
+            font-size: .75rem;
+            line-height: 1rem;
+            border-radius: 0;
+            color: rgb(121, 121, 121);
+            box-shadow: none;
+            border: 1px solid rgb(205, 205, 205);
+          }
+          & .btn {
+            border: 1px solid #ffba38;
+            background-color: #ffba38;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: none;
+            & img {
+              width: 23px;
+              height: 23px;
+            }
+          }
+        }
+      }
+      & .menuHeading {
+        border: none;
+        & .catText {
+          font-size: 1rem;
+          line-height: 1.5rem;
+          font-weight: 600;
+          color: rgb(34, 34, 34);
+          border: none;
+          padding: 0;
+        }
+        & .divder {
+          font-size: 14px;
+          color: rgb(121, 121, 121);
+          padding: 0 10px;
+        }
+        & .mainText {
+          font-size: 1rem;
+          line-height: 1.5rem;
+          font-weight: 600;
+          color: rgb(121, 121, 121);
+          border: none;
+          padding: 0;
+        }
+      }
+    }
+    & .offcanvas-body {
+      padding: 0;
+      & .menuLinks {
+        font-size: .75rem;
+        line-height: 1rem;
+        font-weight: 400;
+        color: rgb(34, 34, 34);
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+        padding: 10px 16px;
+        & .leftIcon {
+          width: 18px;
+          height: 18px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 12px;
+        }
+        & .rightIcon {
+          width: 12px;
+          height: 12px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-left: auto;
+          & img {
+            transform: rotate(-90deg);
+          }
+        }
+        &:hover {
+          background-color: #ffba38;
+        }
+      }
+      & .mainMenuLinks {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: rgb(34, 34, 34);
+        font-size: .875rem;
+        line-height: 1.25rem;
+        font-weight: 400;
+        padding: 10px 0px;
+        & img {
+          transform: rotate(-90deg);
+          width: 11px;
+          height: 11px;
+        }
+      }
+      & ul {
+        & ul {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
 }
 @include media-breakpoint-up(sm) {}
 
@@ -338,10 +538,305 @@
 
 @include media-breakpoint-down(xxl) {}
 
-@include media-breakpoint-down(xl) {}
+@include media-breakpoint-down(xl) {
+  .mainNavbar {
+    & .mainNavbarInner {
+      & .sideBarBtn {
+      }
+      & .navbar-brand {
+      }
+      & .navbar-collapse {
+        & .input-group {
+          & input {
+            &:focus {
+            }
+
+          }
+          & .devider {
+          }
+          & select {
+            &:focus {
+            }
+            & option:disabled {
+            }
+          }
+          & .downArrow {
+          }
+          & .searchBtn {
+            &:focus {
+            }
+          }
+          & ::placeholder {
+          }
+        }
+      }
+      & .linkBtnOuter {
+        & .linkBtn {
+          & .imgOuter {
+            & .linkAmount {
+            }
+          }
+        }
+      }
+    }
+  }
+  .navbarBottom {
+    & .navbarBottomInner {
+      & .categroiesBtnOuter {
+        & .categoriesBtn {
+          & .menuIcon {
+          }
+          & .dropIcon {
+          }
+        }
+        & .menuCollapse {
+          & .menuLinks {
+            & .leftIcon {
+            }
+            & .rightIcon {
+              & img {
+              }
+            }
+            &:hover {
+            }
+          }
+        }
+      }
+      & .navLinksOuter {
+        & li {
+          margin-right: 25px;
+          &:last-child {
+          }
+          & .navLinks {
+            & .dropIcon {
+            }
+            &.hoverClass {
+              & .bottomBox {
+                & .boxLinks {
+                  &:hover {
+                  }
+                }
+                &.shopBox {
+                  & .linkHeading {
+                  }
+                  & .boxLinks {
+                    &:last-child {
+                    }
+                  }
+                }
+              }
+              &.homeHover {
+                &:hover {
+                  & .homeBox {
+                  }
+                }
+              }
+              &.shopHover {
+                &:hover {
+                  & .shopBox {
+                  }
+                }
+              }
+              &.pageHover {
+                &:hover {
+                  & .pagesBox {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      & .becomeASellerBtn {
+        &:hover {
+        }
+        & img {
+        }
+      }
+    }
+  }
+}
 
 @include media-breakpoint-down(lg) {}
  
-@include media-breakpoint-down(md) {}
+@include media-breakpoint-down(md) {
+  .topHeader {  
+    & ul {
+      & .nav-link {
+        & img {
+        }
+        &.dropdown-toggle {
+          &::after {
+          }
+        }
+      }
+      & .dropdown {
+        & .dropdown-menu {
+          & .dropdown-item {
+            &:hover {
+            }
+          }
+        }
+      }
+    }
+  }
+  .mainNavbar {
+    & .mainNavbarInner {
+      & .sideBarBtn {
+      }
+      & .navbar-brand {
+        height: 30px;
+      }
+      & .navbar-collapse {
+        & .input-group {
+          & input {
+            &:focus {
+            }
+
+          }
+          & .devider {
+          }
+          & select {
+            &:focus {
+            }
+            & option:disabled {
+            }
+          }
+          & .downArrow {
+          }
+          & .searchBtn {
+            &:focus {
+            }
+          }
+          & ::placeholder {
+          }
+        }
+      }
+      & .linkBtnOuter {
+        & .linkBtn {
+          & .imgOuter {
+            & .linkAmount {
+            }
+          }
+        }
+      }
+    }
+  }
+  .navbarBottom {
+    & .navbarBottomInner {
+      & .categroiesBtnOuter {
+        & .categoriesBtn {
+          & .menuIcon {
+          }
+          & .dropIcon {
+          }
+        }
+        & .menuCollapse {
+          & .menuLinks {
+            & .leftIcon {
+            }
+            & .rightIcon {
+              & img {
+              }
+            }
+            &:hover {
+            }
+          }
+        }
+      }
+      & .navLinksOuter {
+        & li {
+          &:last-child {
+          }
+          & .navLinks {
+            & .dropIcon {
+            }
+            &.hoverClass {
+              & .bottomBox {
+                & .boxLinks {
+                  &:hover {
+                  }
+                }
+                &.shopBox {
+                  & .linkHeading {
+                  }
+                  & .boxLinks {
+                    &:last-child {
+                    }
+                  }
+                }
+              }
+              &.homeHover {
+                &:hover {
+                  & .homeBox {
+                  }
+                }
+              }
+              &.shopHover {
+                &:hover {
+                  & .shopBox {
+                  }
+                }
+              }
+              &.pageHover {
+                &:hover {
+                  & .pagesBox {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      & .becomeASellerBtn {
+        &:hover {
+        }
+        & img {
+        }
+      }
+    }
+  }
+
+  .menuOffcanvas {
+    & .offcanvas-header {
+      & .offIconLink {
+        & span {
+        }
+      }
+      & .btn-close {
+      }
+      & .searchInputOuter {
+        & .input-group {
+          & .form-control {
+          }
+          & .btn {
+            & img {
+            }
+          }
+        }
+      }
+      & .menuHeading {
+        & .catText {
+        }
+        & .divder {
+        }
+        & .mainText {
+        }
+      }
+    }
+    & .offcanvas-body {
+      & .menuLinks {
+        & .leftIcon {
+        }
+        & .rightIcon {
+          & img {
+          }
+        }
+        &:hover {
+        }
+      }
+    }
+  }
+}
 
 @include media-breakpoint-down(sm) {}

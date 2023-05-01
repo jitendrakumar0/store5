@@ -73,8 +73,8 @@
         <main class="container-fluid">
             <div class="row mainInner">
                 <div class="col-12 px-0 flex-fill" data-page-name="categoriesPage">
-                    <div class="container-fluid topHeader">
-                        <div class="container">
+                    <div class="container-fluid topHeader"> 
+                        <div class="container-xl">
                             <div class="row justify-content-between">
                                 <div class="col-auto">
                                     <ul class="list-unstyled d-flex m-0">
@@ -83,7 +83,7 @@
                                         <li><a href="javascript:;" class="nav-link">Support</a></li>
                                     </ul>
                                 </div>
-                                <div class="col-auto d-none d-md-block">
+                                <div class="col-auto d-none d-sm-block">
                                     <ul class="list-unstyled d-flex m-0">
                                         <li class="dropdown">
                                             <a href="javascript:;" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -114,8 +114,8 @@
                             </div>
                         </div>
                     </div>
-                    <nav class="navbar navbar-expand-lg bg-white mainNavbar">
-                        <div class="container d-flex justify-content-between align-items-center">
+                    <nav class="navbar navbar-expand-lg bg-white mainNavbar container-fluid">
+                        <div class="container-xl d-flex justify-content-between align-items-center mainNavbarInner">
                             <div class="sideBarBtn d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#sideBarOffcanvas" aria-controls="sideBarOffcanvas"></div>
                             <a class="navbar-brand" href="javascript:;">
                                 <img src="assets/img/logo/logo.svg" class="h-100" alt="">
@@ -160,16 +160,108 @@
                           </div>
                         </div>
                     </nav>
-                    <div class="container-fluid navbarBottom">
-                        <div class="container">
+                    <div class="container-fluid navbarBottom d-none d-lg-block">
+                        <div class="container-xl navbarBottomInner">
                             <div class="row align-items-center">
                                 <div class="col-auto categroiesBtnOuter">
                                     <a class="categoriesBtn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                        All Categories
+                                       <span class="menuIcon">
+                                            <img src="assets/img/svg/menu.svg" class="w-100" alt="">
+                                       </span> All Categories
+                                       <span class="dropIcon">
+                                            <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                       </span>
                                     </a>
-                                    <div class="collapse position-absolute top-100" id="collapseExample">
-                                        <div class="card card-body">
-                                          Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                    <div class="collapse position-absolute top-100 menuCollapse" id="collapseExample">
+                                        <div class="row mx-0">
+                                            <a href="javascript:;" class="col-12 menuLinks">
+                                                <span class="leftIcon">
+                                                    <img src="assets/img/svg/mobile-charge-svgrepo-com.svg" class="w-100" alt="">
+                                                </span>Mobile & Laptops
+                                                <span class="rightIcon">
+                                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                                </span>
+                                            </a>
+                                            <a href="javascript:;" class="col-12 menuLinks">
+                                                <span class="leftIcon">
+                                                    <img src="assets/img/svg/controller.svg" class="w-100" alt="">
+                                                </span>Gaming Entertainment
+                                                <span class="rightIcon">
+                                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                                </span>
+                                            </a>
+                                            <a href="javascript:;" class="col-12 menuLinks">
+                                                <span class="leftIcon">
+                                                    <img src="assets/img/svg/camera.svg" class="w-100" alt="">
+                                                </span>Image & Video
+                                                <span class="rightIcon">
+                                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                                </span>
+                                            </a>
+                                            <a href="javascript:;" class="col-12 menuLinks">
+                                                <span class="leftIcon">
+                                                    <img src="assets/img/svg/car-svgrepo-com.svg" class="w-100" alt="">
+                                                </span>Vehicles
+                                                <span class="rightIcon">
+                                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                                </span>
+                                            </a>
+                                            <a href="javascript:;" class="col-12 menuLinks">
+                                                <span class="leftIcon">
+                                                    <img src="assets/img/svg/mobile-charge-svgrepo-com.svg" class="w-100" alt="">
+                                                </span>Furnitures
+                                                <span class="rightIcon">
+                                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                                </span>
+                                            </a>
+                                            <a href="javascript:;" class="col-12 menuLinks">
+                                                <span class="leftIcon">
+                                                    <img src="assets/img/svg/controller.svg" class="w-100" alt="">
+                                                </span>Sprot
+                                                <span class="rightIcon">
+                                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                                </span>
+                                            </a>
+                                            <a href="javascript:;" class="col-12 menuLinks">
+                                                <span class="leftIcon">
+                                                    <img src="assets/img/svg/camera.svg" class="w-100" alt="">
+                                                </span>Food & Drinks
+                                                <span class="rightIcon">
+                                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                                </span>
+                                            </a>
+                                            <a href="javascript:;" class="col-12 menuLinks">
+                                                <span class="leftIcon">
+                                                    <img src="assets/img/svg/car-svgrepo-com.svg" class="w-100" alt="">
+                                                </span>Fashion Accessories
+                                                <span class="rightIcon">
+                                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                                </span>
+                                            </a>
+                                            <a href="javascript:;" class="col-12 menuLinks">
+                                                <span class="leftIcon">
+                                                    <img src="assets/img/svg/mobile-charge-svgrepo-com.svg" class="w-100" alt="">
+                                                </span>Toilet & Sanitation
+                                                <span class="rightIcon">
+                                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                                </span>
+                                            </a>
+                                            <a href="javascript:;" class="col-12 menuLinks">
+                                                <span class="leftIcon">
+                                                    <img src="assets/img/svg/controller.svg" class="w-100" alt="">
+                                                </span>Makeup Corner
+                                                <span class="rightIcon">
+                                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                                </span>
+                                            </a>
+                                            <a href="javascript:;" class="col-12 menuLinks">
+                                                <span class="leftIcon">
+                                                    <img src="assets/img/svg/camera.svg" class="w-100" alt="">
+                                                </span>Baby Items
+                                                <span class="rightIcon">
+                                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                                </span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -251,25 +343,203 @@
             </div>
         </main>
         
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="sideBarOffcanvas" aria-labelledby="sideBarOffcanvasLabel">
-            <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="sideBarOffcanvasLabel">Offcanvas</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div class="offcanvas offcanvas-start menuOffcanvas" tabindex="-1" id="sideBarOffcanvas" aria-labelledby="sideBarOffcanvasLabel">
+            <div class="offcanvas-header px-3 py-4">
+                <div class="row mx-0">
+                    <div class="col-12 px-0 d-flex align-items-center pb-4">
+                        <a href="javascript:;" class="offIconLink me-4">
+                            <img src="assets/img/svg/arrow-repeat.svg" class="w-100" alt="">
+                            <span>2</span>
+                        </a>
+                        <a href="javascript:;" class="offIconLink">
+                            <img src="assets/img/svg/suit-heart.svg" class="w-100" alt="">
+                            <span>1</span>
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="col-12 px-0 searchInputOuter">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search Product..." aria-describedby="button-addon2">
+                            <button class="btn rounded-0 h-100" type="button" id="button-addon2">
+                                <img src="assets/img/svg/search.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-12 nav nav-tabs px-0 text-center menuHeading pt-3 justify-content-center" id="nav-tab" role="tablist">
+                        <span class="catText nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Categories</span> 
+                        <span class="divder"> | </span> 
+                        <span class="mainText nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Main Menu</span>
+                    </div>
+                </div>
             </div>
             <div class="offcanvas-body">
-            <div>
-                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-            </div>
-            <div class="dropdown mt-3">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                Dropdown button
-                </button>
-                <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-            </div>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                        <div class="row mx-0">
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/mobile-charge-svgrepo-com.svg" class="w-100" alt="">
+                                </span>Mobile & Laptops
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/controller.svg" class="w-100" alt="">
+                                </span>Gaming Entertainment
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/camera.svg" class="w-100" alt="">
+                                </span>Image & Video
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/car-svgrepo-com.svg" class="w-100" alt="">
+                                </span>Vehicles
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/mobile-charge-svgrepo-com.svg" class="w-100" alt="">
+                                </span>Furnitures
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/controller.svg" class="w-100" alt="">
+                                </span>Sprot
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/camera.svg" class="w-100" alt="">
+                                </span>Food & Drinks
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/car-svgrepo-com.svg" class="w-100" alt="">
+                                </span>Fashion Accessories
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/mobile-charge-svgrepo-com.svg" class="w-100" alt="">
+                                </span>Toilet & Sanitation
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/controller.svg" class="w-100" alt="">
+                                </span>Makeup Corner
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/camera.svg" class="w-100" alt="">
+                                </span>Baby Items
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                        <div class="row mx-0">
+                            <div class="col-12 px-3">
+                                <ul class="list-unstyled p-0">
+                                    <li>
+                                        <a href="javascript:;" class="mainMenuLinks">Home
+                                            <img src="assets/img/svg/chevron-down.svg" class="ms-auto">
+                                        </a> 
+                                        <ul class="list-unstyled p-0">
+                                            <li>
+                                                <a href="javascript:;" class="mainMenuLinks">Home Two
+                                                    <img src="assets/img/svg/chevron-down.svg" class="ms-auto" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="list-unstyled p-0">
+                                            <li>
+                                                <a href="javascript:;" class="mainMenuLinks">Home Three
+                                                    <img src="assets/img/svg/chevron-down.svg" class="ms-auto" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" class="mainMenuLinks">Shop
+                                            <img src="assets/img/svg/chevron-down.svg" class="ms-auto">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" class="mainMenuLinks">Pages
+                                            <img src="assets/img/svg/chevron-down.svg" class="ms-auto">
+                                        </a> 
+                                        <ul class="list-unstyled p-0">
+                                            <li>
+                                                <a href="javascript:;" class="mainMenuLinks">Privacy Policy
+                                                    <img src="assets/img/svg/chevron-down.svg" class="ms-auto" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="list-unstyled p-0">
+                                            <li>
+                                                <a href="javascript:;" class="mainMenuLinks">FAQ
+                                                    <img src="assets/img/svg/chevron-down.svg" class="ms-auto" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="list-unstyled p-0">
+                                            <li>
+                                                <a href="javascript:;" class="mainMenuLinks">Terms and Conditions
+                                                    <img src="assets/img/svg/chevron-down.svg" class="ms-auto" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" class="mainMenuLinks">About
+                                            <img src="assets/img/svg/chevron-down.svg" class="ms-auto">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" class="mainMenuLinks">Blogs
+                                            <img src="assets/img/svg/chevron-down.svg" class="ms-auto">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" class="mainMenuLinks">Contact
+                                            <img src="assets/img/svg/chevron-down.svg" class="ms-auto">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
