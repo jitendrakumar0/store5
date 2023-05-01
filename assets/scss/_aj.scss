@@ -252,6 +252,8 @@
         & .innersection {
             & .leftSideCard {   
                 & .card {
+                    background-repeat: no-repeat;
+                    background-size: cover;
                     // background: url(../img/campaign-cover-countdown.jpg) 0% 0% / cover no-repeat;
                     & .card-body{
                         & .counter {
@@ -259,12 +261,68 @@
                             height: 100px;
                             & span {
                                 font-size: 30px;
-                                color: #eb5757;
+                                color: var(--cl);
                             }
                         }
                         & .counterHeading {
                             font-size: 18px;
                             line-height: normal;
+                        }
+                        & .flashHeading {
+                            font-size: 44px;
+                            color: rgb(34 34 34);
+                            font-weight: 600;
+                        }
+                        & .shopNowBtn {
+                            font-size: 14px;
+                            font-weight: 600;
+                            letter-spacing: .025rem;
+                            line-height: 1.75rem;
+                            text-decoration: none;
+                            display: inline-block;
+                            color: rgb(34 34 34);
+                            border-bottom: 1px solid rgb(255 187 56);
+                            & img {
+                                margin-left: 4px;
+                                transition: 0.3s ease-in-out;
+                                height: 13px;
+                            }
+                            &:hover {
+                                & img {
+                                    transform: translateX(3px);
+                                }
+                            }
+                        }
+                        & .appText {
+                            color: rgb(34 34 34);
+                            font-size: 13px;
+                            font-weight: 600;
+                            margin-bottom: 0.75rem;
+                        }
+                        & .mainText {
+                            font-size: 30px;
+                            line-height: 2.5rem;
+                            color: rgb(34 34 34);
+                            font-weight: 600;
+                            margin-bottom: 2rem;
+                            & span {
+                                color: red;
+                                border-bottom: 2px solid red;
+                            }
+                        }
+                        & .downloadBtn {
+                            & a {
+                                & img {
+                                    height: 69px;
+                                }
+                            }
+                        }
+                        & .appScreen {
+                            margin-top: 2rem;
+                            text-align: center;
+                            & img {
+                                width: 100%;
+                            }
                         }
                     }
                 }
@@ -361,6 +419,48 @@
             }
         }
     }
+    .flashSaleSection {
+        & .innersection {
+            & .leftSideCard {   
+                & .card {
+                    & .card-body{
+                        & .counter {
+                            & span {
+                            }
+                        }
+                        & .counterHeading {
+                        }
+                        & .flashHeading {
+                        }
+                        & .shopNowBtn {
+                            & img {
+                            }
+                            &:hover {
+                                & img {
+                                }
+                            }
+                        }
+                        & .appText {
+                        }
+                        & .mainText {
+                            & span {
+                            }
+                        }
+                        & .downloadBtn {
+                            & a {
+                                & img {
+                                }
+                            }
+                        }
+                        & .appScreen {
+                            & img {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @include media-breakpoint-down(xl) {
@@ -433,6 +533,54 @@
             }
         }
         & .categoryBadge {
+        }
+    }
+    .flashSaleSection {
+        & .innersection {
+            & .leftSideCard {   
+                & .card {
+                    & .card-body{
+                        & .counter {
+                            width: 90px;
+                            height: 90px;
+                            & span {
+                            }
+                        }
+                        & .counterHeading {
+                            font-size: 17px;
+                        }
+                        & .flashHeading {
+                            font-size: 40px;
+                            margin-top: 2rem !important;
+                        }
+                        & .shopNowBtn {
+                            & img {
+                            }
+                            &:hover {
+                                & img {
+                                }
+                            }
+                        }
+                        & .appText {
+                        }
+                        & .mainText {
+                            & span {
+                            }
+                        }
+                        & .downloadBtn {
+                            & a {
+                                & img {
+                                    height: 60px;
+                                }
+                            }
+                        }
+                        & .appScreen {
+                            & img {
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
     }
@@ -511,6 +659,52 @@
             }
         }
         & .categoryBadge {
+        }
+    }
+    .flashSaleSection {
+        & .innersection {
+            & .leftSideCard {   
+                & .card {
+                    min-height: 400px;
+                    & .card-body{
+                        & .counter {
+                            // height: 67px;
+                            // width: 67px;
+                            & span {
+                                // font-size: 24px;
+                            }
+                        }
+                        & .counterHeading {
+                        }
+                        & .flashHeading {
+                        }
+                        & .shopNowBtn {
+                            & img {
+                            }
+                            &:hover {
+                                & img {
+                                }
+                            }
+                        }
+                        & .appText {
+                        }
+                        & .mainText {
+                            & span {
+                            }
+                        }
+                        & .downloadBtn {
+                            & a {
+                                & img {
+                                }
+                            }
+                        }
+                        & .appScreen {
+                            & img {
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
     }
@@ -592,6 +786,48 @@
         & .categoryBadge {
         }
     }
+    .flashSaleSection {
+        & .innersection {
+            & .leftSideCard {   
+                & .card {
+                    & .card-body{
+                        & .counter {
+                            & span {
+                            }
+                        }
+                        & .counterHeading {
+                        }
+                        & .flashHeading {
+                        }
+                        & .shopNowBtn {
+                            & img {
+                            }
+                            &:hover {
+                                & img {
+                                }
+                            }
+                        }
+                        & .appText {
+                        }
+                        & .mainText {
+                            & span {
+                            }
+                        }
+                        & .downloadBtn {
+                            & a {
+                                & img {
+                                }
+                            }
+                        }
+                        & .appScreen {
+                            & img {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @include media-breakpoint-down(sm) {
@@ -666,6 +902,61 @@
             }
         }
         & .categoryBadge {
+        }
+    }
+    .flashSaleSection {
+        & .innersection {
+            & .leftSideCard {   
+                & .card {
+                    min-height: 350px;
+                    & .card-body{
+                        & .counter {
+                            max-width: 90px;
+                            width: 100%;
+                            height: auto;
+                            aspect-ratio: 1/1;
+                            & span {
+                                font-size: 6vw;
+                            }
+                        }
+                        & .counterHeading {
+                            font-size: 3.5vw;
+                        }
+                        & .flashHeading {
+                            font-size: 28px;
+                        }
+                        & .shopNowBtn {
+                            & img {
+                            }
+                            &:hover {
+                                & img {
+                                }
+                            }
+                        }
+                        & .appText {
+                        }
+                        & .mainText {
+                            font-size: 20px;
+                            line-height: 2rem;
+                            margin-bottom: 1.2rem;
+                            & span {
+                            }
+                        }
+                        & .downloadBtn {
+                            padding-right: 0;
+                            & a {
+                                & img {
+                                    height: 42px;
+                                }
+                            }
+                        }
+                        & .appScreen {
+                            & img {
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
     }
