@@ -935,6 +935,8 @@
                         text-align: center;
                         font-weight: 500;
                         margin-left: 20px;
+                        font-size: 15px;
+                        white-space: nowrap;
                     }
                 }
     
@@ -950,6 +952,7 @@
                 & .size,
                 .Price,.total,.cancel{
                     color: #81807f;
+                    font-size: 14px;
                     & img{
                         max-width:25px;
                     }
