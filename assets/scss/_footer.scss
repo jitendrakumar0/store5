@@ -150,7 +150,6 @@
 
 @include media-breakpoint-down(md) {
     .footerMain {
-        padding: 0;
         & .footerMainInner {
             padding: 0;
             & .footerTopSection {

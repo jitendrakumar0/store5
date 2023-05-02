@@ -69,22 +69,692 @@
     <body>
         <main class="container-fluid">
             <div class="row mainInner">
-                <div class="col-12 px-0 flex-fill" data-page-name="indexPage">
-                    <div class="container-fluid py-4 pageHeading">
-                        <div class="container">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Library</li>
-                                </ol>
-                            </nav>
+                <div class="col-12 px-0 flex-fill" data-page-name="Compaire">
+                    <!-- * Header Section Start -->
+                    <div class="container-fluid topHeader"> 
+                        <div class="container-xl">
+                            <div class="row justify-content-between">
+                                <div class="col-auto">
+                                    <ul class="list-unstyled d-flex m-0">
+                                        <li><a href="javascript:;" class="nav-link">Account</a></li>
+                                        <li><a href="javascript:;" class="nav-link">Track Order</a></li>
+                                        <li><a href="javascript:;" class="nav-link">Support</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-auto d-none d-sm-block">
+                                    <ul class="list-unstyled d-flex m-0">
+                                        <li class="dropdown">
+                                            <a href="javascript:;" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <img src="assets/img/svg/country-logo-16x16.png" alt="">United State
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">United State</a></li>
+                                                <li><a class="dropdown-item" href="#">Bangladesh</a></li>
+                                                <li><a class="dropdown-item" href="#">India</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="javascript:;" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">USD</a></li>
+                                                <li><a class="dropdown-item" href="#">BDT</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="javascript:;" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Bangla</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Bangla</a></li>
+                                                <li><a class="dropdown-item" href="#">English</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    
+                    <nav class="navbar navbar-expand-lg bg-white mainNavbar container-fluid">
+                        <div class="container-xl d-flex justify-content-between align-items-center mainNavbarInner">
+                            <div class="sideBarBtn d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#sideBarOffcanvas" aria-controls="sideBarOffcanvas"></div>
+                            <a class="navbar-brand" href="javascript:;">
+                                <img src="assets/img/logo/logo.svg" class="h-100" alt="">
+                            </a>
+                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <div class="input-group">
+                                <input type="text" placeholder="Search Product.." class="form-control">
+                                <span class="devider"></span>
+                                <select class="form-control">
+                                    <option value="" selected disabled>All Categories</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                                <span class="downArrow"></span>
+                                <button class="btn searchBtn">Search</button>
+                            </div>
+                          </div>
+                          <div class="linkBtnOuter">
+                            <a href="javascript:;" class="linkBtn d-none d-lg-block">
+                                <div class="imgOuter">
+                                    <img src="assets/img/svg/arrow-repeat.svg" class="w-100" alt="">
+                                    <span class="linkAmount">1</span>
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="linkBtn d-none d-lg-block">
+                                <div class="imgOuter">
+                                    <img src="assets/img/svg/suit-heart.svg" class="w-100" alt="">
+                                    <span class="linkAmount">1</span>
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="linkBtn">
+                                <div class="imgOuter">
+                                    <img src="assets/img/svg/handbag.svg" class="w-100" alt="">
+                                    <span class="linkAmount">1</span>
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="linkBtn d-none d-lg-block">
+                                <div class="imgOuter">
+                                    <img src="assets/img/svg/user.svg" class="w-100" alt="">
+                                </div>
+                            </a>
+                          </div>
+                        </div>
+                    </nav>
+                    <div class="container-fluid navbarBottom d-none d-lg-block">
+                        <div class="container-xl navbarBottomInner">
+                            <div class="row align-items-center">
+                                <div class="col-auto categroiesBtnOuter">
+                                    <a class="categoriesBtn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                       <span class="menuIcon">
+                                            <img src="assets/img/svg/menu.svg" class="w-100" alt="">
+                                       </span> All Categories
+                                       <span class="dropIcon">
+                                            <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                       </span>
+                                    </a>
+                                    <div class="collapse position-absolute top-100 menuCollapse" id="collapseExample">
+                                        <div class="row mx-0">
+                                            <a href="javascript:;" class="col-12 menuLinks">
+                                                <span class="leftIcon">
+                                                    <img src="assets/img/svg/mobile-charge-svgrepo-com.svg" class="w-100" alt="">
+                                                </span>Mobile & Laptops
+                                                <span class="rightIcon">
+                                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                                </span>
+                                            </a>
+                                            <a href="javascript:;" class="col-12 menuLinks">
+                                                <span class="leftIcon">
+                                                    <img src="assets/img/svg/controller.svg" class="w-100" alt="">
+                                                </span>Gaming Entertainment
+                                                <span class="rightIcon">
+                                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                                </span>
+                                            </a>
+                                            <a href="javascript:;" class="col-12 menuLinks">
+                                                <span class="leftIcon">
+                                                    <img src="assets/img/svg/camera.svg" class="w-100" alt="">
+                                                </span>Image & Video
+                                                <span class="rightIcon">
+                                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                                </span>
+                                            </a>
+                                            <a href="javascript:;" class="col-12 menuLinks">
+                                                <span class="leftIcon">
+                                                    <img src="assets/img/svg/car-svgrepo-com.svg" class="w-100" alt="">
+                                                </span>Vehicles
+                                                <span class="rightIcon">
+                                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                                </span>
+                                            </a>
+                                            <a href="javascript:;" class="col-12 menuLinks">
+                                                <span class="leftIcon">
+                                                    <img src="assets/img/svg/mobile-charge-svgrepo-com.svg" class="w-100" alt="">
+                                                </span>Furnitures
+                                                <span class="rightIcon">
+                                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                                </span>
+                                            </a>
+                                            <a href="javascript:;" class="col-12 menuLinks">
+                                                <span class="leftIcon">
+                                                    <img src="assets/img/svg/controller.svg" class="w-100" alt="">
+                                                </span>Sprot
+                                                <span class="rightIcon">
+                                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                                </span>
+                                            </a>
+                                            <a href="javascript:;" class="col-12 menuLinks">
+                                                <span class="leftIcon">
+                                                    <img src="assets/img/svg/camera.svg" class="w-100" alt="">
+                                                </span>Food & Drinks
+                                                <span class="rightIcon">
+                                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                                </span>
+                                            </a>
+                                            <a href="javascript:;" class="col-12 menuLinks">
+                                                <span class="leftIcon">
+                                                    <img src="assets/img/svg/car-svgrepo-com.svg" class="w-100" alt="">
+                                                </span>Fashion Accessories
+                                                <span class="rightIcon">
+                                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                                </span>
+                                            </a>
+                                            <a href="javascript:;" class="col-12 menuLinks">
+                                                <span class="leftIcon">
+                                                    <img src="assets/img/svg/mobile-charge-svgrepo-com.svg" class="w-100" alt="">
+                                                </span>Toilet & Sanitation
+                                                <span class="rightIcon">
+                                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                                </span>
+                                            </a>
+                                            <a href="javascript:;" class="col-12 menuLinks">
+                                                <span class="leftIcon">
+                                                    <img src="assets/img/svg/controller.svg" class="w-100" alt="">
+                                                </span>Makeup Corner
+                                                <span class="rightIcon">
+                                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                                </span>
+                                            </a>
+                                            <a href="javascript:;" class="col-12 menuLinks">
+                                                <span class="leftIcon">
+                                                    <img src="assets/img/svg/camera.svg" class="w-100" alt="">
+                                                </span>Baby Items
+                                                <span class="rightIcon">
+                                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <ul class="list-unstyled m-0 navLinksOuter">
+                                        <li>
+                                            <button class="navLinks hoverClass homeHover">Homepage <span class="dropIcon"></span>
+                                                <div class="bottomBox homeBox">
+                                                    <a href="javascript:;" class="boxLinks">Home One</a>
+                                                    <a href="javascript:;" class="boxLinks">Home Two</a>
+                                                    <a href="javascript:;" class="boxLinks">Home Three</a>
+                                                </div>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="navLinks hoverClass shopHover">Shop <span class="dropIcon"></span>
+                                                <div class="bottomBox shopBox">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-9">
+                                                            <div class="row">
+                                                                <div class="col-4 d-flex flex-column">
+                                                                    <div class="linkHeading">SHOP LIST</div>
+                                                                    <a href="javascript:;" class="boxLinks">Shop Sidebar</a>
+                                                                    <a href="javascript:;" class="boxLinks">Shop Fullwidth</a>
+                                                                    <a href="javascript:;" class="boxLinks">Shop Category Icon</a>
+                                                                    <a href="javascript:;" class="boxLinks">Shop Category Icon</a>
+                                                                    <a href="javascript:;" class="boxLinks">Shop List View</a>
+                                                                </div>
+                                                                <div class="col-4 d-flex flex-column">
+                                                                    <div class="linkHeading">PRODUCT LAYOUTS</div>
+                                                                    <a href="javascript:;" class="boxLinks">Horizonral Thumbnail</a>
+                                                                    <a href="javascript:;" class="boxLinks">Vertical Thumbnail</a>
+                                                                    <a href="javascript:;" class="boxLinks">Gallery Thumbnail</a>
+                                                                    <a href="javascript:;" class="boxLinks">Sticky Summary</a>
+                                                                </div>
+                                                                <div class="col-4 d-flex flex-column">
+                                                                    <div class="linkHeading">POPULAR CATEGORY</div>
+                                                                    <a href="javascript:;" class="boxLinks">Phone & Tablet</a>
+                                                                    <a href="javascript:;" class="boxLinks">Gaming & Sports</a>
+                                                                    <a href="javascript:;" class="boxLinks">Home Appliance</a>
+                                                                    <a href="javascript:;" class="boxLinks">Fashion Clothes</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3 d-flex flex-column">
+                                                            <div class="imgOuter">
+                                                                <img src="assets/img/product-img/mega-menu-thumb.jpg" class="w-100" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="navLinks hoverClass pageHover">Pages <span class="dropIcon"></span>
+                                                <div class="bottomBox pagesBox">
+                                                    <a href="javascript:;" class="boxLinks">Privacy Policy</a>
+                                                    <a href="javascript:;" class="boxLinks">terms and Conditions</a>
+                                                    <a href="javascript:;" class="boxLinks">FAQ</a>
+                                                    <a href="javascript:;" class="boxLinks">Shop Category Icon</a>
+                                                    <a href="javascript:;" class="boxLinks">Shop List View</a>
+                                                </div>
+                                            </button>
+                                        </li>
+                                        <li><a href="javascript:;" class="navLinks">About</a></li>
+                                        <li><a href="javascript:;" class="navLinks">Blog</a></li>
+                                        <li><a href="javascript:;" class="navLinks">Contact</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-auto">
+                                    <a href="javascript:;" class="becomeASellerBtn">Become a Seller
+                                        <img src="assets/img/svg/chevron-down.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ! Header Section End -->
+                    <!-- * Breadcrumb Section Start -->
+                    <div class="container-fluid py-5 pageHeading pageHeadingSection">
+                        <div class="container">
+                            <nav aria-label="breadcrumb mb-3">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Compaire</li>
+                                </ol>
+                            </nav>
+                            <div class="col-12 text-center secHeading">Product Comparison</div>
+                        </div>
+                    </div>
+                    <!-- ! Breadcrumb Section End -->
+                    <!-- * Product Comarison Section Start -->
+                    <div class="container-fluid productComSection">
+                        <div class="container pt-3 pb-4">
+                            <div class="row">
+                                <div class="col-12 productComSectionInner">
+                                    <div class="table-responsive position-relative">
+                                        <table class="table position-relative compareTable">
+                                            <thead>
+                                                <tr>
+                                                    <th class="fixedCol" scope="col">
+                                                        <div class="tableTh1"><span class="mainProductHeading">Product Comparison</span></div>
+                                                    </th>
+                                                    <th class="align-middle" scope="col">
+                                                        <div class="tableTh">
+                                                            <div class="searchInput">
+                                                                <input type="text" placeholder="Search Product..">
+                                                                <img src="assets/img/svg/search.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                    <th class="align-middle" scope="col">
+                                                        <div class="tableTh">
+                                                            <div class="searchInput">
+                                                                <input type="text" placeholder="Search Product..">
+                                                                <img src="assets/img/svg/search.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                    <th class="align-middle" scope="col">
+                                                        <div class="tableTh">
+                                                            <div class="searchInput">
+                                                                <input type="text" placeholder="Search Product..">
+                                                                <img src="assets/img/svg/search.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                    <th class="align-middle" scope="col">
+                                                        <div class="tableTh">
+                                                            <div class="searchInput">
+                                                                <input type="text" placeholder="Search Product..">
+                                                                <img src="assets/img/svg/search.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="fixedCol" scope="col">
+                                                        <span class="customText">Select products to see the differences and similarities between them</span>
+                                                    </td>
+                                                    <td class="" scope="col">
+                                                        <div class="proCard">
+                                                            <div class="prodcutImg">
+                                                                <img src="assets/img/productImg1.jpg" class="w-100 h-100" alt="">
+                                                            </div>
+                                                            <div class="proHeading">Apple MacBook Air 13.3-Inch Display</div>
+                                                            <div class="proPrize">$6.9</div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="" scope="col">
+                                                        <div class="proCard">
+                                                            <div class="prodcutImg">
+                                                                <img src="assets/img/productImg2.jpg" class="w-100 h-100" alt="">
+                                                            </div>
+                                                            <div class="proHeading">Apple MacBook Air 13.3-Inch Display</div>
+                                                            <div class="proPrize">$6.9</div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="" scope="col">
+                                                        <div class="proCard">
+                                                            <div class="prodcutImg">
+                                                                <img src="assets/img/productImg3.jpg" class="w-100 h-100" alt="">
+                                                            </div>
+                                                            <div class="proHeading">Apple MacBook Air 13.3-Inch Display</div>
+                                                            <div class="proPrize">$6.9</div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="" scope="col">
+                                                        <div class="proCard">
+                                                            <div class="prodcutImg">
+                                                                <img src="assets/img/productImg3.jpg" class="w-100 h-100" alt="">
+                                                            </div>
+                                                            <div class="proHeading">Apple MacBook Air 13.3-Inch Display</div>
+                                                            <div class="proPrize">$6.9</div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ! Product Comarison Section End -->
+                    <!-- * News Latter Section Start -->
+                    <div class="container-fluid newsletterFluid">
+                        <div class="container newsletterContainer h-100">
+                            <div class="row h-100">
+                                <div class="col-12 h-100">
+                                    <div class="newsletterBox d-flex justify-content-center align-items-center flex-column h-100">
+                                        <div class="newsletterHeading">Get <span class="mx-1 text-yellow">20%</span> Off Discount Coupon</div>
+                                        <div class="newsletterSubHeading">by Subscribe our Newsletter</div>
+                                        <div class="emailInp position-relative">
+                                            <input type="text" class="form-control mailInp" name="" id="" placeholder="EMAIL ADDRESS">
+                                            <img class="mail" src="assets/img/svg/mailicon.svg" alt="">
+                                            <button class="mailBtn">Get the Coupon</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ! News Latter Section End -->
+                    <!-- * Footer Section Start -->
+                    <div class="container-fluid footerMain">
+                        <div class="container footerMainInner pt-5">
+                            <div class="row">
+                                <div class="col-12 footerTopSection">
+                                    <div class="row">
+                                        <a href="javascript:;" class="col-auto footerLogo">
+                                            <img src="assets/img/logo/logo.svg" class="w-100 h-100" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 footerMiddle px-sm-0 px-4">
+                                    <div class="row gap-3 gap-md-0">
+                                        <div class="col-md-4 col-12">
+                                            <div class="row">
+                                                <div class="col-12 footerHeading">About Us</div>
+                                                <div class="col-12 footerText">We know there are a lot of threa developers our but we pride into a firm in the industry.</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8 col-12">
+                                            <div class="row gap-3 gap-md-0">
+                                                <div class="col-md-4 col-12">
+                                                    <div class="row">
+                                                        <div class="col-12 footerHeading">Feature</div>
+                                                        <div class="col-12">
+                                                            <ul class="list-unstyled m-0 p-0">
+                                                                <li><a href="javascript:;" class="footerLinks">About Us</a></li>
+                                                                <li><a href="javascript:;" class="footerLinks">Terms Condition</a></li>
+                                                                <li><a href="javascript:;" class="footerLinks">Best Products</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-12">
+                                                    <div class="row">
+                                                        <div class="col-12 footerHeading">General Links</div>
+                                                        <div class="col-12">
+                                                            <ul class="list-unstyled m-0 p-0">
+                                                                <li><a href="javascript:;" class="footerLinks">Blog</a></li>
+                                                                <li><a href="javascript:;" class="footerLinks">Tracking Order</a></li>
+                                                                <li><a href="javascript:;" class="footerLinks">Become Seller</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-12">
+                                                    <div class="row">
+                                                        <div class="col-12 footerHeading">Helpful</div>
+                                                        <div class="col-12">
+                                                            <ul class="list-unstyled m-0 p-0">
+                                                                <li><a href="javascript:;" class="footerLinks">Flash Sale</a></li>
+                                                                <li><a href="javascript:;" class="footerLinks">FAQ</a></li>
+                                                                <li><a href="javascript:;" class="footerLinks">Support</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 footerBottom px-0">
+                                    <div class="row mx-0 justify-content-md-between justify-content-center align-items-center">
+                                        <div class="col-auto px-0 socialOuter">
+                                            <a href="javascript:;" class="socialIcon">
+                                                <img src="assets/img/svg/instagram.svg" class="w-100 h-100" alt="">
+                                            </a>
+                                            <a href="javascript:;" class="socialIcon">
+                                                <img src="assets/img/svg/facebook-svgrepo-com.svg" class="w-100 h-100" alt="">
+                                            </a>
+                                            <a href="javascript:;" class="socialIcon">
+                                                <img src="assets/img/svg/youtube.svg" class="w-100 h-100" alt="">
+                                            </a>
+                                            <div class="coprightText">©2023 <a href="javascript:;">QuomodosoftAll</a> rights reserved</div>
+                                        </div>
+                                        <a href="javascript:;" class="col-auto px-0 getPayment mt-2 mt-md-0">
+                                            <img src="assets/img/payment-getways.png" class="w-100 h-100" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ! Footer Section End -->
                 </div>
             </div>
         </main>
-        <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <div class="offcanvas offcanvas-start menuOffcanvas" tabindex="-1" id="sideBarOffcanvas" aria-labelledby="sideBarOffcanvasLabel">
+            <div class="offcanvas-header px-3 py-4">
+                <div class="row mx-0">
+                    <div class="col-12 px-0 d-flex align-items-center pb-4">
+                        <a href="index.html" class="offIconLink me-4">
+                            <img src="assets/img/svg/arrow-repeat.svg" class="w-100" alt="">
+                            <span>2</span>
+                        </a>
+                        <a href="javascript:;" class="offIconLink">
+                            <img src="assets/img/svg/suit-heart.svg" class="w-100" alt="">
+                            <span>1</span>
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="col-12 px-0 searchInputOuter">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search Product..." aria-describedby="button-addon2">
+                            <button class="btn rounded-0 h-100" type="button" id="button-addon2">
+                                <img src="assets/img/svg/search.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-12 nav nav-tabs px-0 text-center menuHeading pt-3 justify-content-center" id="nav-tab" role="tablist">
+                        <span class="catText nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Categories</span> 
+                        <span class="divder"> | </span> 
+                        <span class="mainText nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Main Menu</span>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas-body">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                        <div class="row mx-0">
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/mobile-charge-svgrepo-com.svg" class="w-100" alt="">
+                                </span>Mobile & Laptops
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/controller.svg" class="w-100" alt="">
+                                </span>Gaming Entertainment
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/camera.svg" class="w-100" alt="">
+                                </span>Image & Video
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/car-svgrepo-com.svg" class="w-100" alt="">
+                                </span>Vehicles
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/mobile-charge-svgrepo-com.svg" class="w-100" alt="">
+                                </span>Furnitures
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/controller.svg" class="w-100" alt="">
+                                </span>Sprot
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/camera.svg" class="w-100" alt="">
+                                </span>Food & Drinks
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/car-svgrepo-com.svg" class="w-100" alt="">
+                                </span>Fashion Accessories
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/mobile-charge-svgrepo-com.svg" class="w-100" alt="">
+                                </span>Toilet & Sanitation
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/controller.svg" class="w-100" alt="">
+                                </span>Makeup Corner
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/camera.svg" class="w-100" alt="">
+                                </span>Baby Items
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                        <div class="row mx-0">
+                            <div class="col-12 px-3">
+                                <ul class="list-unstyled p-0">
+                                    <li>
+                                        <a href="javascript:;" class="mainMenuLinks">Home
+                                            <img src="assets/img/svg/chevron-down.svg" class="ms-auto">
+                                        </a> 
+                                        <ul class="list-unstyled p-0">
+                                            <li>
+                                                <a href="javascript:;" class="mainMenuLinks">Home Two
+                                                    <img src="assets/img/svg/chevron-down.svg" class="ms-auto" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="list-unstyled p-0">
+                                            <li>
+                                                <a href="javascript:;" class="mainMenuLinks">Home Three
+                                                    <img src="assets/img/svg/chevron-down.svg" class="ms-auto" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" class="mainMenuLinks">Shop
+                                            <img src="assets/img/svg/chevron-down.svg" class="ms-auto">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" class="mainMenuLinks">Pages
+                                            <img src="assets/img/svg/chevron-down.svg" class="ms-auto">
+                                        </a> 
+                                        <ul class="list-unstyled p-0">
+                                            <li>
+                                                <a href="javascript:;" class="mainMenuLinks">Privacy Policy
+                                                    <img src="assets/img/svg/chevron-down.svg" class="ms-auto" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="list-unstyled p-0">
+                                            <li>
+                                                <a href="javascript:;" class="mainMenuLinks">FAQ
+                                                    <img src="assets/img/svg/chevron-down.svg" class="ms-auto" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="list-unstyled p-0">
+                                            <li>
+                                                <a href="javascript:;" class="mainMenuLinks">Terms and Conditions
+                                                    <img src="assets/img/svg/chevron-down.svg" class="ms-auto" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" class="mainMenuLinks">About
+                                            <img src="assets/img/svg/chevron-down.svg" class="ms-auto">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" class="mainMenuLinks">Blogs
+                                            <img src="assets/img/svg/chevron-down.svg" class="ms-auto">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" class="mainMenuLinks">Contact
+                                            <img src="assets/img/svg/chevron-down.svg" class="ms-auto">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- <script src="assets/libs/owl.carousel/dist/owl.carousel.min.js"></script>
+        <script src="assets/libs/select2/dist/js/select2.min.js"></script> -->
         <script type="module" src="assets/js/main.min.js"></script>
     </body>
 </html>
