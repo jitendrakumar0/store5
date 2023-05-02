@@ -1096,7 +1096,9 @@ body .overflow-auto-hidden {
 }
 .singleProductHeroFluid .singleProductHeroContainer .productSizeSelect .productSizeSelectDrop .productSizeSelectDropMenu {
   width: 100%;
-  padding: 0;
+}
+.singleProductHeroFluid .singleProductHeroContainer .productSizeSelect .productSizeSelectDrop .productSizeSelectDropMenu .productSizeSelectDropItem {
+  font-size: 14px;
 }
 .singleProductHeroFluid .singleProductHeroContainer .productSizeSelect .productSizeSelectDrop .productSizeSelectDropMenu .productSizeSelectDropItem.active {
   background-color: #F6F6F6 !important;
