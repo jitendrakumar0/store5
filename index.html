@@ -64,22 +64,1853 @@
 
         <!-- style -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="assets/libs/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" href="assets/libs/owl.carousel/dist/assets/owl.carousel.min.css" />
         <link rel="stylesheet" href="assets/css/style.min.css" />
-        <link rel="stylesheet" href="assets/libs/node_modules/select2/dist/css/select2.min.css">
-        <script src="assets/libs/node_modules/jquery/dist/jquery.min.js"></script>
+        <link rel="stylesheet" href="assets/libs/select2/dist/css/select2.min.css">
+        <script src="assets/libs/jquery/jquery.min.js"></script>
     </head>
     <body>
         <main class="container-fluid">
-            <div class="row mainInner">
-                <div class="col-12 px-0 flex-fill" data-page-name="categoriesPage">
-                
+            <div class="row mainInner bg-light">
+                <div class="col-12 px-0 flex-fill" data-page-name="indexPage">
+                    <!-- * Header Section Start -->
+                    <div class="container-fluid topHeader"> 
+                        <div class="container-xl">
+                            <div class="row justify-content-between">
+                                <div class="col-auto">
+                                    <ul class="list-unstyled d-flex m-0">
+                                        <li><a href="javascript:;" class="nav-link">Account</a></li>
+                                        <li><a href="javascript:;" class="nav-link">Track Order</a></li>
+                                        <li><a href="javascript:;" class="nav-link">Support</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-auto d-none d-sm-block">
+                                    <ul class="list-unstyled d-flex m-0">
+                                        <li class="dropdown">
+                                            <a href="javascript:;" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <img src="assets/img/svg/country-logo-16x16.png" alt="">United State
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">United State</a></li>
+                                                <li><a class="dropdown-item" href="#">Bangladesh</a></li>
+                                                <li><a class="dropdown-item" href="#">India</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="javascript:;" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">USD</a></li>
+                                                <li><a class="dropdown-item" href="#">BDT</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="javascript:;" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Bangla</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Bangla</a></li>
+                                                <li><a class="dropdown-item" href="#">English</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="navbar navbar-expand-lg bg-white mainNavbar container-fluid">
+                        <div class="container-xl d-flex justify-content-between align-items-center mainNavbarInner">
+                            <div class="sideBarBtn d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#sideBarOffcanvas" aria-controls="sideBarOffcanvas"></div>
+                            <a class="navbar-brand" href="javascript:;">
+                                <img src="assets/img/logo/logo.svg" class="h-100" alt="">
+                            </a>
+                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <div class="input-group">
+                                <input type="text" placeholder="Search Product.." class="form-control">
+                                <span class="devider"></span>
+                                <select class="form-control">
+                                    <option value="" selected disabled>All Categories</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                </select>
+                                <span class="downArrow"></span>
+                                <button class="btn searchBtn">Search</button>
+                            </div>
+                          </div>
+                          <div class="linkBtnOuter">
+                            <a href="javascript:;" class="linkBtn d-none d-lg-block">
+                                <div class="imgOuter">
+                                    <img src="assets/img/svg/arrow-repeat.svg" class="w-100" alt="">
+                                    <span class="linkAmount">1</span>
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="linkBtn d-none d-lg-block">
+                                <div class="imgOuter">
+                                    <img src="assets/img/svg/suit-heart.svg" class="w-100" alt="">
+                                    <span class="linkAmount">1</span>
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="linkBtn">
+                                <div class="imgOuter">
+                                    <img src="assets/img/svg/handbag.svg" class="w-100" alt="">
+                                    <span class="linkAmount">1</span>
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="linkBtn d-none d-lg-block">
+                                <div class="imgOuter">
+                                    <img src="assets/img/svg/user.svg" class="w-100" alt="">
+                                </div>
+                            </a>
+                          </div>
+                        </div>
+                    </nav>
+                    <div class="container-fluid navbarBottom d-none d-lg-block">
+                        <div class="container-xl navbarBottomInner">
+                            <div class="row align-items-center">
+                                <div class="col-auto categroiesBtnOuter">
+                                    <a class="categoriesBtn" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                       <span class="menuIcon">
+                                            <img src="assets/img/svg/menu.svg" class="w-100" alt="">
+                                       </span> All Categories
+                                       <span class="dropIcon">
+                                            <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                       </span>
+                                    </a>
+                                    <div class="collapse position-absolute top-100 menuCollapse" id="collapseExample">
+                                        <div class="row mx-0">
+                                            <a href="javascript:;" class="col-12 menuLinks">
+                                                <span class="leftIcon">
+                                                    <img src="assets/img/svg/mobile-charge-svgrepo-com.svg" class="w-100" alt="">
+                                                </span>Mobile & Laptops
+                                                <span class="rightIcon">
+                                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                                </span>
+                                            </a>
+                                            <a href="javascript:;" class="col-12 menuLinks">
+                                                <span class="leftIcon">
+                                                    <img src="assets/img/svg/controller.svg" class="w-100" alt="">
+                                                </span>Gaming Entertainment
+                                                <span class="rightIcon">
+                                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                                </span>
+                                            </a>
+                                            <a href="javascript:;" class="col-12 menuLinks">
+                                                <span class="leftIcon">
+                                                    <img src="assets/img/svg/camera.svg" class="w-100" alt="">
+                                                </span>Image & Video
+                                                <span class="rightIcon">
+                                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                                </span>
+                                            </a>
+                                            <a href="javascript:;" class="col-12 menuLinks">
+                                                <span class="leftIcon">
+                                                    <img src="assets/img/svg/car-svgrepo-com.svg" class="w-100" alt="">
+                                                </span>Vehicles
+                                                <span class="rightIcon">
+                                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                                </span>
+                                            </a>
+                                            <a href="javascript:;" class="col-12 menuLinks">
+                                                <span class="leftIcon">
+                                                    <img src="assets/img/svg/mobile-charge-svgrepo-com.svg" class="w-100" alt="">
+                                                </span>Furnitures
+                                                <span class="rightIcon">
+                                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                                </span>
+                                            </a>
+                                            <a href="javascript:;" class="col-12 menuLinks">
+                                                <span class="leftIcon">
+                                                    <img src="assets/img/svg/controller.svg" class="w-100" alt="">
+                                                </span>Sprot
+                                                <span class="rightIcon">
+                                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                                </span>
+                                            </a>
+                                            <a href="javascript:;" class="col-12 menuLinks">
+                                                <span class="leftIcon">
+                                                    <img src="assets/img/svg/camera.svg" class="w-100" alt="">
+                                                </span>Food & Drinks
+                                                <span class="rightIcon">
+                                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                                </span>
+                                            </a>
+                                            <a href="javascript:;" class="col-12 menuLinks">
+                                                <span class="leftIcon">
+                                                    <img src="assets/img/svg/car-svgrepo-com.svg" class="w-100" alt="">
+                                                </span>Fashion Accessories
+                                                <span class="rightIcon">
+                                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                                </span>
+                                            </a>
+                                            <a href="javascript:;" class="col-12 menuLinks">
+                                                <span class="leftIcon">
+                                                    <img src="assets/img/svg/mobile-charge-svgrepo-com.svg" class="w-100" alt="">
+                                                </span>Toilet & Sanitation
+                                                <span class="rightIcon">
+                                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                                </span>
+                                            </a>
+                                            <a href="javascript:;" class="col-12 menuLinks">
+                                                <span class="leftIcon">
+                                                    <img src="assets/img/svg/controller.svg" class="w-100" alt="">
+                                                </span>Makeup Corner
+                                                <span class="rightIcon">
+                                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                                </span>
+                                            </a>
+                                            <a href="javascript:;" class="col-12 menuLinks">
+                                                <span class="leftIcon">
+                                                    <img src="assets/img/svg/camera.svg" class="w-100" alt="">
+                                                </span>Baby Items
+                                                <span class="rightIcon">
+                                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <ul class="list-unstyled m-0 navLinksOuter">
+                                        <li>
+                                            <button class="navLinks hoverClass homeHover">Homepage <span class="dropIcon"></span>
+                                                <div class="bottomBox homeBox">
+                                                    <a href="javascript:;" class="boxLinks">Home One</a>
+                                                    <a href="javascript:;" class="boxLinks">Home Two</a>
+                                                    <a href="javascript:;" class="boxLinks">Home Three</a>
+                                                </div>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="navLinks hoverClass shopHover">Shop <span class="dropIcon"></span>
+                                                <div class="bottomBox shopBox">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-9">
+                                                            <div class="row">
+                                                                <div class="col-4 d-flex flex-column">
+                                                                    <div class="linkHeading">SHOP LIST</div>
+                                                                    <a href="javascript:;" class="boxLinks">Shop Sidebar</a>
+                                                                    <a href="javascript:;" class="boxLinks">Shop Fullwidth</a>
+                                                                    <a href="javascript:;" class="boxLinks">Shop Category Icon</a>
+                                                                    <a href="javascript:;" class="boxLinks">Shop Category Icon</a>
+                                                                    <a href="javascript:;" class="boxLinks">Shop List View</a>
+                                                                </div>
+                                                                <div class="col-4 d-flex flex-column">
+                                                                    <div class="linkHeading">PRODUCT LAYOUTS</div>
+                                                                    <a href="javascript:;" class="boxLinks">Horizonral Thumbnail</a>
+                                                                    <a href="javascript:;" class="boxLinks">Vertical Thumbnail</a>
+                                                                    <a href="javascript:;" class="boxLinks">Gallery Thumbnail</a>
+                                                                    <a href="javascript:;" class="boxLinks">Sticky Summary</a>
+                                                                </div>
+                                                                <div class="col-4 d-flex flex-column">
+                                                                    <div class="linkHeading">POPULAR CATEGORY</div>
+                                                                    <a href="javascript:;" class="boxLinks">Phone & Tablet</a>
+                                                                    <a href="javascript:;" class="boxLinks">Gaming & Sports</a>
+                                                                    <a href="javascript:;" class="boxLinks">Home Appliance</a>
+                                                                    <a href="javascript:;" class="boxLinks">Fashion Clothes</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-3 d-flex flex-column">
+                                                            <div class="imgOuter">
+                                                                <img src="assets/img/product-img/mega-menu-thumb.jpg" class="w-100" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <button class="navLinks hoverClass pageHover">Pages <span class="dropIcon"></span>
+                                                <div class="bottomBox pagesBox">
+                                                    <a href="javascript:;" class="boxLinks">Privacy Policy</a>
+                                                    <a href="javascript:;" class="boxLinks">terms and Conditions</a>
+                                                    <a href="javascript:;" class="boxLinks">FAQ</a>
+                                                    <a href="javascript:;" class="boxLinks">Shop Category Icon</a>
+                                                    <a href="javascript:;" class="boxLinks">Shop List View</a>
+                                                </div>
+                                            </button>
+                                        </li>
+                                        <li><a href="javascript:;" class="navLinks">About</a></li>
+                                        <li><a href="javascript:;" class="navLinks">Blog</a></li>
+                                        <li><a href="javascript:;" class="navLinks">Contact</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-auto">
+                                    <a href="javascript:;" class="becomeASellerBtn">Become a Seller
+                                        <img src="assets/img/svg/chevron-down.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ! Header Section End -->
+                    <!-- * Hero Section Start -->
+                    <div class="container heroSection my-5">
+                        <div class="row mx-0">
+                            <div class="col-lg-8">
+                                <div class="card border-0 h-100 position-relative">
+                                    <img src="assets/img/banner-1.png" class="w-100 d-lg-block d-none" alt="">
+                                    <img src="assets/img/banner-1.2.png" class="w-100 d-lg-none" alt="">
+                                    <a href="javascript:;" class="stretched-link"></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 row m-0">
+                                <div class="col-lg-12 col-6 px-0">
+                                    <div class="card border-0 h-100 position-relative bg-transparent">
+                                        <img src="assets/img/banner-2.png" class="w-100" alt="">
+                                        <a href="javascript:;" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-6 px-0">
+                                    <div class="card border-0 h-100 position-relative">
+                                        <img src="assets/img/banner-3.png" class="w-100" alt="">
+                                        <a href="javascript:;" class="stretched-link"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-4 shopingCards">
+                                <div class="row mx-0 bg-white px-4 py-5 gap-xl-0 gap-5">
+                                    <div class="col-xl col-12 row mx-0 px-0 align-items-center innerCard">
+                                        <div class="col-auto"><div class="cardImg"><img src="assets/img/svg/shoping.svg" alt="" class="h-100"></div></div>
+                                        <div class="col">
+                                            <div class="cardTitle fw-bold text-black">Free Shipping</div>
+                                            <div class="cardSubTitle fw-normal text-muted">When ordering over $100</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl col-12 row mx-0 px-0 align-items-center innerCard">
+                                        <div class="col-auto"><div class="cardImg"><img src="assets/img/svg/return.svg" alt="" class="h-100"></div></div>
+                                        <div class="col">
+                                            <div class="cardTitle fw-bold text-black">Free Return</div>
+                                            <div class="cardSubTitle fw-normal text-muted">Get Return within 30 days</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl col-12 row mx-0 px-0 align-items-center innerCard">
+                                        <div class="col-auto"><div class="cardImg"><img src="assets/img/svg/Lock.svg" alt="" class="h-100"></div></div>
+                                        <div class="col">
+                                            <div class="cardTitle fw-bold text-black">Secure Payment</div>
+                                            <div class="cardSubTitle fw-normal text-muted">100% Secure Online Payment</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl col-12 row mx-0 px-0 align-items-center innerCard">
+                                        <div class="col-auto"><div class="cardImg"><img src="assets/img/svg/trophy.svg" alt="" class="h-100"></div></div>
+                                        <div class="col">
+                                            <div class="cardTitle fw-bold text-black">Best Quality</div>
+                                            <div class="cardSubTitle fw-normal text-muted">Original Product Guarenteed</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                    <!-- ! Hero Section End -->
+                    <!-- * Gamer World Section Start -->
+                    <div class="container mb-5 gamerWorldSection">
+                        <div class="row align-items-center innersection mx-0">
+                                <div class="col-12 px-0 homeSectionHeading">
+                                    <div class="row mx-0">
+                                        <div class="col sectionHeading fw-semibold text-black">Gamer World</div>
+                                        <div class="col-auto"><a href="javascript:;" class="text-black fw-semibold text-decoration-none viewMoreBtn d-flex align-items-center gap-2" >View More <span class="d-inline-flex"><img src="assets/img/svg/rightArrow.svg" alt=""></span></a></div>
+                                    </div>
+                                </div>
+                                <div class="col-12 px-0 mt-3 mt-lg-4 productCardRow">
+                                    <div class="row mx-0 g-4">
+                                        <div class="col-3 d-none d-xl-block">
+                                            <div class="card shadow-none border-0 h-100" style="--bg: url(../img/sectionCateegoryBg.jpg)">
+                                                <div class="card-body">
+                                                    <div class="cardtitle mb-2">Mobile & Tablet</div>
+                                                    <a href="javascript:;" class="d-block cardLink">Xioami</a>
+                                                    <a href="javascript:;" class="d-block cardLink">Apple</a>
+                                                    <a href="javascript:;" class="d-block cardLink">Google</a>
+                                                    <a href="javascript:;" class="d-block cardLink">Samsung</a>
+                                                    <a href="javascript:;" class="d-flex align-items-center shopNow">Shop Now <img src="./assets/img/svg/rightAngle.svg" alt="right angle icon"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-6">
+                                            <div class="productCard row mx-0 h-100 position-relative">
+                                                <div class="col-12 proImg">
+                                                    <img src="./assets/img/productImg1.jpg" alt="product image">
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="d-flex align-items-center proRating mb-3">
+                                                        <img src="./assets/img/svg/star.svg" alt="star image">
+                                                        <img src="./assets/img/svg/star.svg" alt="star image">
+                                                        <img src="./assets/img/svg/star.svg" alt="star image">
+                                                        <img src="./assets/img/svg/star.svg" alt="star image">
+                                                        <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    </div>
+                                                </div>
+                                                <a href="singleProduct.html" class="col-12 proName mb-2 stretched-link">Xoggle aute et pariatur adipisicing nostrud et excepteur</a>
+                                                <div class="col-12 proPrice">
+                                                    <span class="oldPrice">$27.27</span>
+                                                    <span class="newPrice">$18.73</span>
+                                                </div>
+                                                <button class="addToCartBtn"><img src="./assets/img/svg/bag.svg" alt="bag icon">Add To Cart</button>
+                                                <div class="cardOptions d-flex flex-column">
+                                                    <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/expand.svg" alt="expand Icon"></button>
+                                                    <button class="optionBtn rounded d-flex align-items-center justify-content-center my-2"><img src="./assets/img/svg/wishlist.svg" alt="wishlist Icon"></button>
+                                                    <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/compare.svg" alt="compare Icon"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-6">
+                                            <div class="productCard row mx-0 h-100 position-relative">
+                                                <div class="col-12 progressShow">
+                                                    <div class="row mx-0 px-2">
+                                                        <div class="col text">Prodcuts Available</div>
+                                                        <div class="col-auto value">20</div>
+                                                        <div class="col-12">
+                                                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                                <div class="progress-bar" style="width: 75%"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 proImg">
+                                                    <img src="./assets/img/productImg2.jpg" alt="product image">
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="d-flex align-items-center proRating mb-3">
+                                                        <img src="./assets/img/svg/star.svg" alt="star image">
+                                                        <img src="./assets/img/svg/star.svg" alt="star image">
+                                                        <img src="./assets/img/svg/star.svg" alt="star image">
+                                                        <img src="./assets/img/svg/star.svg" alt="star image">
+                                                        <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    </div>
+                                                </div>
+                                                <a href="singleProduct.html" class="col-12 proName mb-2 stretched-link">Xoggle aute et pariatur adipisicing nostrud et excepteur</a>
+                                                <div class="col-12 proPrice">
+                                                    <span class="oldPrice">$27.27</span>
+                                                    <span class="newPrice">$18.73</span>
+                                                </div>
+                                                <button class="addToCartBtn"><img src="./assets/img/svg/bag.svg" alt="bag icon">Add To Cart</button>
+                                                <div class="cardOptions d-flex flex-column">
+                                                    <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/expand.svg" alt="expand Icon"></button>
+                                                    <button class="optionBtn rounded d-flex align-items-center justify-content-center my-2"><img src="./assets/img/svg/wishlist.svg" alt="wishlist Icon"></button>
+                                                    <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/compare.svg" alt="compare Icon"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-6">
+                                            <div class="productCard row mx-0 h-100 position-relative">
+                                                <div class="categoryBadge" style="--bg:rgb(25 204 64)">Popular</div>
+                                                <div class="col-12 proImg">
+                                                    <img src="./assets/img/productImg3.jpg" alt="product image">
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="d-flex align-items-center proRating mb-3">
+                                                        <img src="./assets/img/svg/star.svg" alt="star image">
+                                                        <img src="./assets/img/svg/star.svg" alt="star image">
+                                                        <img src="./assets/img/svg/star.svg" alt="star image">
+                                                        <img src="./assets/img/svg/star.svg" alt="star image">
+                                                        <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    </div>
+                                                </div>
+                                                <a href="singleProduct.html" class="col-12 proName mb-2 stretched-link">Xoggle aute et pariatur adipisicing nostrud et excepteur</a>
+                                                <div class="col-12 proPrice">
+                                                    <span class="oldPrice">$27.27</span>
+                                                    <span class="newPrice">$18.73</span>
+                                                </div>
+                                                <button class="addToCartBtn"><img src="./assets/img/svg/bag.svg" alt="bag icon">Add To Cart</button>
+                                                <div class="cardOptions d-flex flex-column">
+                                                    <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/expand.svg" alt="expand Icon"></button>
+                                                    <button class="optionBtn rounded d-flex align-items-center justify-content-center my-2"><img src="./assets/img/svg/wishlist.svg" alt="wishlist Icon"></button>
+                                                    <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/compare.svg" alt="compare Icon"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <!-- ! Gamer World Section End -->
+                    <!-- * Shop Category Section Start -->
+                    <div class="container-fluid pb-5">
+                        <div class="container">
+                            <div class="row mb-3">
+                                <div class="col-12 px-0 homeSectionHeading">
+                                    <div class="row mx-0">
+                                        <div class="col sectionHeading fw-semibold text-black">Shop by Brand</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row-cols-xl-6 row-cols-lg-5 row-cols-md-4 row-cols-2 justify-content-center g-1">
+                                <div class="col">
+                                    <div class="brandBox bg-white p-5 h-100 d-flex align-items-center justify-content-center">
+                                        <img src="./assets/img/brand-1.png" alt="brand image">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="brandBox bg-white p-5 h-100 d-flex align-items-center justify-content-center">
+                                        <img src="./assets/img/brand-2.png" alt="brand image">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="brandBox bg-white p-5 h-100 d-flex align-items-center justify-content-center">
+                                        <img src="./assets/img/brand-3.png" alt="brand image">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="brandBox bg-white p-5 h-100 d-flex align-items-center justify-content-center">
+                                        <img src="./assets/img/brand-4.png" alt="brand image">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="brandBox bg-white p-5 h-100 d-flex align-items-center justify-content-center">
+                                        <img src="./assets/img/brand-5.png" alt="brand image">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="brandBox bg-white p-5 h-100 d-flex align-items-center justify-content-center">
+                                        <img src="./assets/img/brand-6.png" alt="brand image">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="brandBox bg-white p-5 h-100 d-flex align-items-center justify-content-center">
+                                        <img src="./assets/img/brand-7.png" alt="brand image">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="brandBox bg-white p-5 h-100 d-flex align-items-center justify-content-center">
+                                        <img src="./assets/img/brand-8.png" alt="brand image">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="brandBox bg-white p-5 h-100 d-flex align-items-center justify-content-center">
+                                        <img src="./assets/img/brand-9.png" alt="brand image">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="brandBox bg-white p-5 h-100 d-flex align-items-center justify-content-center">
+                                        <img src="./assets/img/brand-10.png" alt="brand image">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="brandBox bg-white p-5 h-100 d-flex align-items-center justify-content-center">
+                                        <img src="./assets/img/brand-11.png" alt="brand image">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="brandBox bg-white p-5 h-100 d-flex align-items-center justify-content-center">
+                                        <img src="./assets/img/brand-12.png" alt="brand image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ! Shop Category Section End -->
+                    <!-- * Flash Sale Section Start -->
+                    <div class="container-fluid flashSaleSection pb-5">
+                        <div class="container innersection">
+                            <div class="row mx-0">
+                                <div class="col-lg-6 leftSideCard">
+                                    <div class="card border-0 shadow-none border-0 rounded-0 position-relative h-100" style="background-image: url(assets/img/campaign-cover-countdown.jpg); background-position: bottom right;">
+                                        <!-- <div class="cardImg"><img src="assets/img/campaign-cover-countdown.jpg" class="w-100" alt=""></div> -->
+                                        <div class="card-body">
+                                            <div class="row mx-0 mt-1 mt-sm-3 g-3 g-sm-4">
+                                                <div class="col-3 text-center">
+                                                    <div class="counter bg-white rounded-circle days d-flex justify-content-center align-items-center mx-auto"><span style="--cl:#eb5757" class="fw-bold">0</span></div>
+                                                    <div class="counterHeading fw-medium mt-1">Days</div>
+                                                </div>
+                                                <div class="col-3 text-center">
+                                                    <div class="counter bg-white rounded-circle days d-flex justify-content-center align-items-center mx-auto"><span style="--cl:#2F80ED" class="fw-bold">0</span></div>
+                                                    <div class="counterHeading fw-medium mt-1">Hours</div>
+                                                </div>
+                                                <div class="col-3 text-center">
+                                                    <div class="counter bg-white rounded-circle days d-flex justify-content-center align-items-center mx-auto"><span style="--cl:#219653" class="fw-bold">0</span></div>
+                                                    <div class="counterHeading fw-medium mt-1">Minutes</div>
+                                                </div>
+                                                <div class="col-3 text-center">
+                                                    <div class="counter bg-white rounded-circle days d-flex justify-content-center align-items-center mx-auto"><span style="--cl:#EF5DA8" class="fw-bold">0</span></div>
+                                                    <div class="counterHeading fw-medium mt-1">Seconds</div>
+                                                </div>
+                                            </div>
+                                            <div class="row mx-0">
+                                                <div class="col-12 flashHeading px-4 mt-5">WOO! Flash Sale</div>
+                                                <div class="col-12 px-4 mt-2">
+                                                    <a href="javascript:;" class="shopNowBtn stretched-link">Shop Now <img src="./assets/img/svg/rightAngle.svg" alt="right angle"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 leftSideCard mt-4 mt-lg-0">
+                                    <div class="card border-0 h-100 shadow-none border-0 rounded-0 position-relative pb-md-3 pb-lg-5" style="background-image: url(assets/img/download-app-cover.png); background-position: top right;">
+                                        <!-- <div class="cardImg"><img src="assets/img/download-app-cover.png" class="w-100" alt=""></div> -->
+                                        <div class="card-body">
+                                            <div class="row mx-0 mt-3">
+                                                <div class="col-12 appText">MOBILE APP VERSION</div>
+                                                <div class="col-12 mainText">Get Our <span> Mobile App</span> <br>
+                                                    It’s Make easy for you life !</div>
+                                                <div class="col-auto downloadBtn">
+                                                    <a href="javsccript:;">
+                                                        <img src="./assets/img/play-store.png" alt="play store">
+                                                    </a>
+                                                </div>
+                                                <div class="col-auto downloadBtn">
+                                                    <a href="javsccript:;">
+                                                        <img src="./assets/img/apple-store.png" alt="play store">
+                                                    </a>
+                                                </div>
+                                                <div class="col-12 appScreen">
+                                                    <img src="./assets/img/app-screen.png" alt="mobile screen">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ! Flash Sale Section End -->
+                    <!-- * Top Selling Products Section Start -->
+                    <div class="container-fluid topSellingProductsSection pb-5">
+                        <div class="container">
+                            <div class="row mx-0">
+                                <div class="col-12 px-0 homeSectionHeading">
+                                    <div class="row mx-0 mb-4">
+                                        <div class="col sectionHeading fw-semibold text-black">Top Selling Products</div>
+                                        <div class="col-auto"><a href="javascript:;" class="text-black fw-semibold text-decoration-none viewMoreBtn d-flex align-items-center gap-2" >View More <span class="d-inline-flex"><img src="assets/img/svg/rightArrow.svg" alt=""></span></a></div>
+                                    </div>
+                                </div>
+                                <div class="col-12 px-0">
+                                    <div class="row mx-0 g-md-4 g-3">
+                                        <div class="col-md-6 col-12">
+                                            <div class="card tpCard">
+                                                <div class="row mx-0 position-relative gap-xxl-5 gap-xl-4 gap-3 flex-nowrap align-items-center overflow-hidden">
+                                                    <div class="col-auto px-0 imgOuter">
+                                                        <img src="assets/img/product-img-4.jpg" class="w-100 h-100" alt="">
+                                                    </div>
+                                                    <div class="col px-0">
+                                                        <div class="row flex-column mx-0 gy-lg-3 gy-2">
+                                                            <div class="col starIcon px-0">
+                                                                <img src="assets/img/svg/star.svg" alt="">
+                                                                <img src="assets/img/svg/star.svg" alt="">
+                                                                <img src="assets/img/svg/star.svg" alt="">
+                                                                <img src="assets/img/svg/star.svg" alt="">
+                                                                <img src="assets/img/svg/star.svg" alt="">
+                                                            </div>
+                                                            <a href="javascript:;" class="col px-0 proHeading">
+                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            </a>
+                                                            <div class="col px-0 productPrize">
+                                                                <span class="delPrize">$27.21</span> <span class="actPrize">$20.64</span>
+                                                            </div>
+                                                            <div class="col px-0">
+                                                                <a href="javascript:;" class="addCartBtn">Add to Cart</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="hoverBtns">
+                                                        <a href="javascript:;" class="hoverBtn">
+                                                            <img src="assets/img/svg/expand.svg" alt="">
+                                                        </a>
+                                                        <a href="javascript:;" class="hoverBtn">
+                                                            <img src="assets/img/svg/wishlist.svg" alt="">
+                                                        </a>
+                                                        <a href="javascript:;" class="hoverBtn">
+                                                            <img src="assets/img/svg/compare.svg" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-12">
+                                            <div class="card tpCard">
+                                                <div class="row mx-0 position-relative gap-xxl-5 gap-xl-4 gap-3 flex-nowrap align-items-center overflow-hidden">
+                                                    <div class="col-auto px-0 imgOuter">
+                                                        <img src="assets/img/product-img-5.jpg" class="w-100 h-100" alt="">
+                                                    </div>
+                                                    <div class="col px-0">
+                                                        <div class="row flex-column mx-0 gy-lg-3 gy-2">
+                                                            <div class="col starIcon px-0">
+                                                                <img src="assets/img/svg/star.svg" alt="">
+                                                                <img src="assets/img/svg/star.svg" alt="">
+                                                                <img src="assets/img/svg/star.svg" alt="">
+                                                                <img src="assets/img/svg/star.svg" alt="">
+                                                                <img src="assets/img/svg/star.svg" alt="">
+                                                            </div>
+                                                            <a href="javascript:;" class="col px-0 proHeading">
+                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            </a>
+                                                            <div class="col px-0 productPrize">
+                                                                <span class="delPrize">$27.21</span> <span class="actPrize">$20.64</span>
+                                                            </div>
+                                                            <div class="col px-0">
+                                                                <a href="javascript:;" class="addCartBtn">Add to Cart</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="hoverBtns">
+                                                        <a href="javascript:;" class="hoverBtn">
+                                                            <img src="assets/img/svg/expand.svg" alt="">
+                                                        </a>
+                                                        <a href="javascript:;" class="hoverBtn">
+                                                            <img src="assets/img/svg/wishlist.svg" alt="">
+                                                        </a>
+                                                        <a href="javascript:;" class="hoverBtn">
+                                                            <img src="assets/img/svg/compare.svg" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-12">
+                                            <div class="card tpCard">
+                                                <div class="row mx-0 position-relative gap-xxl-5 gap-xl-4 gap-3 flex-nowrap align-items-center overflow-hidden">
+                                                    <div class="col-auto px-0 imgOuter">
+                                                        <img src="assets/img/product-img-6.jpg" class="w-100 h-100" alt="">
+                                                    </div>
+                                                    <div class="col px-0">
+                                                        <div class="row flex-column mx-0 gy-lg-3 gy-2">
+                                                            <div class="col starIcon px-0">
+                                                                <img src="assets/img/svg/star.svg" alt="">
+                                                                <img src="assets/img/svg/star.svg" alt="">
+                                                                <img src="assets/img/svg/star.svg" alt="">
+                                                                <img src="assets/img/svg/star.svg" alt="">
+                                                                <img src="assets/img/svg/star.svg" alt="">
+                                                            </div>
+                                                            <a href="javascript:;" class="col px-0 proHeading">
+                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            </a>
+                                                            <div class="col px-0 productPrize">
+                                                                <span class="delPrize">$27.21</span> <span class="actPrize">$20.64</span>
+                                                            </div>
+                                                            <div class="col px-0">
+                                                                <a href="javascript:;" class="addCartBtn">Add to Cart</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="hoverBtns">
+                                                        <a href="javascript:;" class="hoverBtn">
+                                                            <img src="assets/img/svg/expand.svg" alt="">
+                                                        </a>
+                                                        <a href="javascript:;" class="hoverBtn">
+                                                            <img src="assets/img/svg/wishlist.svg" alt="">
+                                                        </a>
+                                                        <a href="javascript:;" class="hoverBtn">
+                                                            <img src="assets/img/svg/compare.svg" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-12">
+                                            <div class="card tpCard">
+                                                <div class="row mx-0 position-relative gap-xxl-5 gap-xl-4 gap-3 flex-nowrap align-items-center overflow-hidden">
+                                                    <div class="col-auto px-0 imgOuter">
+                                                        <img src="assets/img/product-img-7.jpg" class="w-100 h-100" alt="">
+                                                    </div>
+                                                    <div class="col px-0">
+                                                        <div class="row flex-column mx-0 gy-lg-3 gy-2">
+                                                            <div class="col starIcon px-0">
+                                                                <img src="assets/img/svg/star.svg" alt="">
+                                                                <img src="assets/img/svg/star.svg" alt="">
+                                                                <img src="assets/img/svg/star.svg" alt="">
+                                                                <img src="assets/img/svg/star.svg" alt="">
+                                                                <img src="assets/img/svg/star.svg" alt="">
+                                                            </div>
+                                                            <a href="javascript:;" class="col px-0 proHeading">
+                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            </a>
+                                                            <div class="col px-0 productPrize">
+                                                                <span class="delPrize">$27.21</span> <span class="actPrize">$20.64</span>
+                                                            </div>
+                                                            <div class="col px-0">
+                                                                <a href="javascript:;" class="addCartBtn">Add to Cart</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="hoverBtns">
+                                                        <a href="javascript:;" class="hoverBtn">
+                                                            <img src="assets/img/svg/expand.svg" alt="">
+                                                        </a>
+                                                        <a href="javascript:;" class="hoverBtn">
+                                                            <img src="assets/img/svg/wishlist.svg" alt="">
+                                                        </a>
+                                                        <a href="javascript:;" class="hoverBtn">
+                                                            <img src="assets/img/svg/compare.svg" alt="">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ! Top Selling Products Section End -->
+                    <!-- * Best Saller Section Start -->
+                    <div class="container-fluid bestSallerSection pb-5">
+                        <div class="container">
+                            <div class="row mx-0">
+                                <div class="col-12 px-0 homeSectionHeading">
+                                    <div class="row mb-4">
+                                        <div class="col sectionHeading fw-semibold text-black">Best Saller</div>
+                                        <div class="col-auto"><a href="javascript:;" class="text-black fw-semibold text-decoration-none viewMoreBtn d-flex align-items-center gap-2" >View More <span class="d-inline-flex"><img src="assets/img/svg/rightArrow.svg" alt=""></span></a></div>
+                                    </div>
+                                </div>
+                                <div class="col-12 px-0 overflow-hidden">
+                                    <div class="row g-3 align-items-center justify-content-md-between flex-nowrap overflow-auto-hidden">
+                                        <div class="col-auto bestSellerCard">
+                                            <div class="bestImg">
+                                                <img src="assets/img/saller-1.png" class="w-100 h-100" alt="">
+                                            </div>
+                                            <a href="javascript:;" class="bestSellerLink">Shopno BD</a>
+                                        </div>
+                                        <div class="col-auto bestSellerCard">
+                                            <div class="bestImg">
+                                                <img src="assets/img/saller-2.png" class="w-100 h-100" alt="">
+                                            </div>
+                                            <a href="javascript:;" class="bestSellerLink">Eecoms Shop</a>
+                                        </div>
+                                        <div class="col-auto bestSellerCard">
+                                            <div class="bestImg">
+                                                <img src="assets/img/saller-3.png" class="w-100 h-100" alt="">
+                                            </div>
+                                            <a href="javascript:;" class="bestSellerLink">Fusion X</a>
+                                        </div><div class="col-auto bestSellerCard">
+                                            <div class="bestImg">
+                                                <img src="assets/img/saller-4.png" class="w-100 h-100" alt="">
+                                            </div>
+                                            <a href="javascript:;" class="bestSellerLink">Rikayi Rox</a>
+                                        </div><div class="col-auto bestSellerCard">
+                                            <div class="bestImg">
+                                                <img src="assets/img/saller-5.png" class="w-100 h-100" alt="">
+                                            </div>
+                                            <a href="javascript:;" class="bestSellerLink">Habbriyi</a>
+                                        </div><div class="col-auto bestSellerCard">
+                                            <div class="bestImg">
+                                                <img src="assets/img/saller-6.png" class="w-100 h-100" alt="">
+                                            </div>
+                                            <a href="javascript:;" class="bestSellerLink">Rayhans</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 px-0 pt-xl-5 pt-lg-4 pt-3">
+                                    <div class="row g-md-4 g-3 row-cols-md-2 row-cols-1">
+                                        <a href="javacript:;" class="col">
+                                            <img src="assets/img/ads-1.png" class="w-100" alt="">
+                                        </a>
+                                        <a href="javascript:;" class="col">
+                                            <img src="assets/img/ads-2.png" class="w-100" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ! Best Saller Section End -->
+                    <!-- * Popular Sales Section Start -->
+                    <div class="container mb-5 gamerWorldSection">
+                        <div class="row mx-0 align-items-center innersection">
+                            <div class="col-12 px-0 homeSectionHeading">
+                                <div class="row mx-0">
+                                    <div class="col sectionHeading fw-semibold text-black">Popular Sales</div>
+                                    <div class="col-auto"><a href="javascript:;" class="text-black fw-semibold text-decoration-none viewMoreBtn d-flex align-items-center gap-2" >View More <span class="d-inline-flex"><img src="assets/img/svg/rightArrow.svg" alt=""></span></a></div>
+                                </div>
+                            </div>
+                            <div class="col-12 px-0 mt-3 mt-lg-4 productCardRow">
+                                <div class="row mx-0 g-4">
+                                    <div class="col-3 d-none d-xl-block">
+                                        <div class="card shadow-none border-0 rounded-0 h-100" style="--bg: url(../img/section-category-2.jpg)">
+                                            <div class="card-body">
+                                                <div class="cardtitle mb-2">Electronics</div>
+                                                <a href="javascript:;" class="d-block cardLink">Xioami</a>
+                                                <a href="javascript:;" class="d-block cardLink">Apple</a>
+                                                <a href="javascript:;" class="d-block cardLink">Google</a>
+                                                <a href="javascript:;" class="d-block cardLink">Samsung</a>
+                                                <a href="javascript:;" class="d-flex align-items-center shopNow">Shop Now <img src="./assets/img/svg/rightAngle.svg" alt="right angle icon"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="productCard row mx-0 h-100 position-relative">
+                                            <div class="col-12 proImg">
+                                                <img src="./assets/img/product-img-5.jpg" alt="product image">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-flex align-items-center proRating mb-3">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                </div>
+                                            </div>
+                                            <a href="singleProduct.html" class="col-12 proName mb-2 stretched-link">Xoggle aute et pariatur adipisicing nostrud et excepteur</a>
+                                            <div class="col-12 proPrice">
+                                                <span class="oldPrice">$27.27</span>
+                                                <span class="newPrice">$18.73</span>
+                                            </div>
+                                            <button class="addToCartBtn"><img src="./assets/img/svg/bag.svg" alt="bag icon">Add To Cart</button>
+                                            <div class="cardOptions d-flex flex-column">
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/expand.svg" alt="expand Icon"></button>
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center my-2"><img src="./assets/img/svg/wishlist.svg" alt="wishlist Icon"></button>
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/compare.svg" alt="compare Icon"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="productCard row mx-0 h-100 position-relative">
+                                            <div class="col-12 progressShow">
+                                                <div class="row mx-0 px-2">
+                                                    <div class="col text">Prodcuts Available</div>
+                                                    <div class="col-auto value">20</div>
+                                                    <div class="col-12">
+                                                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                            <div class="progress-bar" style="width: 75%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 proImg">
+                                                <img src="./assets/img/product-img-6.jpg" alt="product image">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-flex align-items-center proRating mb-3">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                </div>
+                                            </div>
+                                            <a href="singleProduct.html" class="col-12 proName mb-2 stretched-link">Xoggle aute et pariatur adipisicing nostrud et excepteur</a>
+                                            <div class="col-12 proPrice">
+                                                <span class="oldPrice">$27.27</span>
+                                                <span class="newPrice">$18.73</span>
+                                            </div>
+                                            <button class="addToCartBtn"><img src="./assets/img/svg/bag.svg" alt="bag icon">Add To Cart</button>
+                                            <div class="cardOptions d-flex flex-column">
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/expand.svg" alt="expand Icon"></button>
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center my-2"><img src="./assets/img/svg/wishlist.svg" alt="wishlist Icon"></button>
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/compare.svg" alt="compare Icon"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="productCard row mx-0 h-100 position-relative">
+                                            <div class="categoryBadge" style="--bg:rgb(25 204 64)">Popular</div>
+                                            <div class="col-12 proImg">
+                                                <img src="./assets/img/product-img-7.jpg" alt="product image">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-flex align-items-center proRating mb-3">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                </div>
+                                            </div>
+                                            <a href="singleProduct.html" class="col-12 proName mb-2 stretched-link">Xoggle aute et pariatur adipisicing nostrud et excepteur</a>
+                                            <div class="col-12 proPrice">
+                                                <span class="oldPrice">$27.27</span>
+                                                <span class="newPrice">$18.73</span>
+                                            </div>
+                                            <button class="addToCartBtn"><img src="./assets/img/svg/bag.svg" alt="bag icon">Add To Cart</button>
+                                            <div class="cardOptions d-flex flex-column">
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/expand.svg" alt="expand Icon"></button>
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center my-2"><img src="./assets/img/svg/wishlist.svg" alt="wishlist Icon"></button>
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/compare.svg" alt="compare Icon"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="javascipt:;" class="col-12 pt-xl-5 pt-lg-4 pt-3">
+                                <img src="assets/img/ads-3.png" class="w-100" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- ! Popular Sales  Section End -->
+                    <!-- * New Arrivals Section Start -->
+                    <div class="container mb-5 gamerWorldSection">
+                        <div class="row mx-0 align-items-center innersection">
+                            <div class="col-12 px-0 homeSectionHeading">
+                                <div class="row mx-0">
+                                    <div class="col sectionHeading fw-semibold text-black">New Arrivals</div>
+                                    <div class="col-auto"><a href="javascript:;" class="text-black fw-semibold text-decoration-none viewMoreBtn d-flex align-items-center gap-2" >View More <span class="d-inline-flex"><img src="assets/img/svg/rightArrow.svg" alt=""></span></a></div>
+                                </div>
+                            </div>
+                            <div class="col-12 px-0 mt-3 mt-lg-4 productCardRow">
+                                <div class="row mx-0 g-4">
+                                    <!-- <div class="col-3 d-none d-xl-block">
+                                        <div class="card shadow-none border-0 rounded-0 h-100" style="--bg: url(../img/section-category-2.jpg)">
+                                            <div class="card-body">
+                                                <div class="cardtitle mb-2">Electronics</div>
+                                                <a href="javascript:;" class="d-block cardLink">Xioami</a>
+                                                <a href="javascript:;" class="d-block cardLink">Apple</a>
+                                                <a href="javascript:;" class="d-block cardLink">Google</a>
+                                                <a href="javascript:;" class="d-block cardLink">Samsung</a>
+                                                <a href="javascript:;" class="d-flex align-items-center shopNow">Shop Now <img src="./assets/img/svg/rightAngle.svg" alt="right angle icon"></a>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="productCard row mx-0 h-100 position-relative">
+                                            <div class="col-12 proImg">
+                                                <img src="./assets/img/product-img-5.jpg" alt="product image">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-flex align-items-center proRating mb-3">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                </div>
+                                            </div>
+                                            <a href="singleProduct.html" class="col-12 proName mb-2 stretched-link">Xoggle aute et pariatur adipisicing nostrud et excepteur</a>
+                                            <div class="col-12 proPrice">
+                                                <span class="oldPrice">$27.27</span>
+                                                <span class="newPrice">$18.73</span>
+                                            </div>
+                                            <button class="addToCartBtn"><img src="./assets/img/svg/bag.svg" alt="bag icon">Add To Cart</button>
+                                            <div class="cardOptions d-flex flex-column">
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/expand.svg" alt="expand Icon"></button>
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center my-2"><img src="./assets/img/svg/wishlist.svg" alt="wishlist Icon"></button>
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/compare.svg" alt="compare Icon"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="productCard row mx-0 h-100 position-relative">
+                                            <div class="col-12 progressShow">
+                                                <div class="row mx-0 px-2">
+                                                    <div class="col text">Prodcuts Available</div>
+                                                    <div class="col-auto value">20</div>
+                                                    <div class="col-12">
+                                                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                            <div class="progress-bar" style="width: 75%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 proImg">
+                                                <img src="./assets/img/product-img-6.jpg" alt="product image">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-flex align-items-center proRating mb-3">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                </div>
+                                            </div>
+                                            <a href="singleProduct.html" class="col-12 proName mb-2 stretched-link">Xoggle aute et pariatur adipisicing nostrud et excepteur</a>
+                                            <div class="col-12 proPrice">
+                                                <span class="oldPrice">$27.27</span>
+                                                <span class="newPrice">$18.73</span>
+                                            </div>
+                                            <button class="addToCartBtn"><img src="./assets/img/svg/bag.svg" alt="bag icon">Add To Cart</button>
+                                            <div class="cardOptions d-flex flex-column">
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/expand.svg" alt="expand Icon"></button>
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center my-2"><img src="./assets/img/svg/wishlist.svg" alt="wishlist Icon"></button>
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/compare.svg" alt="compare Icon"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="productCard row mx-0 h-100 position-relative">
+                                            <div class="categoryBadge" style="--bg:rgb(25 204 64)">Popular</div>
+                                            <div class="col-12 proImg">
+                                                <img src="./assets/img/product-img-7.jpg" alt="product image">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-flex align-items-center proRating mb-3">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                </div>
+                                            </div>
+                                            <a href="singleProduct.html" class="col-12 proName mb-2 stretched-link">Xoggle aute et pariatur adipisicing nostrud et excepteur</a>
+                                            <div class="col-12 proPrice">
+                                                <span class="oldPrice">$27.27</span>
+                                                <span class="newPrice">$18.73</span>
+                                            </div>
+                                            <button class="addToCartBtn"><img src="./assets/img/svg/bag.svg" alt="bag icon">Add To Cart</button>
+                                            <div class="cardOptions d-flex flex-column">
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/expand.svg" alt="expand Icon"></button>
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center my-2"><img src="./assets/img/svg/wishlist.svg" alt="wishlist Icon"></button>
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/compare.svg" alt="compare Icon"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="productCard row mx-0 h-100 position-relative">
+                                            <div class="col-12 proImg">
+                                                <img src="./assets/img/product-img-5.jpg" alt="product image">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-flex align-items-center proRating mb-3">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                </div>
+                                            </div>
+                                            <a href="singleProduct.html" class="col-12 proName mb-2 stretched-link">Xoggle aute et pariatur adipisicing nostrud et excepteur</a>
+                                            <div class="col-12 proPrice">
+                                                <span class="oldPrice">$27.27</span>
+                                                <span class="newPrice">$18.73</span>
+                                            </div>
+                                            <button class="addToCartBtn"><img src="./assets/img/svg/bag.svg" alt="bag icon">Add To Cart</button>
+                                            <div class="cardOptions d-flex flex-column">
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/expand.svg" alt="expand Icon"></button>
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center my-2"><img src="./assets/img/svg/wishlist.svg" alt="wishlist Icon"></button>
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/compare.svg" alt="compare Icon"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="productCard row mx-0 h-100 position-relative">
+                                            <div class="col-12 progressShow">
+                                                <div class="row mx-0 px-2">
+                                                    <div class="col text">Prodcuts Available</div>
+                                                    <div class="col-auto value">20</div>
+                                                    <div class="col-12">
+                                                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                            <div class="progress-bar" style="width: 75%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 proImg">
+                                                <img src="./assets/img/product-img-6.jpg" alt="product image">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-flex align-items-center proRating mb-3">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                </div>
+                                            </div>
+                                            <a href="singleProduct.html" class="col-12 proName mb-2 stretched-link">Xoggle aute et pariatur adipisicing nostrud et excepteur</a>
+                                            <div class="col-12 proPrice">
+                                                <span class="oldPrice">$27.27</span>
+                                                <span class="newPrice">$18.73</span>
+                                            </div>
+                                            <button class="addToCartBtn"><img src="./assets/img/svg/bag.svg" alt="bag icon">Add To Cart</button>
+                                            <div class="cardOptions d-flex flex-column">
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/expand.svg" alt="expand Icon"></button>
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center my-2"><img src="./assets/img/svg/wishlist.svg" alt="wishlist Icon"></button>
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/compare.svg" alt="compare Icon"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="productCard row mx-0 h-100 position-relative">
+                                            <div class="categoryBadge" style="--bg:rgb(25 204 64)">Popular</div>
+                                            <div class="col-12 proImg">
+                                                <img src="./assets/img/product-img-7.jpg" alt="product image">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-flex align-items-center proRating mb-3">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                </div>
+                                            </div>
+                                            <a href="singleProduct.html" class="col-12 proName mb-2 stretched-link">Xoggle aute et pariatur adipisicing nostrud et excepteur</a>
+                                            <div class="col-12 proPrice">
+                                                <span class="oldPrice">$27.27</span>
+                                                <span class="newPrice">$18.73</span>
+                                            </div>
+                                            <button class="addToCartBtn"><img src="./assets/img/svg/bag.svg" alt="bag icon">Add To Cart</button>
+                                            <div class="cardOptions d-flex flex-column">
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/expand.svg" alt="expand Icon"></button>
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center my-2"><img src="./assets/img/svg/wishlist.svg" alt="wishlist Icon"></button>
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/compare.svg" alt="compare Icon"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="productCard row mx-0 h-100 position-relative">
+                                            <div class="col-12 proImg">
+                                                <img src="./assets/img/product-img-5.jpg" alt="product image">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-flex align-items-center proRating mb-3">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                </div>
+                                            </div>
+                                            <a href="singleProduct.html" class="col-12 proName mb-2 stretched-link">Xoggle aute et pariatur adipisicing nostrud et excepteur</a>
+                                            <div class="col-12 proPrice">
+                                                <span class="oldPrice">$27.27</span>
+                                                <span class="newPrice">$18.73</span>
+                                            </div>
+                                            <button class="addToCartBtn"><img src="./assets/img/svg/bag.svg" alt="bag icon">Add To Cart</button>
+                                            <div class="cardOptions d-flex flex-column">
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/expand.svg" alt="expand Icon"></button>
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center my-2"><img src="./assets/img/svg/wishlist.svg" alt="wishlist Icon"></button>
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/compare.svg" alt="compare Icon"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="productCard row mx-0 h-100 position-relative">
+                                            <div class="col-12 progressShow">
+                                                <div class="row mx-0 px-2">
+                                                    <div class="col text">Prodcuts Available</div>
+                                                    <div class="col-auto value">20</div>
+                                                    <div class="col-12">
+                                                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                            <div class="progress-bar" style="width: 75%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 proImg">
+                                                <img src="./assets/img/product-img-6.jpg" alt="product image">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-flex align-items-center proRating mb-3">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                </div>
+                                            </div>
+                                            <a href="singleProduct.html" class="col-12 proName mb-2 stretched-link">Xoggle aute et pariatur adipisicing nostrud et excepteur</a>
+                                            <div class="col-12 proPrice">
+                                                <span class="oldPrice">$27.27</span>
+                                                <span class="newPrice">$18.73</span>
+                                            </div>
+                                            <button class="addToCartBtn"><img src="./assets/img/svg/bag.svg" alt="bag icon">Add To Cart</button>
+                                            <div class="cardOptions d-flex flex-column">
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/expand.svg" alt="expand Icon"></button>
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center my-2"><img src="./assets/img/svg/wishlist.svg" alt="wishlist Icon"></button>
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/compare.svg" alt="compare Icon"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="productCard row mx-0 h-100 position-relative">
+                                            <div class="categoryBadge" style="--bg:rgb(25 204 64)">Popular</div>
+                                            <div class="col-12 proImg">
+                                                <img src="./assets/img/product-img-7.jpg" alt="product image">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-flex align-items-center proRating mb-3">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                </div>
+                                            </div>
+                                            <a href="singleProduct.html" class="col-12 proName mb-2 stretched-link">Xoggle aute et pariatur adipisicing nostrud et excepteur</a>
+                                            <div class="col-12 proPrice">
+                                                <span class="oldPrice">$27.27</span>
+                                                <span class="newPrice">$18.73</span>
+                                            </div>
+                                            <button class="addToCartBtn"><img src="./assets/img/svg/bag.svg" alt="bag icon">Add To Cart</button>
+                                            <div class="cardOptions d-flex flex-column">
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/expand.svg" alt="expand Icon"></button>
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center my-2"><img src="./assets/img/svg/wishlist.svg" alt="wishlist Icon"></button>
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/compare.svg" alt="compare Icon"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="productCard row mx-0 h-100 position-relative">
+                                            <div class="col-12 proImg">
+                                                <img src="./assets/img/product-img-5.jpg" alt="product image">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-flex align-items-center proRating mb-3">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                </div>
+                                            </div>
+                                            <a href="singleProduct.html" class="col-12 proName mb-2 stretched-link">Xoggle aute et pariatur adipisicing nostrud et excepteur</a>
+                                            <div class="col-12 proPrice">
+                                                <span class="oldPrice">$27.27</span>
+                                                <span class="newPrice">$18.73</span>
+                                            </div>
+                                            <button class="addToCartBtn"><img src="./assets/img/svg/bag.svg" alt="bag icon">Add To Cart</button>
+                                            <div class="cardOptions d-flex flex-column">
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/expand.svg" alt="expand Icon"></button>
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center my-2"><img src="./assets/img/svg/wishlist.svg" alt="wishlist Icon"></button>
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/compare.svg" alt="compare Icon"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="productCard row mx-0 h-100 position-relative">
+                                            <div class="col-12 progressShow">
+                                                <div class="row mx-0 px-2">
+                                                    <div class="col text">Prodcuts Available</div>
+                                                    <div class="col-auto value">20</div>
+                                                    <div class="col-12">
+                                                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                            <div class="progress-bar" style="width: 75%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 proImg">
+                                                <img src="./assets/img/product-img-6.jpg" alt="product image">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-flex align-items-center proRating mb-3">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                </div>
+                                            </div>
+                                            <a href="singleProduct.html" class="col-12 proName mb-2 stretched-link">Xoggle aute et pariatur adipisicing nostrud et excepteur</a>
+                                            <div class="col-12 proPrice">
+                                                <span class="oldPrice">$27.27</span>
+                                                <span class="newPrice">$18.73</span>
+                                            </div>
+                                            <button class="addToCartBtn"><img src="./assets/img/svg/bag.svg" alt="bag icon">Add To Cart</button>
+                                            <div class="cardOptions d-flex flex-column">
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/expand.svg" alt="expand Icon"></button>
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center my-2"><img src="./assets/img/svg/wishlist.svg" alt="wishlist Icon"></button>
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/compare.svg" alt="compare Icon"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div class="productCard row mx-0 h-100 position-relative">
+                                            <div class="categoryBadge" style="--bg:rgb(25 204 64)">Popular</div>
+                                            <div class="col-12 proImg">
+                                                <img src="./assets/img/product-img-7.jpg" alt="product image">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-flex align-items-center proRating mb-3">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                    <img src="./assets/img/svg/star.svg" alt="star image">
+                                                </div>
+                                            </div>
+                                            <a href="singleProduct.html" class="col-12 proName mb-2 stretched-link">Xoggle aute et pariatur adipisicing nostrud et excepteur</a>
+                                            <div class="col-12 proPrice">
+                                                <span class="oldPrice">$27.27</span>
+                                                <span class="newPrice">$18.73</span>
+                                            </div>
+                                            <button class="addToCartBtn"><img src="./assets/img/svg/bag.svg" alt="bag icon">Add To Cart</button>
+                                            <div class="cardOptions d-flex flex-column">
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/expand.svg" alt="expand Icon"></button>
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center my-2"><img src="./assets/img/svg/wishlist.svg" alt="wishlist Icon"></button>
+                                                <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/compare.svg" alt="compare Icon"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="javascipt:;" class="col-12 pt-xl-5 pt-lg-4 pt-3">
+                                <img src="assets/img/ads-4.png" class="w-100" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- ! New Arrivals Section End -->
+                    <!-- * Popular Sales Section Start -->
+                    <div class="container mb-5 popularSallesSection">
+                        <div class="row mx-0 align-items-center innersection">
+                            <div class="col-12 px-0 homeSectionHeading">
+                                <div class="row mx-0">
+                                    <div class="col sectionHeading fw-semibold text-black">Popular Sales</div>
+                                    <div class="col-auto"><a href="javascript:;" class="text-black fw-semibold text-decoration-none viewMoreBtn d-flex align-items-center gap-2" >View More <span class="d-inline-flex"><img src="assets/img/svg/rightArrow.svg" alt=""></span></a></div>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-3 mt-lg-4 ">
+                                <div class="row gx-xl-5 gx-md-4 gx-3 gy-2 row-cols-lg-3 row-cols-md-2 row-cols-1">
+                                    <div class="col">
+                                        <div class="row mx-0 align-items-center gap-3 popCard">
+                                            <div class="col-auto px-0 imgSide">
+                                                <img src="assets/img/product-img-4.jpg" class="w-100 h-100" alt="">
+                                            </div>
+                                            <div class="col px-0">
+                                                <div class="row mx-0 flex-column gy-2">
+                                                    <a href="javascript:;" class="col px-0 cardHeading">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur earum rerum nemo.</a>
+                                                    <div class="col px-0 cardPriz">
+                                                        <span class="delPriz">$27.27</span> <span class="actPriz">$18.73</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row mx-0 align-items-center gap-3 popCard">
+                                            <div class="col-auto px-0 imgSide">
+                                                <img src="assets/img/product-img-5.jpg" class="w-100 h-100" alt="">
+                                            </div>
+                                            <div class="col px-0">
+                                                <div class="row mx-0 flex-column gy-2">
+                                                    <a href="javascript:;" class="col px-0 cardHeading">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur earum rerum nemo.</a>
+                                                    <div class="col px-0 cardPriz">
+                                                        <span class="delPriz">$27.27</span> <span class="actPriz">$18.73</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row mx-0 align-items-center gap-3 popCard">
+                                            <div class="col-auto px-0 imgSide">
+                                                <img src="assets/img/product-img-6.jpg" class="w-100 h-100" alt="">
+                                            </div>
+                                            <div class="col px-0">
+                                                <div class="row mx-0 flex-column gy-2">
+                                                    <a href="javascript:;" class="col px-0 cardHeading">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur earum rerum nemo.</a>
+                                                    <div class="col px-0 cardPriz">
+                                                        <span class="delPriz">$27.27</span> <span class="actPriz">$18.73</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row mx-0 align-items-center gap-3 popCard">
+                                            <div class="col-auto px-0 imgSide">
+                                                <img src="assets/img/product-img-6.jpg" class="w-100 h-100" alt="">
+                                            </div>
+                                            <div class="col px-0">
+                                                <div class="row mx-0 flex-column gy-2">
+                                                    <a href="javascript:;" class="col px-0 cardHeading">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur earum rerum nemo.</a>
+                                                    <div class="col px-0 cardPriz">
+                                                        <span class="delPriz">$27.27</span> <span class="actPriz">$18.73</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row mx-0 align-items-center gap-3 popCard">
+                                            <div class="col-auto px-0 imgSide">
+                                                <img src="assets/img/product-img-5.jpg" class="w-100 h-100" alt="">
+                                            </div>
+                                            <div class="col px-0">
+                                                <div class="row mx-0 flex-column gy-2">
+                                                    <a href="javascript:;" class="col px-0 cardHeading">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur earum rerum nemo.</a>
+                                                    <div class="col px-0 cardPriz">
+                                                        <span class="delPriz">$27.27</span> <span class="actPriz">$18.73</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row mx-0 align-items-center gap-3 popCard">
+                                            <div class="col-auto px-0 imgSide">
+                                                <img src="assets/img/product-img-4.jpg" class="w-100 h-100" alt="">
+                                            </div>
+                                            <div class="col px-0">
+                                                <div class="row mx-0 flex-column gy-2">
+                                                    <a href="javascript:;" class="col px-0 cardHeading">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur earum rerum nemo.</a>
+                                                    <div class="col px-0 cardPriz">
+                                                        <span class="delPriz">$27.27</span> <span class="actPriz">$18.73</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row mx-0 align-items-center gap-3 popCard">
+                                            <div class="col-auto px-0 imgSide">
+                                                <img src="assets/img/product-img-4.jpg" class="w-100 h-100" alt="">
+                                            </div>
+                                            <div class="col px-0">
+                                                <div class="row mx-0 flex-column gy-2">
+                                                    <a href="javascript:;" class="col px-0 cardHeading">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur earum rerum nemo.</a>
+                                                    <div class="col px-0 cardPriz">
+                                                        <span class="delPriz">$27.27</span> <span class="actPriz">$18.73</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row mx-0 align-items-center gap-3 popCard">
+                                            <div class="col-auto px-0 imgSide">
+                                                <img src="assets/img/product-img-5.jpg" class="w-100 h-100" alt="">
+                                            </div>
+                                            <div class="col px-0">
+                                                <div class="row mx-0 flex-column gy-2">
+                                                    <a href="javascript:;" class="col px-0 cardHeading">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur earum rerum nemo.</a>
+                                                    <div class="col px-0 cardPriz">
+                                                        <span class="delPriz">$27.27</span> <span class="actPriz">$18.73</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row mx-0 align-items-center gap-3 popCard">
+                                            <div class="col-auto px-0 imgSide">
+                                                <img src="assets/img/product-img-6.jpg" class="w-100 h-100" alt="">
+                                            </div>
+                                            <div class="col px-0">
+                                                <div class="row mx-0 flex-column gy-2">
+                                                    <a href="javascript:;" class="col px-0 cardHeading">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur earum rerum nemo.</a>
+                                                    <div class="col px-0 cardPriz">
+                                                        <span class="delPriz">$27.27</span> <span class="actPriz">$18.73</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row mx-0 align-items-center gap-3 popCard">
+                                            <div class="col-auto px-0 imgSide">
+                                                <img src="assets/img/product-img-6.jpg" class="w-100 h-100" alt="">
+                                            </div>
+                                            <div class="col px-0">
+                                                <div class="row mx-0 flex-column gy-2">
+                                                    <a href="javascript:;" class="col px-0 cardHeading">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur earum rerum nemo.</a>
+                                                    <div class="col px-0 cardPriz">
+                                                        <span class="delPriz">$27.27</span> <span class="actPriz">$18.73</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row mx-0 align-items-center gap-3 popCard">
+                                            <div class="col-auto px-0 imgSide">
+                                                <img src="assets/img/product-img-5.jpg" class="w-100 h-100" alt="">
+                                            </div>
+                                            <div class="col px-0">
+                                                <div class="row mx-0 flex-column gy-2">
+                                                    <a href="javascript:;" class="col px-0 cardHeading">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur earum rerum nemo.</a>
+                                                    <div class="col px-0 cardPriz">
+                                                        <span class="delPriz">$27.27</span> <span class="actPriz">$18.73</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row mx-0 align-items-center gap-3 popCard">
+                                            <div class="col-auto px-0 imgSide">
+                                                <img src="assets/img/product-img-4.jpg" class="w-100 h-100" alt="">
+                                            </div>
+                                            <div class="col px-0">
+                                                <div class="row mx-0 flex-column gy-2">
+                                                    <a href="javascript:;" class="col px-0 cardHeading">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur earum rerum nemo.</a>
+                                                    <div class="col px-0 cardPriz">
+                                                        <span class="delPriz">$27.27</span> <span class="actPriz">$18.73</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ! Popular Sales Section End -->
+                    <!-- * Footer Section Start -->
+                    <div class="container-fluid footerMain">
+                        <div class="container footerMainInner pt-5">
+                            <div class="row mx-0">
+                                <div class="col-12 footerTopSection">
+                                    <div class="row">
+                                        <a href="javascript:;" class="col-auto footerLogo">
+                                            <img src="assets/img/logo/logo.svg" class="w-100 h-100" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 footerMiddle px-sm-0">
+                                    <div class="row gap-3 gap-md-0">
+                                        <div class="col-md-4 col-12">
+                                            <div class="row">
+                                                <div class="col-12 footerHeading">About Us</div>
+                                                <div class="col-12 footerText">We know there are a lot of threa developers our but we pride into a firm in the industry.</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8 col-12">
+                                            <div class="row gap-3 gap-md-0">
+                                                <div class="col-md-4 col-12">
+                                                    <div class="row">
+                                                        <div class="col-12 footerHeading">Feature</div>
+                                                        <div class="col-12">
+                                                            <ul class="list-unstyled m-0 p-0">
+                                                                <li><a href="javascript:;" class="footerLinks">About Us</a></li>
+                                                                <li><a href="javascript:;" class="footerLinks">Terms Condition</a></li>
+                                                                <li><a href="javascript:;" class="footerLinks">Best Products</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-12">
+                                                    <div class="row">
+                                                        <div class="col-12 footerHeading">General Links</div>
+                                                        <div class="col-12">
+                                                            <ul class="list-unstyled m-0 p-0">
+                                                                <li><a href="javascript:;" class="footerLinks">Blog</a></li>
+                                                                <li><a href="javascript:;" class="footerLinks">Tracking Order</a></li>
+                                                                <li><a href="javascript:;" class="footerLinks">Become Seller</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-12">
+                                                    <div class="row">
+                                                        <div class="col-12 footerHeading">Helpful</div>
+                                                        <div class="col-12">
+                                                            <ul class="list-unstyled m-0 p-0">
+                                                                <li><a href="javascript:;" class="footerLinks">Flash Sale</a></li>
+                                                                <li><a href="javascript:;" class="footerLinks">FAQ</a></li>
+                                                                <li><a href="javascript:;" class="footerLinks">Support</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 footerBottom px-0">
+                                    <div class="row mx-0 justify-content-md-between justify-content-center align-items-center">
+                                        <div class="col-auto px-0 socialOuter">
+                                            <a href="javascript:;" class="socialIcon">
+                                                <img src="assets/img/svg/instagram.svg" class="w-100 h-100" alt="">
+                                            </a>
+                                            <a href="javascript:;" class="socialIcon">
+                                                <img src="assets/img/svg/facebook-svgrepo-com.svg" class="w-100 h-100" alt="">
+                                            </a>
+                                            <a href="javascript:;" class="socialIcon">
+                                                <img src="assets/img/svg/youtube.svg" class="w-100 h-100" alt="">
+                                            </a>
+                                            <div class="coprightText">©2023 <a href="javascript:;">QuomodosoftAll</a> rights reserved</div>
+                                        </div>
+                                        <a href="javascript:;" class="col-auto px-0 getPayment mt-2 mt-md-0">
+                                            <img src="assets/img/payment-getways.png" class="w-100 h-100" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ! Footer Section End -->
                 </div>
             </div>
         </main>
+        <div class="offcanvas offcanvas-start menuOffcanvas" tabindex="-1" id="sideBarOffcanvas" aria-labelledby="sideBarOffcanvasLabel">
+            <div class="offcanvas-header px-3 py-4">
+                <div class="row mx-0">
+                    <div class="col-12 px-0 d-flex align-items-center pb-4">
+                        <a href="javascript:;" class="offIconLink me-4">
+                            <img src="assets/img/svg/arrow-repeat.svg" class="w-100" alt="">
+                            <span>2</span>
+                        </a>
+                        <a href="javascript:;" class="offIconLink">
+                            <img src="assets/img/svg/suit-heart.svg" class="w-100" alt="">
+                            <span>1</span>
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="col-12 px-0 searchInputOuter">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search Product..." aria-describedby="button-addon2">
+                            <button class="btn rounded-0 h-100" type="button" id="button-addon2">
+                                <img src="assets/img/svg/search.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-12 nav nav-tabs px-0 text-center menuHeading pt-3 justify-content-center" id="nav-tab" role="tablist">
+                        <span class="catText nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Categories</span> 
+                        <span class="divder"> | </span> 
+                        <span class="mainText nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Main Menu</span>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas-body">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                        <div class="row mx-0">
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/mobile-charge-svgrepo-com.svg" class="w-100" alt="">
+                                </span>Mobile & Laptops
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/controller.svg" class="w-100" alt="">
+                                </span>Gaming Entertainment
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/camera.svg" class="w-100" alt="">
+                                </span>Image & Video
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/car-svgrepo-com.svg" class="w-100" alt="">
+                                </span>Vehicles
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/mobile-charge-svgrepo-com.svg" class="w-100" alt="">
+                                </span>Furnitures
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/controller.svg" class="w-100" alt="">
+                                </span>Sprot
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/camera.svg" class="w-100" alt="">
+                                </span>Food & Drinks
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/car-svgrepo-com.svg" class="w-100" alt="">
+                                </span>Fashion Accessories
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/mobile-charge-svgrepo-com.svg" class="w-100" alt="">
+                                </span>Toilet & Sanitation
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/controller.svg" class="w-100" alt="">
+                                </span>Makeup Corner
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/camera.svg" class="w-100" alt="">
+                                </span>Baby Items
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                        <div class="row mx-0">
+                            <div class="col-12 px-3">
+                                <ul class="list-unstyled p-0">
+                                    <li>
+                                        <a href="javascript:;" class="mainMenuLinks">Home
+                                            <img src="assets/img/svg/chevron-down.svg" class="ms-auto">
+                                        </a> 
+                                        <ul class="list-unstyled p-0">
+                                            <li>
+                                                <a href="javascript:;" class="mainMenuLinks">Home Two
+                                                    <img src="assets/img/svg/chevron-down.svg" class="ms-auto" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="list-unstyled p-0">
+                                            <li>
+                                                <a href="javascript:;" class="mainMenuLinks">Home Three
+                                                    <img src="assets/img/svg/chevron-down.svg" class="ms-auto" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" class="mainMenuLinks">Shop
+                                            <img src="assets/img/svg/chevron-down.svg" class="ms-auto">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" class="mainMenuLinks">Pages
+                                            <img src="assets/img/svg/chevron-down.svg" class="ms-auto">
+                                        </a> 
+                                        <ul class="list-unstyled p-0">
+                                            <li>
+                                                <a href="javascript:;" class="mainMenuLinks">Privacy Policy
+                                                    <img src="assets/img/svg/chevron-down.svg" class="ms-auto" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="list-unstyled p-0">
+                                            <li>
+                                                <a href="javascript:;" class="mainMenuLinks">FAQ
+                                                    <img src="assets/img/svg/chevron-down.svg" class="ms-auto" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="list-unstyled p-0">
+                                            <li>
+                                                <a href="javascript:;" class="mainMenuLinks">Terms and Conditions
+                                                    <img src="assets/img/svg/chevron-down.svg" class="ms-auto" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" class="mainMenuLinks">About
+                                            <img src="assets/img/svg/chevron-down.svg" class="ms-auto">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" class="mainMenuLinks">Blogs
+                                            <img src="assets/img/svg/chevron-down.svg" class="ms-auto">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" class="mainMenuLinks">Contact
+                                            <img src="assets/img/svg/chevron-down.svg" class="ms-auto">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/libs/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
-        <script src="assets/libs/node_modules/select2/dist/js/select2.min.js"></script>
+        <!-- <script src="assets/libs/owl.carousel/dist/owl.carousel.min.js"></script>
+        <script src="assets/libs/select2/dist/js/select2.min.js"></script> -->
         <script type="module" src="assets/js/main.min.js"></script>
     </body>
 </html>
