@@ -215,7 +215,7 @@
         & .menuCollapse {
           width: 270px;
           background-color: white;
-          z-index: 1;
+          z-index: 10;
           & .menuLinks {
             font-size: .75rem;
             line-height: 1rem;
@@ -325,7 +325,7 @@
               &.homeHover {
                 &:hover {
                   & .homeBox {
-                    z-index: 1;
+                    z-index: 10;
                     opacity: 1;
                   }
                 }
@@ -334,14 +334,14 @@
                 &:hover {
                   & .shopBox {
                     opacity: 1;
-                    z-index: 1;
+                    z-index: 10;
                   }
                 }
               }
               &.pageHover {
                 &:hover {
                   & .pagesBox {
-                    z-index: 1;
+                    z-index: 10;
                     opacity: 1;
                   }
                 }
