@@ -552,7 +552,7 @@
                                                 </div>
                                                 <div class="col-12">
                                                     <div class="storegeTypes">
-                                                        <div class="spann">64GB</div>
+                                                        <div class="spann active">64GB</div>
                                                         <div class="spann">128GB</div>
                                                         <div class="spann">256GB</div>
                                                         <div class="spann">512GB</div>
@@ -1105,6 +1105,23 @@
                             </div>
                         </div>
                     </div>
+                    <div class="container-fluid newsletterFluid mb-5">
+                        <div class="container newsletterContainer h-100">
+                            <div class="row h-100">
+                                <div class="col-12 h-100">
+                                    <div class="newsletterBox d-flex justify-content-center align-items-center flex-column h-100">
+                                        <div class="newsletterHeading">Get <span class="mx-1 text-yellow">20%</span> Off Discount Coupon</div>
+                                        <div class="newsletterSubHeading">by Subscribe our Newsletter</div>
+                                        <div class="emailInp position-relative">
+                                            <input type="text" class="form-control mailInp" name="" id="" placeholder="EMAIL ADDRESS">
+                                            <img class="mail" src="assets/img/svg/mailicon.svg" alt="">
+                                            <button class="mailBtn">Get the Coupon</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="container-fluid footerMain">
                         <div class="container footerMainInner pt-5">
                             <div class="row">
@@ -1208,10 +1225,14 @@
             })
         </script>
         <script>
-            window.onload = function () {
+            // window.onload = function () {
+            //     slideOne();
+            //     slideTwo();
+            //     };
+            window.addEventListener('load', ()=> {
                 slideOne();
                 slideTwo();
-                };
+            })
 
                 let sliderOne = document.getElementById("slider-1");
                 let sliderTwo = document.getElementById("slider-2");
@@ -1252,6 +1273,16 @@
                 filter.classList.remove('show')
             })
         </script>
-        s
+        <script>
+            let spann = document.querySelectorAll('.spann')
+            spann.forEach(abc  =>{
+                abc.addEventListener('click', ()=>{
+                    spann.forEach(aa =>{
+                aa.classList.remove('active')
+            })
+                    abc.classList.add('active')
+                })
+            })
+        </script>
     </body>
 </html>

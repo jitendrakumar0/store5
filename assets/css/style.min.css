@@ -1431,8 +1431,6 @@ body .overflow-auto-hidden {
 
 .allProductFluid {
   background-color: #F8F8F8;
-  height: 100%;
-  overflow-y: auto;
 }
 .allProductFluid .allProductContainer .allProductLeftFilterBar {
   padding: 40px 30px;
@@ -1459,6 +1457,9 @@ body .overflow-auto-hidden {
   border-color: #000;
   width: 15px;
   height: 15px;
+}
+.allProductFluid .allProductContainer .allProductLeftFilterBar .productCategories .productCategoryUl .productCategoryLi .productCategoryFormCheck .productCategoryFormCheckInp:checked {
+  border-color: #377dff;
 }
 .allProductFluid .allProductContainer .allProductLeftFilterBar .productCategories .productCategoryUl .productCategoryLi .productCategoryFormCheck .productCategoryFormCheckLbl {
   font-size: 0.75rem;
@@ -1502,8 +1503,8 @@ body .overflow-auto-hidden {
   outline: none;
   position: absolute;
   margin: auto;
-  top: 0;
-  bottom: 0;
+  top: 10px;
+  bottom: -10px;
   background-color: transparent;
   pointer-events: none;
 }
@@ -1512,8 +1513,8 @@ body .overflow-auto-hidden {
   height: 5px;
   position: absolute;
   margin: auto;
-  top: 0;
-  bottom: 0;
+  top: 10px;
+  bottom: -10px;
   border-radius: 5px;
 }
 .allProductFluid .allProductContainer .allProductLeftFilterBar .productCategories .box input[type=range]::-webkit-slider-runnable-track {
@@ -1530,8 +1531,8 @@ body .overflow-auto-hidden {
 }
 .allProductFluid .allProductContainer .allProductLeftFilterBar .productCategories .box input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
-  height: 1.7em;
-  width: 1.7em;
+  height: 15px;
+  width: 15px;
   background-color: #ffffff;
   box-shadow: 0 3px 10px 0 #ccc;
   cursor: pointer;
@@ -1541,8 +1542,8 @@ body .overflow-auto-hidden {
 }
 .allProductFluid .allProductContainer .allProductLeftFilterBar .productCategories .box input[type=range]::-moz-range-thumb {
   -webkit-appearance: none;
-  height: 1.7em;
-  width: 1.7em;
+  height: 15px;
+  width: 15px;
   cursor: pointer;
   border-radius: 50%;
   background-color: #ffffff;
@@ -1601,6 +1602,9 @@ body .overflow-auto-hidden {
   height: 15px;
   width: 15px;
 }
+.allProductFluid .allProductContainer .allProductLeftFilterBar .productCategories .brandsProduct .brandsProductFormCheck .brandsProductFormCheckInp:checked {
+  border-color: #377dff;
+}
 .allProductFluid .allProductContainer .allProductLeftFilterBar .productCategories .brandsProduct .brandsProductFormCheck .brandsProductFormCheckLbl {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -1627,6 +1631,10 @@ body .overflow-auto-hidden {
   display: inline-block;
   margin-bottom: 8px;
 }
+.allProductFluid .allProductContainer .allProductLeftFilterBar .productCategories .storegeTypes .spann.active {
+  cursor: pointer;
+  background-color: #ffba38;
+}
 .allProductFluid .allProductContainer .allProductLeftFilterBar .productCategories .size {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1643,9 +1651,12 @@ body .overflow-auto-hidden {
 }
 .allProductFluid .allProductContainer .allProductLeftFilterBar .productCategories .formCheck .brandsProductFormCheckInp {
   box-shadow: none;
-  border-color: #000;
   height: 15px;
   width: 15px;
+}
+.allProductFluid .allProductContainer .allProductLeftFilterBar .productCategories .formCheck .brandsProductFormCheckInp:checked {
+  border-color: #377dff !important;
+  background-color: #377dff;
 }
 .allProductFluid .allProductContainer .allProductLeftFilterBar .productCategories .formCheck .lbl {
   font-size: 0.75rem;
