@@ -1,146 +1,221 @@
 @include media-breakpoint(basic) {
- .pageHeadingSection {
-    & .secHeading {
-        color: rgb(34, 34, 34);
-        font-size: 1.875rem;
-        line-height: 2.25rem;
-        font-weight: 600;
+    .pageHeadingSection {
+        & .secHeading {
+            color: rgb(34, 34, 34);
+            font-size: 1.875rem;
+            line-height: 2.25rem;
+            font-weight: 600;
+        }
     }
- }
- .productComSection {
-    & .productComSectionInner {
-        border: 1px solid rgb(239, 239, 239);
-        border-radius: 0px;
-        padding: 0;
-        & .compareTable {
-            border-collapse: collapse;
-            border-spacing: 0;
-            margin: 0;
-            & .fixedCol {
-                background-color: rgb(250, 250, 250);
-                position: sticky;
-                left: 0;
-                z-index: 9;
-            }
-            & .tableTh1 {
-                min-width: 200px;
-            }
-            & .mainProductHeading {
-                font-size: 18px;
-                font-weight: 500;
-                color: rgb(34, 34, 34);
-                margin-bottom: 1rem;
-            }
-            & .searchInput {
-                position: relative;
-                & input {
-                    border: 1px solid rgb(239, 239, 239);
-                    font-size: .875rem;
-                    line-height: 1.25rem;
-                    font-weight: 400;
-                    padding: 0.7rem 1.6rem;
-                    min-width: 180px;
-                    max-width: 215px;
-                    &:focus {
-                        outline: none;
+    .productComSection {
+        & .productComSectionInner {
+            border: 1px solid rgb(239, 239, 239);
+            border-radius: 0px;
+            padding: 0;
+            & .compareTable {
+                border-collapse: collapse;
+                border-spacing: 0;
+                margin: 0;
+                & .fixedCol {
+                    background-color: rgb(250, 250, 250);
+                    position: sticky;
+                    left: 0;
+                    z-index: 9;
+                }
+                & .tableTh1 {
+                    min-width: 200px;
+                }
+                & .mainProductHeading {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: rgb(34, 34, 34);
+                    margin-bottom: 1rem;
+                }
+                & .searchInput {
+                    position: relative;
+                    & input {
+                        border: 1px solid rgb(239, 239, 239);
+                        font-size: .875rem;
+                        line-height: 1.25rem;
+                        font-weight: 400;
+                        padding: 0.7rem 1.6rem;
+                        min-width: 180px;
+                        max-width: 215px;
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                    & img {      
+                        position: absolute;
+                        width: 16px;
+                        height: 16px;
+                        cursor: pointer;
+                        right: 12px;
+                        top: 14px;
                     }
                 }
-                & img {      
-                    position: absolute;
-                    width: 16px;
-                    height: 16px;
-                    cursor: pointer;
-                    right: 12px;
-                    top: 14px;
-                }
-            }
-            & thead {
-                & tr {
-                    & th {
-                        padding: 1.5rem;
-                        border: 1px solid rgb(239, 239, 239);
-                        border-top: none;
-                        border-bottom: none;
-                        &:first-child,
-                        &:last-child {
-                            border-right: none;
+                & thead {
+                    & tr {
+                        & th {
+                            padding: 1.5rem;
+                            border: 1px solid rgb(239, 239, 239);
+                            border-top: none;
+                            border-bottom: none !important;
+                            &:first-child,
+                            &:last-child {
+                                border-right: none;
+                            }
+                            &:nth-child(2) {
+                                border-left: none;
+                            }
+                            &:first-child {
+                                border-left: none;
+                            }
                         }
-                        &:nth-child(2) {
-                            border-left: none;
+                    }
+                }
+                & tbody {
+                    & tr {
+                        &:last-child {
+                            & td {
+                                border-bottom: none;
+                                padding-bottom: 2.5rem !important;
+                            }
                         }
                         &:first-child {
-                            border-left: none;
+                            & td {
+                                border: 1px solid rgb(239, 239, 239);
+                                padding-bottom: 1.5rem;
+                                border-top: none !important;
+                            }
                         }
-                    }
-                }
-            }
-            & tbody {
-                & tr {
-                    &:last-child {
                         & td {
+                            border: 1px solid rgb(239, 239, 239);
+                            padding: 1.5rem;
+                            border-top: none;
                             border-bottom: none;
-                        }
-                    }
-                    &:first-child {
-                        border: 1px solid rgb(239, 239, 239);
-                    }
-                    & td {
-                        border: 1px solid rgb(239, 239, 239);
-                        padding: 1.5rem;
-                        border-top: none;
-                        border-bottom: none;
-                        border-left: none;
-                        & .customText {
-                            font-size: 13px;
-                            color: rgb(142, 142, 142);
-                        }
-                        & .proCard {
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            align-items: center;
-                            gap: 8px;
-                            & .prodcutImg {
-                                width: 161px;
-                                height: 161px;
-                                align-items: center;
-                                justify-content: center;
+                            border-left: none;
+                            padding-bottom: 0 !important;
+                            & .customText {
+                                font-size: 13px;
+                                color: rgb(142, 142, 142);
+                            }
+                            & .proCard {
                                 display: flex;
-                                & img {
-                                    object-fit: contain;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 8px;
+                                & .prodcutImg {
+                                    width: 161px;
+                                    height: 161px;
+                                    align-items: center;
+                                    justify-content: center;
+                                    display: flex;
+                                    & img {
+                                        object-fit: contain;
+                                    }
+                                }
+                                & .proHeading {
+                                    font-size: 15px;
+                                    font-weight: 500;
+                                    color: rgb(34, 34, 34);
+                                    list-style: 24px;
+                                    text-align: center;
+                                }
+                                & .proPrize {
+                                    font-size: 15px;
+                                    font-weight: 500;
+                                    color: #ef2731;
+                                    list-style: 24px;
+                                    text-align: center;
                                 }
                             }
-                            & .proHeading {
+                            & .sideHeading {
                                 font-size: 15px;
                                 font-weight: 500;
                                 color: rgb(34, 34, 34);
-                                list-style: 24px;
-                                text-align: center;
                             }
-                            & .proPrize {
-                                font-size: 15px;
-                                font-weight: 500;
-                                color: #ef2731;
-                                list-style: 24px;
-                                text-align: center;
+                            & .ratingBox {
+                                display: flex;
+                                align-items: center;
+                                justify-content: start;
+                                gap: 5px;
+                                & .ratingNumber {
+                                    font-size: 15px;
+                                    font-weight: 500;
+                                    color: rgb(34, 34, 34);
+                                }
+                                & .starNumber {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 2px;
+                                    & img {
+                                        width: 18px;
+                                        height: 18px;
+                                    }
+                                }
+                                & .personNumber {
+                                    font-size: 13px;
+                                    font-weight: 400;
+                                    color: rgb(142, 142, 142);
+                                }
                             }
-                        }
-                        &:first-child,
-                        &:last-child {
-                            border-right: none;
-                        }
-                        &:nth-child(2) {
-                            border-left: none;
-                        }
-                        &:first-child {
-                            border-left: none;
+                            & .detailText {
+                                font-size: 13px;
+                                font-weight: 400;
+                                color: rgb(142, 142, 142);
+                            }
+                            & .inStockText {
+                                font-size: 13px;
+                                font-weight: 600;
+                                color: rgb(34, 197, 94);
+                            }
+                            & .outText {
+                                font-size: 13px;
+                                font-weight: 600;
+                                color: rgb(239, 38, 44);
+                            }
+                            & .colorBoxMain {
+                                display: flex;
+                                align-items: center;
+                                gap: 8px;
+                                justify-content: start;
+                                & .colorBox {
+                                    width: 16px;
+                                    height: 16px;
+                                    border-radius: 50%;
+                                    overflow: hidden;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-self: center;
+                                    &.blue {
+                                        background-color: #649ffe;
+                                    }
+                                    &.green {
+                                        background-color: #bbff8f;
+                                    }
+                                    &.red {
+                                        background-color: #fe7172;
+                                    }
+                                }
+                            }
+                            &:first-child,
+                            &:last-child {
+                                border-right: none;
+                            }
+                            &:nth-child(2) {
+                                border-left: none;
+                            }
+                            &:first-child {
+                                border-left: none;
+                            }
                         }
                     }
                 }
             }
         }
     }
- }
 }
 @include media-breakpoint-up(sm) {}
 
@@ -155,10 +230,364 @@
 
 @include media-breakpoint-down(xxl) {}
 
-@include media-breakpoint-down(xl) {}
+@include media-breakpoint-down(xl) { 
+    .pageHeadingSection {
+        & .secHeading {
+            font-size: 1.65rem;
+        }
+     }
+    .productComSection {
+        & .productComSectionInner {
+            & .compareTable {
+                & .fixedCol {
+                }
+                & .tableTh1 {
+                }
+                & .mainProductHeading {
+                    font-size: 17px;
+                }
+                & .searchInput {
+                    & input {
+                        min-width: 170px;
+                        max-width: 200px;
+                        &:focus {
+                        }
+                    }
+                    & img {  
+                    }
+                }
+                & thead {
+                    & tr {
+                        & th {
+                            padding: 1rem;
+                            &:first-child,
+                            &:last-child {
+                            }
+                            &:nth-child(2) {
+                            }
+                            &:first-child {
+                            }
+                        }
+                    }
+                }
+                & tbody {
+                    & tr {
+                        &:last-child {
+
+                            & td {
+                                padding-bottom: 2rem;
+                            }
+                        }
+                        &:first-child {
+                            & td {
+                            }
+                        }
+                        & td {
+                            padding: 1rem;
+                            & .customText {
+                            }
+                            & .proCard {
+                                & .prodcutImg {
+                                    width: 150px;
+                                    height: 150px;
+                                    & img {
+                                    }
+                                }
+                                & .proHeading {
+                                    font-size: 14px;
+                                }
+                                & .proPrize {
+                                    font-size: 14px;
+                                }
+                            }
+                            & .sideHeading {
+                                font-size: 14px;
+                            }
+                            & .ratingBox {
+                                & .ratingNumber {
+                                    font-size: 14px;
+                                }
+                                & .starNumber {
+                                    & img {
+                                    }
+                                }
+                                & .personNumber {
+                                }
+                            }
+                            & .detailText {
+                            }
+                            & .inStockText {
+                            }
+                            & .outText {
+                            }
+                            & .colorBoxMain {
+                                & .colorBox {
+                                    &.blue {
+                                    }
+                                    &.green {
+                                    }
+                                    &.red {
+                                    }
+                                }
+                            }
+                            &:first-child,
+                            &:last-child {
+                            }
+                            &:nth-child(2) {
+                            }
+                            &:first-child {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 @include media-breakpoint-down(lg) {}
 
-@include media-breakpoint-down(md) {}
+@include media-breakpoint-down(md) {
+    .pageHeadingSection {
+        & .secHeading {
+            font-size: 1.5rem;
+        }
+     }
+    .productComSection {
+        & .productComSectionInner {
+            & .compareTable {
+                & .fixedCol {
+                }
+                & .tableTh1 {
+                    min-width: 160px;
+                }
+                & .mainProductHeading {
+                    font-size: 16px;
+                }
+                & .searchInput {
+                    & input {
+                        min-width: 160px;
+                        max-width: 170px;
+                        &:focus {
+                        }
+                    }
+                    & img {  
+                    }
+                }
+                & thead {
+                    & tr {
+                        & th {
+                            padding: 0.7rem;
+                            &:first-child,
+                            &:last-child {
+                            }
+                            &:nth-child(2) {
+                            }
+                            &:first-child {
+                            }
+                        }
+                    }
+                }
+                & tbody {
+                    & tr {
+                        &:last-child {
 
-@include media-breakpoint-down(sm) {}
+                            & td {
+                                padding-bottom: 1.5rem;
+                            }
+                        }
+                        &:first-child {
+                            & td {
+                            }
+                        }
+                        & td {
+                            padding: 0.7rem;
+                            & .customText {
+                            }
+                            & .proCard {
+                                & .prodcutImg {
+                                    width: 100px;
+                                    height: 100px;
+                                    & img {
+                                    }
+                                }
+                                & .proHeading {
+                                    font-size: 13px;
+                                }
+                                & .proPrize {
+                                    font-size: 13px;
+                                }
+                            }
+                            & .sideHeading {
+                                font-size: 13px;
+                            }
+                            & .ratingBox {
+                                & .ratingNumber {
+                                    font-size: 13px;
+                                }
+                                & .starNumber {
+                                    & img {
+                                    }
+                                }
+                                & .personNumber {
+                                }
+                            }
+                            & .detailText {
+                            }
+                            & .inStockText {
+                            }
+                            & .outText {
+                            }
+                            & .colorBoxMain {
+                                & .colorBox {
+                                    &.blue {
+                                    }
+                                    &.green {
+                                    }
+                                    &.red {
+                                    }
+                                }
+                            }
+                            &:first-child,
+                            &:last-child {
+                            }
+                            &:nth-child(2) {
+                            }
+                            &:first-child {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .pageHeadingSection {
+        & .secHeading {
+            font-size: 1.3rem;
+        }
+     }
+    .productComSection {
+        & .productComSectionInner {
+            & .compareTable {
+                & .fixedCol {
+                }
+                & .tableTh1 {
+                    min-width: 130px;
+                }
+                & .mainProductHeading {
+                    font-size: 14px;
+                }
+                & .searchInput {
+                    & input {
+                        min-width: 120px;
+                        max-width: 150px;
+                        font-size: .65rem;
+                        line-height: 1.25rem;
+                        padding: 0.5rem 1.7rem 0.5rem 0.5rem;
+                        &:focus {
+                        }
+                    }
+                    & img {
+                        width: 14px;
+                        height: 14px;
+                        right: 12px;
+                        top: 12px;                    
+                    }
+                }
+                & thead {
+                    & tr {
+                        & th {
+                            &:first-child,
+                            &:last-child {
+                            }
+                            &:nth-child(2) {
+                            }
+                            &:first-child {
+                            }
+                        }
+                    }
+                }
+                & tbody {
+                    & tr {
+                        &:last-child {
+                            & td {
+                                padding-bottom: 1rem;
+                            }
+                        }
+                        &:first-child {
+                            & td {
+                            }
+                        }
+                        & td {
+                            & .customText {
+                                font-size: 12px;
+                            }
+                            & .proCard {
+                                & .prodcutImg {
+                                    width: 80px;
+                                    height: 80px;
+                                    & img {
+                                    }
+                                }
+                                & .proHeading {
+                                    font-size: 12px;
+                                }
+                                & .proPrize {
+                                    font-size: 12px;
+                                }
+                            }
+                            & .sideHeading {
+                                font-size: 12px;
+                            }
+                            & .ratingBox {
+                                & .ratingNumber {
+                                    font-size: 12px;
+                                }
+                                & .starNumber {
+                                    & img {
+                                        width: 14px;
+                                        height: 14px;
+                                    }
+                                }
+                                & .personNumber {
+                                    font-size: 11px;
+                                }
+                            }
+                            & .detailText {
+                                font-size: 11px;
+                            }
+                            & .inStockText {
+                                font-size: 12px;
+                            }
+                            & .outText {
+                                font-size: 12px;
+                            }
+                            & .colorBoxMain {
+                                & .colorBox {
+                                    width: 14px;
+                                    height: 14px;
+                                    &.blue {
+                                    }
+                                    &.green {
+                                    }
+                                    &.red {
+                                    }
+                                }
+                            }
+                            &:first-child,
+                            &:last-child {
+                            }
+                            &:nth-child(2) {
+                            }
+                            &:first-child {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
