@@ -363,7 +363,7 @@ body .overflow-auto-hidden {
 .navbarBottom .navbarBottomInner .categroiesBtnOuter .menuCollapse {
   width: 270px;
   background-color: white;
-  z-index: 1;
+  z-index: 10;
 }
 .navbarBottom .navbarBottomInner .categroiesBtnOuter .menuCollapse .menuLinks {
   font-size: 0.75rem;
@@ -474,15 +474,15 @@ body .overflow-auto-hidden {
   margin-bottom: 0;
 }
 .navbarBottom .navbarBottomInner .navLinksOuter li .navLinks.hoverClass.homeHover:hover .homeBox {
-  z-index: 1;
+  z-index: 10;
   opacity: 1;
 }
 .navbarBottom .navbarBottomInner .navLinksOuter li .navLinks.hoverClass.shopHover:hover .shopBox {
   opacity: 1;
-  z-index: 1;
+  z-index: 10;
 }
 .navbarBottom .navbarBottomInner .navLinksOuter li .navLinks.hoverClass.pageHover:hover .pagesBox {
-  z-index: 1;
+  z-index: 10;
   opacity: 1;
 }
 .navbarBottom .navbarBottomInner .becomeASellerBtn {
@@ -852,7 +852,7 @@ body .overflow-auto-hidden {
   padding: 1.5rem;
   border: 1px solid rgb(239, 239, 239);
   border-top: none;
-  border-bottom: none;
+  border-bottom: none !important;
 }
 .productComSection .productComSectionInner .compareTable thead tr th:first-child, .productComSection .productComSectionInner .compareTable thead tr th:last-child {
   border-right: none;
@@ -865,9 +865,12 @@ body .overflow-auto-hidden {
 }
 .productComSection .productComSectionInner .compareTable tbody tr:last-child td {
   border-bottom: none;
+  padding-bottom: 2.5rem !important;
 }
-.productComSection .productComSectionInner .compareTable tbody tr:first-child {
+.productComSection .productComSectionInner .compareTable tbody tr:first-child td {
   border: 1px solid rgb(239, 239, 239);
+  padding-bottom: 1.5rem;
+  border-top: none !important;
 }
 .productComSection .productComSectionInner .compareTable tbody tr td {
   border: 1px solid rgb(239, 239, 239);
@@ -875,6 +878,7 @@ body .overflow-auto-hidden {
   border-top: none;
   border-bottom: none;
   border-left: none;
+  padding-bottom: 0 !important;
 }
 .productComSection .productComSectionInner .compareTable tbody tr td .customText {
   font-size: 13px;
@@ -911,6 +915,75 @@ body .overflow-auto-hidden {
   list-style: 24px;
   text-align: center;
 }
+.productComSection .productComSectionInner .compareTable tbody tr td .sideHeading {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(34, 34, 34);
+}
+.productComSection .productComSectionInner .compareTable tbody tr td .ratingBox {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+}
+.productComSection .productComSectionInner .compareTable tbody tr td .ratingBox .ratingNumber {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(34, 34, 34);
+}
+.productComSection .productComSectionInner .compareTable tbody tr td .ratingBox .starNumber {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.productComSection .productComSectionInner .compareTable tbody tr td .ratingBox .starNumber img {
+  width: 18px;
+  height: 18px;
+}
+.productComSection .productComSectionInner .compareTable tbody tr td .ratingBox .personNumber {
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(142, 142, 142);
+}
+.productComSection .productComSectionInner .compareTable tbody tr td .detailText {
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(142, 142, 142);
+}
+.productComSection .productComSectionInner .compareTable tbody tr td .inStockText {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(34, 197, 94);
+}
+.productComSection .productComSectionInner .compareTable tbody tr td .outText {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(239, 38, 44);
+}
+.productComSection .productComSectionInner .compareTable tbody tr td .colorBoxMain {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: start;
+}
+.productComSection .productComSectionInner .compareTable tbody tr td .colorBoxMain .colorBox {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+.productComSection .productComSectionInner .compareTable tbody tr td .colorBoxMain .colorBox.blue {
+  background-color: #649ffe;
+}
+.productComSection .productComSectionInner .compareTable tbody tr td .colorBoxMain .colorBox.green {
+  background-color: #bbff8f;
+}
+.productComSection .productComSectionInner .compareTable tbody tr td .colorBoxMain .colorBox.red {
+  background-color: #fe7172;
+}
 .productComSection .productComSectionInner .compareTable tbody tr td:first-child, .productComSection .productComSectionInner .compareTable tbody tr td:last-child {
   border-right: none;
 }
@@ -921,6 +994,149 @@ body .overflow-auto-hidden {
   border-left: none;
 }
 
+@media (max-width: 1199.98px) {
+  .pageHeadingSection .secHeading {
+    font-size: 1.65rem;
+  }
+  .productComSection .productComSectionInner .compareTable .mainProductHeading {
+    font-size: 17px;
+  }
+  .productComSection .productComSectionInner .compareTable .searchInput input {
+    min-width: 170px;
+    max-width: 200px;
+  }
+  .productComSection .productComSectionInner .compareTable thead tr th {
+    padding: 1rem;
+  }
+  .productComSection .productComSectionInner .compareTable tbody tr:last-child td {
+    padding-bottom: 2rem;
+  }
+  .productComSection .productComSectionInner .compareTable tbody tr td {
+    padding: 1rem;
+  }
+  .productComSection .productComSectionInner .compareTable tbody tr td .proCard .prodcutImg {
+    width: 150px;
+    height: 150px;
+  }
+  .productComSection .productComSectionInner .compareTable tbody tr td .proCard .proHeading {
+    font-size: 14px;
+  }
+  .productComSection .productComSectionInner .compareTable tbody tr td .proCard .proPrize {
+    font-size: 14px;
+  }
+  .productComSection .productComSectionInner .compareTable tbody tr td .sideHeading {
+    font-size: 14px;
+  }
+  .productComSection .productComSectionInner .compareTable tbody tr td .ratingBox .ratingNumber {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767.98px) {
+  .pageHeadingSection .secHeading {
+    font-size: 1.5rem;
+  }
+  .productComSection .productComSectionInner .compareTable .tableTh1 {
+    min-width: 160px;
+  }
+  .productComSection .productComSectionInner .compareTable .mainProductHeading {
+    font-size: 16px;
+  }
+  .productComSection .productComSectionInner .compareTable .searchInput input {
+    min-width: 160px;
+    max-width: 170px;
+  }
+  .productComSection .productComSectionInner .compareTable thead tr th {
+    padding: 0.7rem;
+  }
+  .productComSection .productComSectionInner .compareTable tbody tr:last-child td {
+    padding-bottom: 1.5rem;
+  }
+  .productComSection .productComSectionInner .compareTable tbody tr td {
+    padding: 0.7rem;
+  }
+  .productComSection .productComSectionInner .compareTable tbody tr td .proCard .prodcutImg {
+    width: 100px;
+    height: 100px;
+  }
+  .productComSection .productComSectionInner .compareTable tbody tr td .proCard .proHeading {
+    font-size: 13px;
+  }
+  .productComSection .productComSectionInner .compareTable tbody tr td .proCard .proPrize {
+    font-size: 13px;
+  }
+  .productComSection .productComSectionInner .compareTable tbody tr td .sideHeading {
+    font-size: 13px;
+  }
+  .productComSection .productComSectionInner .compareTable tbody tr td .ratingBox .ratingNumber {
+    font-size: 13px;
+  }
+}
+@media (max-width: 575.98px) {
+  .pageHeadingSection .secHeading {
+    font-size: 1.3rem;
+  }
+  .productComSection .productComSectionInner .compareTable .tableTh1 {
+    min-width: 130px;
+  }
+  .productComSection .productComSectionInner .compareTable .mainProductHeading {
+    font-size: 14px;
+  }
+  .productComSection .productComSectionInner .compareTable .searchInput input {
+    min-width: 120px;
+    max-width: 150px;
+    font-size: 0.65rem;
+    line-height: 1.25rem;
+    padding: 0.5rem 1.7rem 0.5rem 0.5rem;
+  }
+  .productComSection .productComSectionInner .compareTable .searchInput img {
+    width: 14px;
+    height: 14px;
+    right: 12px;
+    top: 12px;
+  }
+  .productComSection .productComSectionInner .compareTable tbody tr:last-child td {
+    padding-bottom: 1rem;
+  }
+  .productComSection .productComSectionInner .compareTable tbody tr td .customText {
+    font-size: 12px;
+  }
+  .productComSection .productComSectionInner .compareTable tbody tr td .proCard .prodcutImg {
+    width: 80px;
+    height: 80px;
+  }
+  .productComSection .productComSectionInner .compareTable tbody tr td .proCard .proHeading {
+    font-size: 12px;
+  }
+  .productComSection .productComSectionInner .compareTable tbody tr td .proCard .proPrize {
+    font-size: 12px;
+  }
+  .productComSection .productComSectionInner .compareTable tbody tr td .sideHeading {
+    font-size: 12px;
+  }
+  .productComSection .productComSectionInner .compareTable tbody tr td .ratingBox .ratingNumber {
+    font-size: 12px;
+  }
+  .productComSection .productComSectionInner .compareTable tbody tr td .ratingBox .starNumber img {
+    width: 14px;
+    height: 14px;
+  }
+  .productComSection .productComSectionInner .compareTable tbody tr td .ratingBox .personNumber {
+    font-size: 11px;
+  }
+  .productComSection .productComSectionInner .compareTable tbody tr td .detailText {
+    font-size: 11px;
+  }
+  .productComSection .productComSectionInner .compareTable tbody tr td .inStockText {
+    font-size: 12px;
+  }
+  .productComSection .productComSectionInner .compareTable tbody tr td .outText {
+    font-size: 12px;
+  }
+  .productComSection .productComSectionInner .compareTable tbody tr td .colorBoxMain .colorBox {
+    width: 14px;
+    height: 14px;
+  }
+}
 .pageHeading {
   background-color: rgb(255, 250, 239);
 }
@@ -1793,6 +2009,8 @@ body .overflow-auto-hidden {
   text-align: center;
   font-weight: 500;
   margin-left: 20px;
+  font-size: 15px;
+  white-space: nowrap;
 }
 .main .wish-table .detail-rows .color {
   display: inline-block;
@@ -1805,6 +2023,7 @@ body .overflow-auto-hidden {
 .main .wish-table .detail-rows .size,
 .main .wish-table .detail-rows .Price, .main .wish-table .detail-rows .total, .main .wish-table .detail-rows .cancel {
   color: #81807f;
+  font-size: 14px;
 }
 .main .wish-table .detail-rows .size img,
 .main .wish-table .detail-rows .Price img, .main .wish-table .detail-rows .total img, .main .wish-table .detail-rows .cancel img {
