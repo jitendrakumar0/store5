@@ -117,7 +117,7 @@
                     <nav class="navbar navbar-expand-lg bg-white mainNavbar container-fluid">
                         <div class="container-xl d-flex justify-content-between align-items-center mainNavbarInner">
                             <div class="sideBarBtn d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#sideBarOffcanvas" aria-controls="sideBarOffcanvas"></div>
-                            <a class="navbar-brand" href="javascript:;">
+                            <a class="navbar-brand" href="index.html">
                                 <img src="assets/img/logo/logo.svg" class="h-100" alt="">
                             </a>
                           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -612,7 +612,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-12">
-                                                <div class="row">
+                                                <div class="row pb-5">
                                                     <div class="col-12 px-0 mt-3 mt-lg-4 productCardRow">
                                                         <div class="row mx-0 g-4">
                                                             <div class="col-xxl-4 col-xl-6 col-lg-6 col-md-6">
@@ -1094,12 +1094,94 @@
                                                                         <button class="optionBtn rounded d-flex align-items-center justify-content-center"><img src="./assets/img/svg/compare.svg" alt="compare Icon"></button>
                                                                     </div>
                                                                     </div>
-                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid footerMain">
+                        <div class="container footerMainInner pt-5">
+                            <div class="row">
+                                <div class="col-12 footerTopSection">
+                                    <div class="row">
+                                        <a href="javascript:;" class="col-auto footerLogo">
+                                            <img src="assets/img/logo/logo.svg" class="w-100 h-100" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 footerMiddle px-sm-0 px-4">
+                                    <div class="row gap-3 gap-md-0">
+                                        <div class="col-md-4 col-12">
+                                            <div class="row">
+                                                <div class="col-12 footerHeading">About Us</div>
+                                                <div class="col-12 footerText">We know there are a lot of threa developers our but we pride into a firm in the industry.</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8 col-12">
+                                            <div class="row gap-3 gap-md-0">
+                                                <div class="col-md-4 col-12">
+                                                    <div class="row">
+                                                        <div class="col-12 footerHeading">Feature</div>
+                                                        <div class="col-12">
+                                                            <ul class="list-unstyled m-0 p-0">
+                                                                <li><a href="javascript:;" class="footerLinks">About Us</a></li>
+                                                                <li><a href="javascript:;" class="footerLinks">Terms Condition</a></li>
+                                                                <li><a href="javascript:;" class="footerLinks">Best Products</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-12">
+                                                    <div class="row">
+                                                        <div class="col-12 footerHeading">General Links</div>
+                                                        <div class="col-12">
+                                                            <ul class="list-unstyled m-0 p-0">
+                                                                <li><a href="javascript:;" class="footerLinks">Blog</a></li>
+                                                                <li><a href="javascript:;" class="footerLinks">Tracking Order</a></li>
+                                                                <li><a href="javascript:;" class="footerLinks">Become Seller</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4 col-12">
+                                                    <div class="row">
+                                                        <div class="col-12 footerHeading">Helpful</div>
+                                                        <div class="col-12">
+                                                            <ul class="list-unstyled m-0 p-0">
+                                                                <li><a href="javascript:;" class="footerLinks">Flash Sale</a></li>
+                                                                <li><a href="javascript:;" class="footerLinks">FAQ</a></li>
+                                                                <li><a href="javascript:;" class="footerLinks">Support</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 footerBottom px-0">
+                                    <div class="row mx-0 justify-content-md-between justify-content-center align-items-center">
+                                        <div class="col-auto px-0 socialOuter">
+                                            <a href="javascript:;" class="socialIcon">
+                                                <img src="assets/img/svg/instagram.svg" class="w-100 h-100" alt="">
+                                            </a>
+                                            <a href="javascript:;" class="socialIcon">
+                                                <img src="assets/img/svg/facebook-svgrepo-com.svg" class="w-100 h-100" alt="">
+                                            </a>
+                                            <a href="javascript:;" class="socialIcon">
+                                                <img src="assets/img/svg/youtube.svg" class="w-100 h-100" alt="">
+                                            </a>
+                                            <div class="coprightText">©2023 <a href="javascript:;">QuomodosoftAll</a> rights reserved</div>
+                                        </div>
+                                        <a href="javascript:;" class="col-auto px-0 getPayment mt-2 mt-md-0">
+                                            <img src="assets/img/payment-getways.png" class="w-100 h-100" alt="">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -1160,12 +1242,16 @@
                 }
         </script>
         <script>
+            let filterBtn = document.querySelector('.filterBtn')
             let filter = document.querySelector('.filterShow')
             let close = document.querySelector('.closeBtn')
-            filter.addEventListener('click', ()=>{
-                filter.classList.toggle('show')
-                closeBtn.classList.remove('show')
+            filterBtn.addEventListener('click', ()=>{
+                filter.classList.add('show')
+            })
+            close.addEventListener('click', ()=>{
+                filter.classList.remove('show')
             })
         </script>
+        s
     </body>
 </html>
