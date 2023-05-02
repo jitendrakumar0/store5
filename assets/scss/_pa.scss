@@ -624,7 +624,7 @@
                         outline: none;
                         position: absolute;
                         margin: auto;
-                        top: 10px;
+                        top: 13px;
                         bottom: -10px;
                         background-color: transparent;
                         pointer-events: none;
@@ -754,8 +754,8 @@
                             margin-left: 5px;
                             display: inline-block;
                             margin-bottom: 8px;
+                            cursor: pointer;
                             &.active{
-                                cursor: pointer;
                                 background-color: $theme1;
                             }
                         }
@@ -903,8 +903,10 @@
         }
     }
     .main {
-        & .wish-table {
+        & .responsiveTable {
             border: 1px solid rgba(128,128,128,.2509803922);
+        }
+        & .wish-table {
             & .heading-row {
                 background-color: #f0f0f0;
     
@@ -927,7 +929,6 @@
                         align-items: center;
                         justify-content: center;
                         & img {
-                            max-width: 75px;
                         }
                     }
     
@@ -1017,6 +1018,9 @@
                 & td:nth-child(1) {
                     padding:20px 0px 15px 40px !important;
                     width: 350px;
+                }
+                &:last-child {
+                    border-bottom: none;
                 }
             }
         }
@@ -2577,6 +2581,94 @@
                     & .trackBtn{
                     }
                 }
+            }
+        }
+    }
+    .main {
+        & .responsiveTable {
+        }
+        & .wish-table {
+            & .heading-row {
+                font-size: 15px;
+                & td {
+                    padding: 16px 20px;
+                }
+    
+            }
+    
+            & .detail-rows {
+                & .prdct-cntner {
+                    & .image {
+                        width: 50px;
+                        height: 50px;
+                        & img {
+                        }
+                    }
+    
+                    & .para {
+                        margin-left: 15px;
+                        font-size: 13px;
+                        margin-bottom: 0;
+                    }
+                }
+    
+                & .color {
+                    width: 16px;
+                    height: 16px;
+                }
+    
+                & .size,
+                .Price,.total,.cancel{
+                    font-size: 13px;
+                    & img{
+                    }
+                }
+    
+                & .quantity {
+                    & .operators{
+                    & .quantity__minus,
+                    .quantity__plus {
+                    }
+    
+                    & .quantity__minus:hover,
+                    .quantity__plus:hover {
+                    }
+    
+                    & .quantity__minus {
+                    }
+    
+                    & .quantity__plus {
+                    }
+    
+                    & .quantity__input {
+                    }
+    
+                    & .quantity__minus:link,
+                    .quantity__plus:link {
+                    }
+    
+                    & .quantity__minus:visited,
+                    .quantity__plus:visited {
+                    }
+                }
+                }
+            }
+    
+            & tr {
+                & td:nth-child(1) {
+                    padding:20px 0px 15px 20px !important;
+                }
+                &:last-child {
+                }
+            }
+        }
+        & .buttonOuter {
+            margin: auto;
+        }
+        & .button-box {
+            & .btnRes {
+                padding: 10px 14px;
+                font-size: 12px;
             }
         }
     }

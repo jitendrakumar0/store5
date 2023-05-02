@@ -80,7 +80,7 @@
                                 <div class="col-auto">
                                     <ul class="list-unstyled d-flex m-0">
                                         <li><a href="javascript:;" class="nav-link">Account</a></li>
-                                        <li><a href="javascript:;" class="nav-link">Track Order</a></li>
+                                        <li><a href="trackOrder.html" class="nav-link">Track Order</a></li>
                                         <li><a href="javascript:;" class="nav-link">Support</a></li>
                                     </ul>
                                 </div>
@@ -141,7 +141,7 @@
                                     <span class="linkAmount">1</span>
                                 </div>
                             </a>
-                            <a href="javascript:;" class="linkBtn d-none d-lg-block">
+                            <a href="wishlist.html" class="linkBtn d-none d-lg-block">
                                 <div class="imgOuter">
                                     <img src="assets/img/svg/suit-heart.svg" class="w-100" alt="">
                                     <span class="linkAmount">1</span>
@@ -271,7 +271,7 @@
                                         <li>
                                             <button class="navLinks hoverClass homeHover">Homepage <span class="dropIcon"></span>
                                                 <div class="bottomBox homeBox">
-                                                    <a href="javascript:;" class="boxLinks">Home One</a>
+                                                    <a href="index.html" class="boxLinks">Home One</a>
                                                     <a href="javascript:;" class="boxLinks">Home Two</a>
                                                     <a href="javascript:;" class="boxLinks">Home Three</a>
                                                 </div>
@@ -323,7 +323,8 @@
                                                     <a href="javascript:;" class="boxLinks">terms and Conditions</a>
                                                     <a href="javascript:;" class="boxLinks">FAQ</a>
                                                     <a href="javascript:;" class="boxLinks">Shop Category Icon</a>
-                                                    <a href="javascript:;" class="boxLinks">Shop List View</a>
+                                                    <a href="allProducts.html" class="boxLinks">Shop List View</a>
+                                                    <a href="product-compare.html" class="boxLinks">Product Compaire</a>
                                                 </div>
                                             </button>
                                         </li>
@@ -498,6 +499,205 @@
                 </div>
             </div>
         </main>
+        <div class="offcanvas offcanvas-start menuOffcanvas" tabindex="-1" id="sideBarOffcanvas" aria-labelledby="sideBarOffcanvasLabel">
+            <div class="offcanvas-header px-3 py-4">
+                <div class="row mx-0">
+                    <div class="col-12 px-0 d-flex align-items-center pb-4">
+                        <a href="index.html" class="offIconLink me-4">
+                            <img src="assets/img/svg/arrow-repeat.svg" class="w-100" alt="">
+                            <span>2</span>
+                        </a>
+                        <a href="wishlist.html" class="offIconLink">
+                            <img src="assets/img/svg/suit-heart.svg" class="w-100" alt="">
+                            <span>1</span>
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="col-12 px-0 searchInputOuter">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search Product..." aria-describedby="button-addon2">
+                            <button class="btn rounded-0 h-100" type="button" id="button-addon2">
+                                <img src="assets/img/svg/search.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-12 nav nav-tabs px-0 text-center menuHeading pt-3 justify-content-center" id="nav-tab" role="tablist">
+                        <span class="catText nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Categories</span> 
+                        <span class="divder"> | </span> 
+                        <span class="mainText nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Main Menu</span>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas-body">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                        <div class="row mx-0">
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/mobile-charge-svgrepo-com.svg" class="w-100" alt="">
+                                </span>Mobile & Laptops
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/controller.svg" class="w-100" alt="">
+                                </span>Gaming Entertainment
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/camera.svg" class="w-100" alt="">
+                                </span>Image & Video
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/car-svgrepo-com.svg" class="w-100" alt="">
+                                </span>Vehicles
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/mobile-charge-svgrepo-com.svg" class="w-100" alt="">
+                                </span>Furnitures
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/controller.svg" class="w-100" alt="">
+                                </span>Sprot
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/camera.svg" class="w-100" alt="">
+                                </span>Food & Drinks
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/car-svgrepo-com.svg" class="w-100" alt="">
+                                </span>Fashion Accessories
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/mobile-charge-svgrepo-com.svg" class="w-100" alt="">
+                                </span>Toilet & Sanitation
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/controller.svg" class="w-100" alt="">
+                                </span>Makeup Corner
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                            <a href="javascript:;" class="col-12 menuLinks">
+                                <span class="leftIcon">
+                                    <img src="assets/img/svg/camera.svg" class="w-100" alt="">
+                                </span>Baby Items
+                                <span class="rightIcon">
+                                    <img src="assets/img/svg/chevron-down.svg" class="w-100" alt="">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                        <div class="row mx-0">
+                            <div class="col-12 px-3">
+                                <ul class="list-unstyled p-0">
+                                    <li>
+                                        <a href="index.html" class="mainMenuLinks">Home
+                                            <img src="assets/img/svg/chevron-down.svg" class="ms-auto">
+                                        </a> 
+                                        <ul class="list-unstyled p-0">
+                                            <li>
+                                                <a href="javascript:;" class="mainMenuLinks">Home Two
+                                                    <img src="assets/img/svg/chevron-down.svg" class="ms-auto" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="list-unstyled p-0">
+                                            <li>
+                                                <a href="javascript:;" class="mainMenuLinks">Home Three
+                                                    <img src="assets/img/svg/chevron-down.svg" class="ms-auto" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" class="mainMenuLinks">Shop
+                                            <img src="assets/img/svg/chevron-down.svg" class="ms-auto">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" class="mainMenuLinks">Pages
+                                            <img src="assets/img/svg/chevron-down.svg" class="ms-auto">
+                                        </a> 
+                                        <ul class="list-unstyled p-0">
+                                            <li>
+                                                <a href="javascript:;" class="mainMenuLinks">Privacy Policy
+                                                    <img src="assets/img/svg/chevron-down.svg" class="ms-auto" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="list-unstyled p-0">
+                                            <li>
+                                                <a href="javascript:;" class="mainMenuLinks">FAQ
+                                                    <img src="assets/img/svg/chevron-down.svg" class="ms-auto" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="list-unstyled p-0">
+                                            <li>
+                                                <a href="javascript:;" class="mainMenuLinks">Terms and Conditions
+                                                    <img src="assets/img/svg/chevron-down.svg" class="ms-auto" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" class="mainMenuLinks">About
+                                            <img src="assets/img/svg/chevron-down.svg" class="ms-auto">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" class="mainMenuLinks">Blogs
+                                            <img src="assets/img/svg/chevron-down.svg" class="ms-auto">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" class="mainMenuLinks">Contact
+                                            <img src="assets/img/svg/chevron-down.svg" class="ms-auto">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
         <script src="assets/libs/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
         <script src="assets/libs/node_modules/select2/dist/js/select2.min.js"></script>
