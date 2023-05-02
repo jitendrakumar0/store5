@@ -206,7 +206,7 @@ body .overflow-auto-hidden {
 }
 
 .mainNavbar {
-  background-color: whtie;
+  background-color: white;
   padding: 14px 12px;
 }
 .mainNavbar .mainNavbarInner .sideBarBtn {
@@ -363,6 +363,7 @@ body .overflow-auto-hidden {
 .navbarBottom .navbarBottomInner .categroiesBtnOuter .menuCollapse {
   width: 270px;
   background-color: white;
+  z-index: 1;
 }
 .navbarBottom .navbarBottomInner .categroiesBtnOuter .menuCollapse .menuLinks {
   font-size: 0.75rem;
@@ -661,6 +662,150 @@ body .overflow-auto-hidden {
   .mainNavbar .mainNavbarInner .navbar-brand {
     height: 30px;
   }
+}
+.footerMain {
+  background-color: white;
+}
+.footerMain .footerMainInner .footerTopSection {
+  border-bottom: 1px solid rgb(233, 233, 233);
+  margin-bottom: 50px;
+}
+.footerMain .footerMainInner .footerTopSection .footerLogo {
+  display: inline-flex;
+  margin: auto;
+  height: 36px;
+  margin-bottom: 40px;
+}
+.footerMain .footerMainInner .footerMiddle {
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgb(233, 233, 233);
+}
+.footerMain .footerMainInner .footerMiddle .footerHeading {
+  font-weight: 500;
+  color: rgb(47, 47, 47);
+  margin-bottom: 1.25rem;
+}
+.footerMain .footerMainInner .footerMiddle .footerText {
+  font-size: 15px;
+  line-height: 28px;
+  max-width: 250px;
+  color: rgb(154, 154, 154);
+}
+.footerMain .footerMainInner .footerMiddle .footerLinks {
+  text-decoration: none;
+  font-size: 15px;
+  color: rgb(154, 154, 154);
+}
+.footerMain .footerMainInner .footerMiddle .footerLinks:hover {
+  color: #000;
+  text-decoration: underline;
+}
+.footerMain .footerMainInner .footerMiddle ul li {
+  margin-top: 16px;
+}
+.footerMain .footerMainInner .footerMiddle ul li:first-child {
+  margin-top: 0px;
+}
+.footerMain .footerMainInner .footerBottom {
+  padding: 20px 0px;
+}
+.footerMain .footerMainInner .footerBottom .socialOuter {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.footerMain .footerMainInner .footerBottom .socialOuter .socialIcon {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+.footerMain .footerMainInner .footerBottom .socialOuter .socialIcon img {
+  filter: invert(0.5);
+}
+.footerMain .footerMainInner .footerBottom .socialOuter .socialIcon:hover img {
+  filter: unset;
+}
+.footerMain .footerMainInner .footerBottom .socialOuter .coprightText {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+  color: rgb(121, 121, 121);
+}
+.footerMain .footerMainInner .footerBottom .socialOuter .coprightText a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #000;
+}
+.footerMain .footerMainInner .footerBottom .getPayment {
+  height: 28px;
+}
+
+@media (max-width: 991.98px) {
+  .footerMain .footerMainInner .footerBottom .socialOuter .socialIcon {
+    margin-right: 15px;
+  }
+}
+@media (max-width: 767.98px) {
+  .footerMain {
+    padding: 0;
+  }
+  .footerMain .footerMainInner {
+    padding: 0;
+  }
+  .footerMain .footerMainInner .footerTopSection {
+    margin-bottom: 25px;
+  }
+  .footerMain .footerMainInner .footerTopSection .footerLogo {
+    height: 26px;
+    margin-bottom: 20px;
+  }
+  .footerMain .footerMainInner .footerMiddle {
+    padding-bottom: 25px;
+  }
+  .footerMain .footerMainInner .footerMiddle .footerHeading {
+    margin-bottom: 0.5rem;
+  }
+  .footerMain .footerMainInner .footerMiddle .footerText {
+    font-size: 14px;
+    max-width: 500px;
+  }
+  .footerMain .footerMainInner .footerMiddle .footerLinks {
+    font-size: 13px;
+  }
+  .footerMain .footerMainInner .footerMiddle ul li {
+    margin-top: 10px;
+  }
+  .footerMain .footerMainInner .footerBottom {
+    padding: 15px 0px;
+  }
+  .footerMain .footerMainInner .footerBottom .socialOuter .socialIcon {
+    width: 13px;
+    height: 13px;
+    margin-right: 8px;
+  }
+  .footerMain .footerMainInner .footerBottom .socialOuter .coprightText {
+    font-size: 12px;
+    line-height: 0.8rem;
+  }
+  .footerMain .footerMainInner .footerBottom .getPayment {
+    height: 25px;
+  }
+}
+.pageHeading {
+  background-color: rgb(255, 250, 239);
+}
+.pageHeading .breadcrumb .breadcrumb-item {
+  font-size: 13px;
+  font-weight: 400;
+}
+.pageHeading .breadcrumb .breadcrumb-item a {
+  text-decoration: none;
+  color: rgba(33, 37, 41, 0.75);
 }
 .breadCrumbFluid .breadCrumbContainer .singleProductBreadcrumbOl {
   margin-bottom: 0;
@@ -1483,6 +1628,108 @@ body .overflow-auto-hidden {
   border: none;
 }
 
+.main .wish-table {
+  border: 1px solid rgba(128, 128, 128, 0.2509803922);
+}
+.main .wish-table .heading-row {
+  background-color: #f0f0f0;
+}
+.main .wish-table .heading-row td {
+  padding: 16px 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.main .wish-table .detail-rows .prdct-cntner .image {
+  border: 1px solid #dfe6e9;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .wish-table .detail-rows .prdct-cntner .image img {
+  max-width: 75px;
+}
+.main .wish-table .detail-rows .prdct-cntner .para {
+  text-align: center;
+  font-weight: 500;
+  margin-left: 20px;
+}
+.main .wish-table .detail-rows .color {
+  display: inline-block;
+  display: inline-block;
+  background: #d39b09;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+}
+.main .wish-table .detail-rows .size,
+.main .wish-table .detail-rows .Price, .main .wish-table .detail-rows .total, .main .wish-table .detail-rows .cancel {
+  color: #81807f;
+}
+.main .wish-table .detail-rows .size img,
+.main .wish-table .detail-rows .Price img, .main .wish-table .detail-rows .total img, .main .wish-table .detail-rows .cancel img {
+  max-width: 25px;
+}
+.main .wish-table .detail-rows .quantity .operators {
+  width: 120px;
+  border: 1px solid rgba(128, 128, 128, 0.2509803922);
+  padding: 6px;
+}
+.main .wish-table .detail-rows .quantity .operators .quantity__minus,
+.main .wish-table .detail-rows .quantity .operators .quantity__plus {
+  display: block;
+  width: 22px;
+  height: 23px;
+  margin: 0;
+  text-decoration: none;
+  text-align: center;
+  line-height: 23px;
+}
+.main .wish-table .detail-rows .quantity .operators .quantity__minus:hover,
+.main .wish-table .detail-rows .quantity .operators .quantity__plus:hover {
+  background: #fff;
+  color: #575b71;
+}
+.main .wish-table .detail-rows .quantity .operators .quantity__minus {
+  border-radius: 3px 0 0 3px;
+}
+.main .wish-table .detail-rows .quantity .operators .quantity__plus {
+  border-radius: 0 3px 3px 0;
+}
+.main .wish-table .detail-rows .quantity .operators .quantity__input {
+  width: 32px;
+  height: 19px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: #fff;
+  color: #575b71;
+  border: none;
+}
+.main .wish-table .detail-rows .quantity .operators .quantity__minus:link,
+.main .wish-table .detail-rows .quantity .operators .quantity__plus:link {
+  color: #8184a1;
+}
+.main .wish-table .detail-rows .quantity .operators .quantity__minus:visited,
+.main .wish-table .detail-rows .quantity .operators .quantity__plus:visited {
+  color: #8184a1;
+}
+.main .wish-table tr {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2509803922);
+}
+.main .wish-table tr td:nth-child(1) {
+  padding: 20px 0px 15px 40px !important;
+  width: 350px;
+}
+
+.button-box .button {
+  padding: 15px 30px;
+  font-weight: 500;
+  margin-left: 15px;
+}
+
 @media (max-width: 991.98px) {
   .allProductFluid .allProductContainer.show .allProductLeftFilterBar {
     transform: translateX(0);
@@ -1822,9 +2069,267 @@ body .overflow-auto-hidden {
   transform: translateX(0);
 }
 
+.flashSaleSection .innersection .leftSideCard .card {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.flashSaleSection .innersection .leftSideCard .card .card-body .counter {
+  width: 100px;
+  height: 100px;
+}
+.flashSaleSection .innersection .leftSideCard .card .card-body .counter span {
+  font-size: 30px;
+  color: var(--cl);
+}
+.flashSaleSection .innersection .leftSideCard .card .card-body .counterHeading {
+  font-size: 18px;
+  line-height: normal;
+}
+.flashSaleSection .innersection .leftSideCard .card .card-body .flashHeading {
+  font-size: 44px;
+  color: rgb(34, 34, 34);
+  font-weight: 600;
+}
+.flashSaleSection .innersection .leftSideCard .card .card-body .shopNowBtn {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.025rem;
+  line-height: 1.75rem;
+  text-decoration: none;
+  display: inline-block;
+  color: rgb(34, 34, 34);
+  border-bottom: 1px solid rgb(255, 187, 56);
+}
+.flashSaleSection .innersection .leftSideCard .card .card-body .shopNowBtn img {
+  margin-left: 4px;
+  transition: 0.3s ease-in-out;
+  height: 13px;
+}
+.flashSaleSection .innersection .leftSideCard .card .card-body .shopNowBtn:hover img {
+  transform: translateX(3px);
+}
+.flashSaleSection .innersection .leftSideCard .card .card-body .appText {
+  color: rgb(34, 34, 34);
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+.flashSaleSection .innersection .leftSideCard .card .card-body .mainText {
+  font-size: 30px;
+  line-height: 2.5rem;
+  color: rgb(34, 34, 34);
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.flashSaleSection .innersection .leftSideCard .card .card-body .mainText span {
+  color: red;
+  border-bottom: 2px solid red;
+}
+.flashSaleSection .innersection .leftSideCard .card .card-body .downloadBtn a img {
+  height: 69px;
+}
+.flashSaleSection .innersection .leftSideCard .card .card-body .appScreen {
+  margin-top: 2rem;
+  text-align: center;
+}
+.flashSaleSection .innersection .leftSideCard .card .card-body .appScreen img {
+  width: 100%;
+}
+
+.topSellingProductsSection .tpCard {
+  overflow: hidden;
+  border: none;
+  border-radius: 0;
+  padding: 24px;
+  transition: all 0.5s ease-in-out;
+  height: 100%;
+}
+.topSellingProductsSection .tpCard .imgOuter {
+  max-width: 250px;
+  width: 100%;
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topSellingProductsSection .tpCard .imgOuter img {
+  object-fit: contain;
+}
+.topSellingProductsSection .tpCard .starIcon {
+  display: flex;
+  align-items: center;
+}
+.topSellingProductsSection .tpCard .starIcon img {
+  width: 17px;
+  height: 17px;
+}
+.topSellingProductsSection .tpCard .proHeading {
+  color: rgb(34, 34, 34);
+  font-weight: 600;
+  font-size: 15px;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  line-height: 24px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.topSellingProductsSection .tpCard .proHeading:hover {
+  color: rgb(37, 99, 235);
+}
+.topSellingProductsSection .tpCard .productPrize .delPrize {
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration-line: line-through;
+  color: rgb(121, 121, 121);
+}
+.topSellingProductsSection .tpCard .productPrize .actPrize {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(239, 38, 44);
+}
+.topSellingProductsSection .tpCard .addCartBtn {
+  width: 110px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  background-color: rgb(255, 187, 56);
+  color: rgb(29, 29, 29);
+  text-decoration: none;
+}
+.topSellingProductsSection .tpCard .hoverBtns {
+  width: auto;
+  position: absolute;
+  top: 0;
+  right: -100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  transition: all 0.5s ease-in-out;
+  padding: 0;
+}
+.topSellingProductsSection .tpCard .hoverBtns .hoverBtn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(248, 248, 248);
+  padding: 5px;
+}
+.topSellingProductsSection .tpCard:hover .hoverBtns {
+  right: 0;
+}
+
+.bestSallerSection .bestSellerCard {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.bestSallerSection .bestSellerCard .bestImg {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 35px;
+}
+.bestSallerSection .bestSellerCard .bestSellerLink {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+
+.popularSallesSection .popCard {
+  height: 100%;
+  padding: 8px;
+  background-color: white;
+}
+.popularSallesSection .popCard .imgSide {
+  width: 75px;
+  height: 100%;
+}
+.popularSallesSection .popCard .imgSide img {
+  object-fit: contain;
+}
+.popularSallesSection .popCard .cardHeading {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(34, 34, 34);
+  line-height: 24px;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  display: -webkit-box;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.popularSallesSection .popCard .cardHeading:hover {
+  color: rgb(37, 99, 235);
+}
+.popularSallesSection .popCard .cardPriz .delPriz {
+  font-weight: 600;
+  text-decoration-line: line-through;
+  font-size: 18px;
+  color: rgb(121, 121, 121);
+}
+.popularSallesSection .popCard .cardPriz .actPriz {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(239, 38, 44);
+}
+
+@media (max-width: 1199.98px) {
+  .flashSaleSection .innersection .leftSideCard .card .card-body .counter {
+    width: 90px;
+    height: 90px;
+  }
+  .flashSaleSection .innersection .leftSideCard .card .card-body .counterHeading {
+    font-size: 17px;
+  }
+  .flashSaleSection .innersection .leftSideCard .card .card-body .flashHeading {
+    font-size: 40px;
+    margin-top: 2rem !important;
+  }
+  .flashSaleSection .innersection .leftSideCard .card .card-body .downloadBtn a img {
+    height: 60px;
+  }
+  .topSellingProductsSection .tpCard .imgOuter {
+    width: 200px;
+  }
+  .bestSallerSection .bestSellerCard .bestImg {
+    width: 145px;
+    height: 145px;
+    padding: 30px;
+  }
+}
 @media (max-width: 991.98px) {
   .homeSectionHeading .sectionHeading {
     font-size: 22px;
+  }
+  .flashSaleSection .innersection .leftSideCard .card {
+    min-height: 400px;
+  }
+  .topSellingProductsSection .tpCard {
+    padding: 18px;
+  }
+  .topSellingProductsSection .tpCard .imgOuter {
+    width: 130px;
+  }
+  .bestSallerSection .bestSellerCard .bestImg {
+    width: 130px;
+    height: 130px;
+    padding: 25px;
   }
 }
 @media (max-width: 767.98px) {
@@ -1836,5 +2341,90 @@ body .overflow-auto-hidden {
   }
   .homeSectionHeading .viewMoreBtn img {
     height: 12px;
+  }
+  .topSellingProductsSection .tpCard .imgOuter {
+    width: 115px;
+    height: 170px;
+  }
+  .topSellingProductsSection .tpCard .proHeading {
+    font-size: 14px;
+  }
+  .topSellingProductsSection .tpCard .productPrize .delPrize {
+    font-size: 16px;
+  }
+  .topSellingProductsSection .tpCard .productPrize .actPrize {
+    font-size: 16px;
+  }
+  .bestSallerSection .bestSellerCard .bestImg {
+    width: 120px;
+    height: 120px;
+    padding: 25px;
+  }
+  .bestSallerSection .bestSellerCard .bestSellerLink {
+    font-size: 15px;
+  }
+  .popularSallesSection .popCard .imgSide {
+    width: 65px;
+  }
+  .popularSallesSection .popCard .cardHeading {
+    font-size: 14px;
+  }
+  .popularSallesSection .popCard .cardPriz .delPriz {
+    font-size: 16px;
+  }
+  .popularSallesSection .popCard .cardPriz .actPriz {
+    font-size: 16px;
+  }
+}
+@media (max-width: 575.98px) {
+  .flashSaleSection .innersection .leftSideCard .card {
+    min-height: 350px;
+  }
+  .flashSaleSection .innersection .leftSideCard .card .card-body .counter {
+    max-width: 90px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+  }
+  .flashSaleSection .innersection .leftSideCard .card .card-body .counter span {
+    font-size: 6vw;
+  }
+  .flashSaleSection .innersection .leftSideCard .card .card-body .counterHeading {
+    font-size: 3.5vw;
+  }
+  .flashSaleSection .innersection .leftSideCard .card .card-body .flashHeading {
+    font-size: 28px;
+  }
+  .flashSaleSection .innersection .leftSideCard .card .card-body .mainText {
+    font-size: 20px;
+    line-height: 2rem;
+    margin-bottom: 1.2rem;
+  }
+  .flashSaleSection .innersection .leftSideCard .card .card-body .downloadBtn {
+    padding-right: 0;
+  }
+  .flashSaleSection .innersection .leftSideCard .card .card-body .downloadBtn a img {
+    height: 42px;
+  }
+  .topSellingProductsSection .tpCard .imgOuter {
+    width: 100px;
+    height: 150px;
+  }
+  .topSellingProductsSection .tpCard .proHeading {
+    font-size: 14px;
+  }
+  .topSellingProductsSection .tpCard .productPrize .delPrize {
+    font-size: 15px;
+  }
+  .topSellingProductsSection .tpCard .productPrize .actPrize {
+    font-size: 15px;
+  }
+  .bestSallerSection .bestSellerCard .bestImg {
+    width: 100px;
+    height: 100px;
+    padding: 25px;
+  }
+  .bestSallerSection .bestSellerCard .bestSellerLink {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=style.min.css.map */
