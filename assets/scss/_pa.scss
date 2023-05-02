@@ -826,6 +826,69 @@
             }
         }
     }
+    .breadCrumbFluidbg1{
+        background-color:  #FFFAEF;
+    }
+    .trackFluid{
+        background-color: #FFFAEF;
+        & .trackContainer{
+            & .trackHead{
+                font-size: 1.875rem;
+                line-height: 2.25rem;
+                font-weight: 600;
+                text-align: center;
+                padding-bottom: 80px;
+            }
+        }
+    }
+    .orderFluid{
+        background-color: #F8F8F8;
+        & .orderContainer{
+            & .orderMainHead{
+                font-size: 22px;
+                font-weight: 600;
+                line-height: 2.25rem;
+            }
+            & .orderSubHead{
+                font-size: 15px;
+                line-height: 2rem;
+                margin-bottom: 2.25rem;
+                color: $gray-600;
+            }
+            & .orderFormRow{
+                padding: 23px 30px;
+                background-color: $white;
+                & .orderForm{
+                    & .orderLbl{
+                        display: block;
+                        font-size: 13px;
+                        font-weight: 400;
+                        margin-bottom: 0.5rem;
+                    }
+                    & .oredrInp{
+                        box-shadow: none;
+                        border-color: $gray-300;
+                        border-radius: 0;
+                        font-size: .875rem;
+                        line-height: 1.25rem;
+                        font-weight: 400;
+                        padding-left: 1.5rem;
+                        padding-right: 1.5rem;
+                        height: 50px;
+                    }
+                    & .trackBtn{
+                        width: 142px;
+                        height: 50px;
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: $white;
+                        background-color: $black;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
 }
 @include media-breakpoint-up(sm) {}
 
@@ -1196,6 +1259,24 @@
             }
         }
     }
+    .orderFluid{
+        & .orderContainer{
+            & .orderMainHead{
+            }
+            & .orderSubHead{
+            }
+            & .orderFormRow{
+                & .orderForm{
+                    & .orderLbl{
+                    }
+                    & .oredrInp{
+                    }
+                    & .trackBtn{
+                    }
+                }
+            }
+        }
+    }
 }
 
 @include media-breakpoint-down(xl) {
@@ -1551,6 +1632,24 @@
                 }
                 & .filterBtn{
                     & img{
+                    }
+                }
+            }
+        }
+    }
+    .orderFluid{
+        & .orderContainer{
+            & .orderMainHead{
+            }
+            & .orderSubHead{
+            }
+            & .orderFormRow{
+                & .orderForm{
+                    & .orderLbl{
+                    }
+                    & .oredrInp{
+                    }
+                    & .trackBtn{
                     }
                 }
             }
@@ -1944,6 +2043,24 @@
             }
         }
     }
+    .orderFluid{
+        & .orderContainer{
+            & .orderMainHead{
+            }
+            & .orderSubHead{
+            }
+            & .orderFormRow{
+                & .orderForm{
+                    & .orderLbl{
+                    }
+                    & .oredrInp{
+                    }
+                    & .trackBtn{
+                    }
+                }
+            }
+        }
+    }
 }
 
 @include media-breakpoint-down(md) {
@@ -2301,6 +2418,24 @@
                 }
                 & .filterBtn{
                     & img{
+                    }
+                }
+            }
+        }
+    }
+    .orderFluid{
+        & .orderContainer{
+            & .orderMainHead{
+            }
+            & .orderSubHead{
+            }
+            & .orderFormRow{
+                & .orderForm{
+                    & .orderLbl{
+                    }
+                    & .oredrInp{
+                    }
+                    & .trackBtn{
                     }
                 }
             }
@@ -2701,6 +2836,36 @@
                 }
                 & .filterBtn{
                     & img{
+                    }
+                }
+            }
+        }
+    }
+    .trackFluid{
+        & .trackContainer{
+            & .trackHead{
+                padding-bottom: 40px;
+                font-size: 25px;
+            }
+        }
+    }
+    .orderFluid{
+        & .orderContainer{
+            & .orderMainHead{
+                font-size: 20px;
+            }
+            & .orderSubHead{
+                font-size: 14px;
+                line-height: normal;
+                margin-bottom: 30px;
+            }
+            & .orderFormRow{
+                & .orderForm{
+                    & .orderLbl{
+                    }
+                    & .oredrInp{
+                    }
+                    & .trackBtn{
                     }
                 }
             }

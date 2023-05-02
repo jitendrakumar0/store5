@@ -1160,12 +1160,16 @@
                 }
         </script>
         <script>
+            let filterBtn = document.querySelector('.filterBtn')
             let filter = document.querySelector('.filterShow')
             let close = document.querySelector('.closeBtn')
-            filter.addEventListener('click', ()=>{
-                filter.classList.toggle('show')
-                closeBtn.classList.remove('show')
+            filterBtn.addEventListener('click', ()=>{
+                filter.classList.add('show')
+            })
+            close.addEventListener('click', ()=>{
+                filter.classList.remove('show')
             })
         </script>
+        s
     </body>
 </html>
